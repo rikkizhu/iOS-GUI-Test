@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="219305f9-bd2b-46bf-a796-4daba492e35b" name="Default Changelist" comment="" />
+    <list default="true" id="219305f9-bd2b-46bf-a796-4daba492e35b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/AbstractTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/AbstractTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/account/EmailLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/account/EmailLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/player/PlayPause.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/player/PlayPause.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/player/PlayPauseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/AbstractTestCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/AbstractTestCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/account/EmailLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/account/EmailLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/player/PlayPause.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/player/PlayPause.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/player/PlayPauseTest.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +42,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1WL78FIayVklpFjR9tDc0WxYQxp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -37,6 +54,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -51,7 +69,24 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="TestNG.PlayPauseTest.testPlayPause">
+  <component name="RunManager" selected="TestNG.PlayPause.testPlayPause">
+    <configuration name="EmailLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test-ios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.***REMOVED***.uitest.ios.account.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.***REMOVED***.uitest.ios.account" />
+      <option name="MAIN_CLASS_NAME" value="com.***REMOVED***.uitest.ios.account.EmailLogin" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EmailLogin.testEmail_Login" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test-ios" />
       <extension name="coverage">
@@ -87,41 +122,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayPauseTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test-ios" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.***REMOVED***.uitest.ios.player.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.***REMOVED***.uitest.ios.player" />
-      <option name="MAIN_CLASS_NAME" value="com.***REMOVED***.uitest.ios.player.PlayPauseTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PlayPauseTest.testPlayPause" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test-ios" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.***REMOVED***.uitest.ios.player.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.***REMOVED***.uitest.ios.player" />
-      <option name="MAIN_CLASS_NAME" value="com.***REMOVED***.uitest.ios.player.PlayPauseTest" />
-      <option name="METHOD_NAME" value="testPlayPause" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PlayPause.testPlayPause" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test-ios" />
       <extension name="coverage">
@@ -140,20 +140,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TouristLogin.testTouristLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test-ios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.***REMOVED***.uitest.ios.account.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.***REMOVED***.uitest.ios.account" />
+      <option name="MAIN_CLASS_NAME" value="com.***REMOVED***.uitest.ios.account.TouristLogin" />
+      <option name="METHOD_NAME" value="testTouristLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="TestNG.EmailLogin.testEmail_Login" />
       <item itemvalue="TestNG.PlayPause.testPlayPause" />
       <item itemvalue="TestNG.PlayPause" />
-      <item itemvalue="TestNG.PlayPauseTest.testPlayPause" />
-      <item itemvalue="TestNG.PlayPauseTest" />
+      <item itemvalue="TestNG.EmailLogin" />
+      <item itemvalue="TestNG.TouristLogin.testTouristLogin" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PlayPauseTest.testPlayPause" />
-        <item itemvalue="TestNG.PlayPauseTest" />
         <item itemvalue="TestNG.PlayPause.testPlayPause" />
         <item itemvalue="TestNG.PlayPause" />
+        <item itemvalue="TestNG.TouristLogin.testTouristLogin" />
         <item itemvalue="TestNG.EmailLogin.testEmail_Login" />
+        <item itemvalue="TestNG.EmailLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +224,7 @@
       <workItem from="1583895475100" duration="139000" />
       <workItem from="1583897965008" duration="4801000" />
       <workItem from="1583915643052" duration="7106000" />
+      <workItem from="1583931729431" duration="4255000" />
     </task>
     <servers />
   </component>
@@ -226,7 +245,7 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-243.-1080.1920.1080@0.0.1440.900" timestamp="1583923127884" />
-    <state width="1398" height="226" key="GridCell.Tab.0.bottom" timestamp="1583923230602">
+    <state width="1398" height="226" key="GridCell.Tab.0.bottom" timestamp="1583937058514">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1878" height="358" key="GridCell.Tab.0.bottom/0.0.1440.818/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579253392839" />
@@ -234,7 +253,7 @@
     <state width="699" height="88" key="GridCell.Tab.0.bottom/0.0.1440.900/-243.-1057.1920.1057@0.0.1440.900" timestamp="1583915429203" />
     <state width="939" height="356" key="GridCell.Tab.0.bottom/0.0.1440.900/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1583898269576" />
     <state width="1398" height="226" key="GridCell.Tab.0.bottom/0.0.1440.900/-243.-1080.1920.1080@0.0.1440.900" timestamp="1583923230602" />
-    <state width="1398" height="283" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578987950739" />
+    <state width="1398" height="226" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583937058514" />
     <state width="1878" height="379" key="GridCell.Tab.0.bottom/0.23.1440.795/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579573184015" />
     <state width="1878" height="379" key="GridCell.Tab.0.bottom/0.23.1440.798/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579575718469" />
     <state width="1398" height="171" key="GridCell.Tab.0.bottom/0.23.1440.798/-243.-1057.1920.1057@0.23.1440.798" timestamp="1583920974566" />
@@ -247,7 +266,7 @@
     <state width="1878" height="379" key="GridCell.Tab.0.bottom/0.23.1440.808/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579587449024" />
     <state width="1398" height="258" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1579170510382" />
     <state width="1878" height="283" key="GridCell.Tab.0.bottom/0.23.1440.877/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1578991306397" />
-    <state width="1398" height="226" key="GridCell.Tab.0.center" timestamp="1583923230600">
+    <state width="1398" height="226" key="GridCell.Tab.0.center" timestamp="1583937058513">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1878" height="358" key="GridCell.Tab.0.center/0.0.1440.818/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579253392837" />
@@ -255,7 +274,7 @@
     <state width="699" height="88" key="GridCell.Tab.0.center/0.0.1440.900/-243.-1057.1920.1057@0.0.1440.900" timestamp="1583915429200" />
     <state width="939" height="356" key="GridCell.Tab.0.center/0.0.1440.900/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1583898269573" />
     <state width="1398" height="226" key="GridCell.Tab.0.center/0.0.1440.900/-243.-1080.1920.1080@0.0.1440.900" timestamp="1583923230600" />
-    <state width="1398" height="283" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578987950738" />
+    <state width="1398" height="226" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583937058513" />
     <state width="1878" height="379" key="GridCell.Tab.0.center/0.23.1440.795/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579573184014" />
     <state width="1878" height="379" key="GridCell.Tab.0.center/0.23.1440.798/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579575718468" />
     <state width="1398" height="171" key="GridCell.Tab.0.center/0.23.1440.798/-243.-1057.1920.1057@0.23.1440.798" timestamp="1583920974565" />
@@ -268,7 +287,7 @@
     <state width="1878" height="379" key="GridCell.Tab.0.center/0.23.1440.808/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579587449019" />
     <state width="1398" height="258" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1579170510381" />
     <state width="1878" height="283" key="GridCell.Tab.0.center/0.23.1440.877/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1578991306394" />
-    <state width="1398" height="226" key="GridCell.Tab.0.left" timestamp="1583923230599">
+    <state width="1398" height="226" key="GridCell.Tab.0.left" timestamp="1583937058512">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1878" height="358" key="GridCell.Tab.0.left/0.0.1440.818/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579253392836" />
@@ -276,7 +295,7 @@
     <state width="699" height="88" key="GridCell.Tab.0.left/0.0.1440.900/-243.-1057.1920.1057@0.0.1440.900" timestamp="1583915429198" />
     <state width="939" height="356" key="GridCell.Tab.0.left/0.0.1440.900/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1583898269572" />
     <state width="1398" height="226" key="GridCell.Tab.0.left/0.0.1440.900/-243.-1080.1920.1080@0.0.1440.900" timestamp="1583923230599" />
-    <state width="1398" height="283" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578987950738" />
+    <state width="1398" height="226" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583937058512" />
     <state width="1878" height="379" key="GridCell.Tab.0.left/0.23.1440.795/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579573184013" />
     <state width="1878" height="379" key="GridCell.Tab.0.left/0.23.1440.798/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579575718468" />
     <state width="1398" height="171" key="GridCell.Tab.0.left/0.23.1440.798/-243.-1057.1920.1057@0.23.1440.798" timestamp="1583920974565" />
@@ -289,7 +308,7 @@
     <state width="1878" height="379" key="GridCell.Tab.0.left/0.23.1440.808/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579587449018" />
     <state width="1398" height="258" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1579170510380" />
     <state width="1878" height="283" key="GridCell.Tab.0.left/0.23.1440.877/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1578991306392" />
-    <state width="1398" height="226" key="GridCell.Tab.0.right" timestamp="1583923230601">
+    <state width="1398" height="226" key="GridCell.Tab.0.right" timestamp="1583937058513">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1878" height="358" key="GridCell.Tab.0.right/0.0.1440.818/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579253392838" />
@@ -297,7 +316,7 @@
     <state width="699" height="88" key="GridCell.Tab.0.right/0.0.1440.900/-243.-1057.1920.1057@0.0.1440.900" timestamp="1583915429202" />
     <state width="939" height="356" key="GridCell.Tab.0.right/0.0.1440.900/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1583898269574" />
     <state width="1398" height="226" key="GridCell.Tab.0.right/0.0.1440.900/-243.-1080.1920.1080@0.0.1440.900" timestamp="1583923230601" />
-    <state width="1398" height="283" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578987950739" />
+    <state width="1398" height="226" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583937058513" />
     <state width="1878" height="379" key="GridCell.Tab.0.right/0.23.1440.795/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579573184014" />
     <state width="1878" height="379" key="GridCell.Tab.0.right/0.23.1440.798/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579575718469" />
     <state width="1398" height="171" key="GridCell.Tab.0.right/0.23.1440.798/-243.-1057.1920.1057@0.23.1440.798" timestamp="1583920974565" />
@@ -310,21 +329,25 @@
     <state width="1878" height="379" key="GridCell.Tab.0.right/0.23.1440.808/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579587449020" />
     <state width="1398" height="258" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1579170510381" />
     <state width="1878" height="283" key="GridCell.Tab.0.right/0.23.1440.877/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1578991306395" />
-    <state width="1878" height="357" key="GridCell.Tab.1.bottom" timestamp="1579603489802">
-      <screen x="-243" y="-1057" width="1920" height="1057" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1583935052591">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583935052591" />
     <state width="1878" height="357" key="GridCell.Tab.1.bottom/0.23.1440.804/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579603489802" />
-    <state width="1878" height="357" key="GridCell.Tab.1.center" timestamp="1579603489801">
-      <screen x="-243" y="-1057" width="1920" height="1057" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1583935052587">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1583935052587" />
     <state width="1878" height="357" key="GridCell.Tab.1.center/0.23.1440.804/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579603489801" />
-    <state width="1878" height="357" key="GridCell.Tab.1.left" timestamp="1579603489801">
-      <screen x="-243" y="-1057" width="1920" height="1057" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1583935052584">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1583935052584" />
     <state width="1878" height="357" key="GridCell.Tab.1.left/0.23.1440.804/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579603489801" />
-    <state width="1878" height="357" key="GridCell.Tab.1.right" timestamp="1579603489802">
-      <screen x="-243" y="-1057" width="1920" height="1057" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1583935052590">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1583935052590" />
     <state width="1878" height="357" key="GridCell.Tab.1.right/0.23.1440.804/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579603489802" />
     <state x="258" y="69" key="Maven.ArtifactSearchDialog" timestamp="1583916850529">
       <screen x="0" y="0" width="1440" height="900" />
@@ -335,20 +358,22 @@
       <screen x="0" y="23" width="1440" height="798" />
     </state>
     <state x="450" y="161" width="540" height="524" key="StructurePopup/0.23.1440.798/-243.-1057.1920.1057@0.23.1440.798" timestamp="1583920206783" />
-    <state x="333" y="-765" key="com.intellij.ide.util.TipDialog" timestamp="1583897965902">
-      <screen x="-243" y="-1080" width="1920" height="1080" />
+    <state x="432" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1583932413042">
+      <screen x="0" y="23" width="1440" height="792" />
     </state>
     <state x="333" y="-765" key="com.intellij.ide.util.TipDialog/0.0.1440.900/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1583897965902" />
     <state x="432" y="254" key="com.intellij.ide.util.TipDialog/0.23.1440.791/-243.-1057.1920.1057@0.23.1440.791" timestamp="1583749691598" />
+    <state x="432" y="254" key="com.intellij.ide.util.TipDialog/0.23.1440.792@0.23.1440.792" timestamp="1583932413042" />
     <state x="333" y="-749" key="com.intellij.ide.util.TipDialog/0.23.1440.795/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579420334272" />
     <state x="432" y="255" key="com.intellij.ide.util.TipDialog/0.23.1440.795@0.23.1440.795" timestamp="1581908756846" />
     <state x="333" y="-749" key="com.intellij.ide.util.TipDialog/0.23.1440.798/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579164201630" />
     <state x="432" y="256" key="com.intellij.ide.util.TipDialog/0.23.1440.798/-243.-1057.1920.1057@0.23.1440.798" timestamp="1583748005310" />
     <state x="432" y="256" key="com.intellij.ide.util.TipDialog/0.23.1440.798@0.23.1440.798" timestamp="1579068789290" />
     <state x="576" y="128" key="com.intellij.ide.util.TipDialog/0.23.1440.804/-243.-1057.1920.1057@0.23.1440.804" timestamp="1579148175898" />
-    <state x="319" y="-801" key="search.everywhere.popup" timestamp="1579150825238">
-      <screen x="-243" y="-1057" width="1920" height="1057" />
+    <state x="422" y="218" key="search.everywhere.popup" timestamp="1583936219852">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="422" y="218" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1583936219852" />
     <state x="319" y="-801" key="search.everywhere.popup/0.23.1440.795/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579150825238" />
     <state x="319" y="-801" key="search.everywhere.popup/0.23.1440.804/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1578985195847" />
   </component>

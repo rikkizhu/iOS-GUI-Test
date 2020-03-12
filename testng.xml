@@ -3,6 +3,7 @@
 <suite name="***REMOVED*** ios ui-test" verbose="1" >
     <test name="***REMOVED*** ios ui-test">
         <packages>
+            <package name="com.***REMOVED***.uitest.ios.player"></package>
             <package name="com.***REMOVED***.uitest.ios.account"></package>
         </packages>
     </test>

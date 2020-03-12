@@ -1,6 +1,7 @@
 package com.***REMOVED***.uitest.ios;
 
 import com.***REMOVED***.uitest.ios.elements.AccountPage;
+import com.***REMOVED***.uitest.ios.elements.AlbumPage;
 import com.***REMOVED***.uitest.ios.elements.DiscoverPage;
 import com.***REMOVED***.uitest.ios.elements.ProfilePage;
 import io.appium.java_client.ios.IOSDriver;
@@ -14,12 +15,11 @@ import java.net.URL;
 
 public class Utils {
 
-    public static IOSDriver iosDriver;
+    IOSDriver iosDriver;
 
     AccountPage accountPage = new AccountPage();
     DiscoverPage discoverPage = new DiscoverPage();
     ProfilePage profilePage = new ProfilePage();
-
 
     public static String EMAIL_ACCOUNT = "***REMOVED***";
     public static String EMAIL_PASSWORD = "***REMOVED***";
@@ -67,6 +67,7 @@ public class Utils {
 
     public void loginByEmail(IOSDriver iosDriver) {
         WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+
         // 点击 "邮箱登录"按钮
         new WebDriverWait(iosDriver, 10).until(ExpectedConditions.visibilityOfElementLocated(accountPage.EMAIL_LOGIN_BTN()));
         iosDriver.findElement(accountPage.EMAIL_LOGIN_BTN()).click();

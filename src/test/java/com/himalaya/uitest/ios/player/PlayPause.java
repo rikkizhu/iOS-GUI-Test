@@ -35,7 +35,7 @@ public class PlayPause extends AbstractTestCase {
         int played_progress = Integer.parseInt(iosDriver.findElement(playerPage.PLAYER_PROGRESS()).getAttribute("value").replace("%",""));
 
         //断言播放进度有增加
-        Assert.assertTrue(played_progress>init_progress);
+        Assert.assertTrue(played_progress>init_progress,"验证播放中播放进度有增加");
 
         //暂停播放
         iosDriver.findElement(playerPage.PLAY_PAUSE_BTN()).click();
@@ -48,7 +48,7 @@ public class PlayPause extends AbstractTestCase {
         int paused_progress2= Integer.parseInt(iosDriver.findElement(playerPage.PLAYER_PROGRESS()).getAttribute("value").replace("%",""));
 
         //断言播放进度没有增加
-        Assert.assertTrue(paused_progress1==paused_progress2);
+        Assert.assertTrue(paused_progress1==paused_progress2,"验证暂停后播放进度没有增加");
 
     }
 

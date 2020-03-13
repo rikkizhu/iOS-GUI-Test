@@ -2,147 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="219305f9-bd2b-46bf-a796-4daba492e35b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/allure-results/00d2f35b-be8a-4160-88b1-4bfd6e35ca04-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/01c1ae64-7d88-45da-a391-217b9b5e9cff-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0241c9e9-0590-40ac-86e3-adc2b4645ac5-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0900bd82-3f7b-4380-ab95-ec6faceddc30-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/09b13eea-81c6-4b64-9994-f5d24424844c-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0afe429e-8d10-4c07-aa43-c4ea485f8d3e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0ec17d84-8e86-413f-ae59-d63cbcbfb1a3-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/12ca83ba-79be-49a3-b209-ae8f7540dee9-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/13db58af-dd20-42ef-b3a8-ce19b7b7a6c9-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/14a554e4-70f4-4751-a6c0-d6e6eda3d548-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/1507a156-e730-4d17-a437-c520d8a0b581-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/151d9c23-2958-4eb9-b629-e48e7a0fbd2c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/1ffef5c6-70f9-4a64-815e-c196e6244bb6-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/216b0ba7-c286-4c94-b439-6a9d118cc61c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/23f44655-a59f-46d5-9635-4a2fdbe57656-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/24ca7306-8ca8-409c-b177-f4595c84cc9e-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/262e16c1-92f1-455f-9187-cf1123887d0f-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/274b947d-3af4-4aba-8ae3-7e1ac611d6e2-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/2bd954cf-eeff-43d8-b339-ad9f4c9adc18-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/2c8bd002-d90e-4d7c-9b21-865eaf6bff3e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/2e086a38-29c7-4de0-a9fa-bee3db48f6e1-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/2ec09048-dcf0-4480-9d1d-89436c98d113-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/32187af9-0346-4520-b7b9-91ac81ea4595-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/3293cc41-a318-4b8a-89db-4e12eb9bb5a1-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/36dd6140-b2a3-4e9a-a7e0-de49c72ee88e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/39467d6c-4c5d-46e2-ade7-0921013c05db-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/3bac81ce-1f1d-4795-924a-e9a6aaacbeb6-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/3ec52216-f9c2-415a-8bd9-6a838be12b8d-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/3fa8a050-6d22-4cb4-99be-ed5c8e0f2fbd-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/41a2f52f-152e-4d51-9343-82e199e9d3c3-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/41d5683b-1a52-4a0e-a795-14b360ac4dc5-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/42a7fdfd-2cb9-4236-8016-5e4f413f4179-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/4493de69-f7df-4092-9319-82d4b1872ee1-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/459537fd-30fb-4263-90a2-5617958934c7-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/46f6ef71-0dfd-4a83-a5b1-cb8a0a689bc9-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/4a15d6b9-dbb9-42cb-a707-ed3b64d3167f-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/5100d0e5-c181-42bb-998a-5063ee47e4ec-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/521b3f5e-a8dd-41dd-bb2b-d3ba6b6ecee7-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/52e7964d-acf2-48d7-9aca-de63df738485-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/5493434e-4b0f-45cc-bda9-55229b2e2738-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/55308741-0e76-4e72-8a96-87e241b9b601-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/566dc9a5-6823-46cb-b182-45c2d1e3eabc-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/580a458e-2cd9-4963-be49-f63b7181cd4b-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/59ad089d-7450-40c2-9401-16d3eb807933-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/5d65d3b4-374b-4ecf-946e-da8b49897fa7-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/5ec27eaf-84e2-4e5f-872d-63423d1ac889-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/60eb2d99-cdc4-4dc6-b642-994d7c59e5be-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/625bd4a0-7a38-4f98-a7bc-ebf24cb7e6b7-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/6341dac5-fcce-4d65-8317-d99ed8ae2665-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/6cf7a8b9-f3ba-4564-8681-9fcfd402dc4a-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/6f75195d-a0a0-49cc-8fca-7659436f75fa-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/6fc0d5cc-d408-4049-b687-35cf8bb19bf7-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/75e25915-557e-4d7f-903f-faef54a8f5ea-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/77a67b77-0a35-4349-b8dd-bb00d3aa3faa-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/7b3f8c88-d128-434f-b93b-19078e5d573d-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/805490bf-6672-434b-943d-3e3a276f1c04-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/81f51f14-3847-4f84-8233-e6727f6a53c2-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8d1f8c83-f848-494a-9a7f-b13835e2c97c-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8eeb1476-214c-4d3e-8e39-7de9a9b149cd-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8fd4fee7-306f-4628-a4e3-675262601357-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9073a5ec-b0a1-4569-b873-17fe90cff8e1-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9221ee64-1083-40c2-abd6-02b3477e2344-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/95a637c9-6794-415c-b4fb-283354f2a2c0-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/98308cf5-63ba-4c0f-85c9-329078ba1047-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9be5f139-0b85-46af-9b08-08a5d685f3e1-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9c5b368d-ea8d-4260-9fbc-76ef5f10361d-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a00a25ed-3984-4b93-a4d2-f178f165e4ef-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a02aaf64-4ca6-4134-afb7-b0f45beaebad-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a0e7f278-725f-48f6-ab4a-72249aeed027-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a188cdd7-261d-4144-b30f-ad5e5a42143c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a1f7feb1-8e04-47ae-ac16-d063b26a9107-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a2ccced4-25b6-470e-b56b-8eb9c07d6743-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a3d5b772-849c-4de2-a2df-0129e5844302-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a3e65639-a365-4785-a193-0fbc1fa51a01-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a72ac52b-6f16-4915-b3a5-656dfeae1990-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a79a6f47-ca3d-4542-a07c-1cc0c85a16b9-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a9ced1e7-0383-4dd0-a1e9-f0fdf7449ce9-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a9fa2258-7735-4d20-96ae-c23ad9366f32-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/abdf3275-9be9-4382-9cf5-bebfcc5d6ebc-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ae0b9a2f-d1b3-4ec9-8f2d-049354a45559-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b2109779-8938-4aa9-a5d9-30313fdf406e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b39d4397-69dd-4934-b731-a2ddd6b59492-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b79e42c6-b95c-4597-bf44-fd5586c0c2ca-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bbe5178a-9c19-4d18-aff0-2e36a757da8e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bc3d3a58-450f-4f29-b37a-1db91d5b72cc-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bcc3466b-d3d2-41e8-b59c-533548429090-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bd7531be-1859-453b-9549-bde6eb0543c6-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bea64b07-b396-4f39-a9a0-8e9fd64285ef-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bec99701-fd15-45a4-a710-43779e0e71e0-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bef737b1-8138-4a06-a63c-63c56af2bb28-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c578f9af-f5cd-4661-aac6-19eb65f171d4-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c7431b10-11c8-45e9-9300-2e62f2adc30e-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c7d9f7c0-a9b4-4ff7-b2cd-20369050be76-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c94fcec3-d8b0-4d23-91f9-45466caa5be1-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/cc32c7fa-6881-44d7-9526-604a35320ab0-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/cc652cf8-b80e-4e99-9bd4-3171bef8f7f8-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/cfbf7de1-b53a-430d-8e8b-2bd782c48b9c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/d084c250-2ba1-41f4-bceb-1f40b2be95f8-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/d263ce7c-2391-446f-afb1-5e62d319f563-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/d5d26e51-4ee8-4f4f-ac0c-ba2756eeef42-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/d7e93455-60ba-4a23-8458-69772b833347-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/d8e34d6e-7966-4916-adc0-ab50507d5893-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/d91678c4-d3f9-4989-a5d3-8bbb3f9c5a03-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/dcf05588-cf90-46d7-9650-f10b694a664d-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e0ad361f-1a4a-47c5-aebe-e52d39b8c148-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e0dcabde-ec44-410f-adab-bd94c72342f6-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e464a2a2-6f9b-4043-b930-ad6749354759-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e5884f89-a593-439b-8005-a894583a8b52-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e6aa8df5-15c2-4811-9c36-965bd7ac5fab-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e6b2d0db-669a-46ef-a486-6d6de97ed5c0-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/eecbaa8a-6f60-4fa6-b44f-0bd7cdc91e02-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f02322e6-fd88-4e10-92c2-db799a67f09a-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f1ba22af-c9da-4487-818a-0604ff8c4180-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f60a1c44-4a57-4cea-ad31-1690d9d039b0-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f68dec7d-e9ae-4813-b11f-faf7bb419930-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f72f0c4a-b7cf-49c2-93ae-1595d3f7c84b-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/fc033a69-7b86-4294-a8e7-d7868d8814af-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/fdb1b467-4d22-4a5d-8a46-374ac54003a7-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/fefbecde-c32b-42c1-9bd6-a9a15062d466-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/player/Miniplayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/player/Miniplayer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/AbstractTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/AbstractTestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/account/EmailLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/account/EmailLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/elements/PlayerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/elements/PlayerPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/player/PlayPause.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/player/PlayPause.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/test-ios.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/AbstractTestCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/AbstractTestCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/elements/DiscoverPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/***REMOVED***/uitest/ios/elements/DiscoverPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/Utils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/account/EmailLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/account/EmailLogin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/account/TouristLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/account/TouristLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/elements/AccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/elements/AccountPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/elements/AlbumPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/elements/AlbumPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/elements/DiscoverPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/elements/DiscoverPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/elements/LibraryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/elements/LibraryPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/elements/PlayerPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/elements/PlayerPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/elements/ProfilePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/elements/ProfilePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/elements/SearchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/elements/SearchPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/player/PlayPause.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/***REMOVED***/uitest/ios/player/PlayPause.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,18 +65,36 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="TestNG./Users/***REMOVED***/Desktop/自动化/test-ios/testng.xml">
-    <configuration name="Miniplayer" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TouristLogin.testTouristLogin">
+    <configuration name="EmailLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test-ios" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.***REMOVED***.uitest.ios.player.*" />
+          <option name="PATTERN" value="com.***REMOVED***.uitest.ios.account.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.***REMOVED***.uitest.ios.player" />
-      <option name="MAIN_CLASS_NAME" value="com.***REMOVED***.uitest.ios.player.Miniplayer" />
+      <option name="PACKAGE_NAME" value="com.***REMOVED***.uitest.ios.account" />
+      <option name="MAIN_CLASS_NAME" value="com.***REMOVED***.uitest.ios.account.EmailLogin" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailLogin.testEmail_Login" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test-ios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.***REMOVED***.uitest.ios.account.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.***REMOVED***.uitest.ios.account" />
+      <option name="MAIN_CLASS_NAME" value="com.***REMOVED***.uitest.ios.account.EmailLogin" />
+      <option name="METHOD_NAME" value="testEmail_Login" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -234,34 +119,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayPause" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TouristLogin.testTouristLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test-ios" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.***REMOVED***.uitest.ios.player.*" />
+          <option name="PATTERN" value="com.***REMOVED***.uitest.ios.account.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.***REMOVED***.uitest.ios.player" />
-      <option name="MAIN_CLASS_NAME" value="com.***REMOVED***.uitest.ios.player.PlayPause" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PlayPause.testPlayPause" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test-ios" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.***REMOVED***.uitest.ios.player.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.***REMOVED***.uitest.ios.player" />
-      <option name="MAIN_CLASS_NAME" value="com.***REMOVED***.uitest.ios.player.PlayPause" />
-      <option name="METHOD_NAME" value="testPlayPause" />
+      <option name="PACKAGE_NAME" value="com.***REMOVED***.uitest.ios.account" />
+      <option name="MAIN_CLASS_NAME" value="com.***REMOVED***.uitest.ios.account.TouristLogin" />
+      <option name="METHOD_NAME" value="testTouristLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -280,19 +148,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.PlayPause.testPlayPause" />
-      <item itemvalue="TestNG.PlayPause" />
       <item itemvalue="TestNG./Users/***REMOVED***/Desktop/自动化/test-ios/testng.xml" />
       <item itemvalue="TestNG.Miniplayer.testMiniPlayer" />
-      <item itemvalue="TestNG.Miniplayer" />
+      <item itemvalue="TestNG.EmailLogin.testEmail_Login" />
+      <item itemvalue="TestNG.EmailLogin" />
+      <item itemvalue="TestNG.TouristLogin.testTouristLogin" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TouristLogin.testTouristLogin" />
+        <item itemvalue="TestNG.EmailLogin.testEmail_Login" />
+        <item itemvalue="TestNG.EmailLogin" />
         <item itemvalue="TestNG./Users/***REMOVED***/Desktop/自动化/test-ios/testng.xml" />
         <item itemvalue="TestNG.Miniplayer.testMiniPlayer" />
-        <item itemvalue="TestNG.Miniplayer" />
-        <item itemvalue="TestNG.PlayPause.testPlayPause" />
-        <item itemvalue="TestNG.PlayPause" />
       </list>
     </recent_temporary>
   </component>
@@ -349,7 +217,7 @@
       <workItem from="1583937968109" duration="82000" />
       <workItem from="1583938433378" duration="235000" />
       <workItem from="1583980376721" duration="16214000" />
-      <workItem from="1584080180068" duration="10396000" />
+      <workItem from="1584080180068" duration="11143000" />
     </task>
     <servers />
   </component>
@@ -370,14 +238,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-243.-1080.1920.1080@0.0.1440.900" timestamp="1583923127884" />
-    <state width="1878" height="224" key="GridCell.Tab.0.bottom" timestamp="1584092750266">
+    <state width="1878" height="224" key="GridCell.Tab.0.bottom" timestamp="1584094207043">
       <screen x="-243" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1878" height="358" key="GridCell.Tab.0.bottom/0.0.1440.818/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579253392839" />
     <state width="1398" height="224" key="GridCell.Tab.0.bottom/0.0.1440.818/-243.-1057.1920.1057@0.0.1440.818" timestamp="1584083581046" />
     <state width="699" height="88" key="GridCell.Tab.0.bottom/0.0.1440.824/-243.-1057.1920.1057@0.0.1440.824" timestamp="1583911395370" />
     <state width="699" height="88" key="GridCell.Tab.0.bottom/0.0.1440.900/-243.-1057.1920.1057@0.0.1440.900" timestamp="1583915429203" />
-    <state width="1878" height="224" key="GridCell.Tab.0.bottom/0.0.1440.900/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1584092750266" />
+    <state width="1878" height="224" key="GridCell.Tab.0.bottom/0.0.1440.900/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1584094207043" />
     <state width="1398" height="224" key="GridCell.Tab.0.bottom/0.0.1440.900/-243.-1080.1920.1080@0.0.1440.900" timestamp="1584089885313" />
     <state width="1398" height="226" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583938667641" />
     <state width="1878" height="379" key="GridCell.Tab.0.bottom/0.23.1440.795/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579573184015" />
@@ -393,14 +261,14 @@
     <state width="1878" height="379" key="GridCell.Tab.0.bottom/0.23.1440.808/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579587449024" />
     <state width="1398" height="258" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1579170510382" />
     <state width="1878" height="283" key="GridCell.Tab.0.bottom/0.23.1440.877/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1578991306397" />
-    <state width="1878" height="224" key="GridCell.Tab.0.center" timestamp="1584092750265">
+    <state width="1878" height="224" key="GridCell.Tab.0.center" timestamp="1584094207041">
       <screen x="-243" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1878" height="358" key="GridCell.Tab.0.center/0.0.1440.818/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579253392837" />
     <state width="1398" height="224" key="GridCell.Tab.0.center/0.0.1440.818/-243.-1057.1920.1057@0.0.1440.818" timestamp="1584083581044" />
     <state width="699" height="88" key="GridCell.Tab.0.center/0.0.1440.824/-243.-1057.1920.1057@0.0.1440.824" timestamp="1583911395368" />
     <state width="699" height="88" key="GridCell.Tab.0.center/0.0.1440.900/-243.-1057.1920.1057@0.0.1440.900" timestamp="1583915429200" />
-    <state width="1878" height="224" key="GridCell.Tab.0.center/0.0.1440.900/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1584092750265" />
+    <state width="1878" height="224" key="GridCell.Tab.0.center/0.0.1440.900/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1584094207041" />
     <state width="1398" height="224" key="GridCell.Tab.0.center/0.0.1440.900/-243.-1080.1920.1080@0.0.1440.900" timestamp="1584089885311" />
     <state width="1398" height="226" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583938667640" />
     <state width="1878" height="379" key="GridCell.Tab.0.center/0.23.1440.795/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579573184014" />
@@ -416,14 +284,14 @@
     <state width="1878" height="379" key="GridCell.Tab.0.center/0.23.1440.808/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579587449019" />
     <state width="1398" height="258" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1579170510381" />
     <state width="1878" height="283" key="GridCell.Tab.0.center/0.23.1440.877/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1578991306394" />
-    <state width="1878" height="224" key="GridCell.Tab.0.left" timestamp="1584092750264">
+    <state width="1878" height="224" key="GridCell.Tab.0.left" timestamp="1584094207040">
       <screen x="-243" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1878" height="358" key="GridCell.Tab.0.left/0.0.1440.818/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579253392836" />
     <state width="1398" height="224" key="GridCell.Tab.0.left/0.0.1440.818/-243.-1057.1920.1057@0.0.1440.818" timestamp="1584083581044" />
     <state width="699" height="88" key="GridCell.Tab.0.left/0.0.1440.824/-243.-1057.1920.1057@0.0.1440.824" timestamp="1583911395367" />
     <state width="699" height="88" key="GridCell.Tab.0.left/0.0.1440.900/-243.-1057.1920.1057@0.0.1440.900" timestamp="1583915429198" />
-    <state width="1878" height="224" key="GridCell.Tab.0.left/0.0.1440.900/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1584092750264" />
+    <state width="1878" height="224" key="GridCell.Tab.0.left/0.0.1440.900/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1584094207040" />
     <state width="1398" height="224" key="GridCell.Tab.0.left/0.0.1440.900/-243.-1080.1920.1080@0.0.1440.900" timestamp="1584089885310" />
     <state width="1398" height="226" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583938667639" />
     <state width="1878" height="379" key="GridCell.Tab.0.left/0.23.1440.795/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579573184013" />
@@ -439,14 +307,14 @@
     <state width="1878" height="379" key="GridCell.Tab.0.left/0.23.1440.808/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579587449018" />
     <state width="1398" height="258" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1579170510380" />
     <state width="1878" height="283" key="GridCell.Tab.0.left/0.23.1440.877/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1578991306392" />
-    <state width="1878" height="224" key="GridCell.Tab.0.right" timestamp="1584092750266">
+    <state width="1878" height="224" key="GridCell.Tab.0.right" timestamp="1584094207042">
       <screen x="-243" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1878" height="358" key="GridCell.Tab.0.right/0.0.1440.818/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579253392838" />
     <state width="1398" height="224" key="GridCell.Tab.0.right/0.0.1440.818/-243.-1057.1920.1057@0.0.1440.818" timestamp="1584083581045" />
     <state width="699" height="88" key="GridCell.Tab.0.right/0.0.1440.824/-243.-1057.1920.1057@0.0.1440.824" timestamp="1583911395369" />
     <state width="699" height="88" key="GridCell.Tab.0.right/0.0.1440.900/-243.-1057.1920.1057@0.0.1440.900" timestamp="1583915429202" />
-    <state width="1878" height="224" key="GridCell.Tab.0.right/0.0.1440.900/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1584092750266" />
+    <state width="1878" height="224" key="GridCell.Tab.0.right/0.0.1440.900/-243.-1080.1920.1080@-243.-1080.1920.1080" timestamp="1584094207042" />
     <state width="1398" height="224" key="GridCell.Tab.0.right/0.0.1440.900/-243.-1080.1920.1080@0.0.1440.900" timestamp="1584089885312" />
     <state width="1398" height="226" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583938667640" />
     <state width="1878" height="379" key="GridCell.Tab.0.right/0.23.1440.795/-243.-1057.1920.1057@-243.-1057.1920.1057" timestamp="1579573184014" />

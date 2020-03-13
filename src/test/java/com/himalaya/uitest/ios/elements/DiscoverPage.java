@@ -6,4 +6,8 @@ public class DiscoverPage {
     public By TRENDING_BTN() {
         return By.xpath("//XCUIElementTypeButton[@name='Trending']");
     }
+
+    public By DISCOVER_TAB_BTN(){
+        return By.xpath("//XCUIElementTypeStaticText[@name='Discover']");
+    }
 }

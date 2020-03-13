@@ -39,6 +39,6 @@ public class EmailLogin extends AbstractTestCase {
 
         //断言测试成功
         wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.TRENDING_BTN()));
-        Assert.assertTrue(iosDriver.findElement(discoverPage.TRENDING_BTN()).isDisplayed(),"验证是否进入 discover");
+        Assert.assertTrue(iosDriver.findElement(discoverPage.DISCOVER_TAB_BTN()).isDisplayed(),"验证是否进入 discover");
     }
 }

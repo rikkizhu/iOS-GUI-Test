@@ -2,7 +2,6 @@ package com.***REMOVED***.uitest.ios.account;
 
 import com.***REMOVED***.uitest.ios.AbstractTestCase;
 import com.***REMOVED***.uitest.ios.Utils;
-import com.***REMOVED***.uitest.ios.elements.AccountPage;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;

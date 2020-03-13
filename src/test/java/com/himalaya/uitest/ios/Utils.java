@@ -1,17 +1,20 @@
 package com.***REMOVED***.uitest.ios;
 
 import com.***REMOVED***.uitest.ios.elements.AccountPage;
-import com.***REMOVED***.uitest.ios.elements.AlbumPage;
 import com.***REMOVED***.uitest.ios.elements.DiscoverPage;
 import com.***REMOVED***.uitest.ios.elements.ProfilePage;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 
 public class Utils {
 
@@ -106,6 +109,14 @@ public class Utils {
         wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.MYSHOW_BTN()));
         iosDriver.findElement(profilePage.MYSHOW_BTN()).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.RECORD_BTN_IN_MYSHOW()));
+    }
+
+    public void swipePage(IOSDriver iosDriver,Integer int_height,Integer end_height){
+        TouchAction action = new TouchAction(iosDriver);
+        action.longPress(PointOption.point(iosDriver.manage().window().getSize().width / 2, int_height))
+                .waitAction(WaitOptions.waitOptions(Duration.ofNanos(15000)))
+                .moveTo(PointOption.point(iosDriver.manage().window().getSize().width / 2, end_height))
+                .release().perform();
     }
 
 

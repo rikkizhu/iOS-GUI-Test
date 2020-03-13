@@ -20,9 +20,7 @@ public class AbstractTestCase {
     @BeforeClass
     public static void launch***REMOVED***() throws MalformedURLException {
         Utils utils = new Utils();
-        //todo
         iosDriver=utils.resetLaunchSimulator();
-//        iosDriver=utils.noResetLaunchSimulator();
     }
 
     //@AfterClass

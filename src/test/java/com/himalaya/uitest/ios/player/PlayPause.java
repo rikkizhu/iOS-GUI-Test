@@ -2,8 +2,6 @@ package com.***REMOVED***.uitest.ios.player;
 
 import com.***REMOVED***.uitest.ios.AbstractTestCase;
 import com.***REMOVED***.uitest.ios.Utils;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -42,7 +40,7 @@ public class PlayPause extends AbstractTestCase {
         //暂停播放
         iosDriver.findElement(playerPage.PLAY_PAUSE_BTN()).click();
         //有操作延迟，需要再取一次值
-        Thread.sleep(5*1000);
+        Thread.sleep(3*1000);
         int paused_progress1= Integer.parseInt(iosDriver.findElement(playerPage.PLAYER_PROGRESS()).getAttribute("value").replace("%",""));
         //等待10s
         Thread.sleep(10*1000);

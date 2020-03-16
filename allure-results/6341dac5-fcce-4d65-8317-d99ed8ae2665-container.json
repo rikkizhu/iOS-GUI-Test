@@ -1,1 +1,0 @@
-{"uuid":"6341dac5-fcce-4d65-8317-d99ed8ae2665","name":"com.***REMOVED***.uitest.ios.player.Miniplayer.setup","description":"","start":1584082024649,"stop":1584082041115,"children":["e6aa8df5-15c2-4811-9c36-965bd7ac5fab"],"befores":[{"name":"setup","stage":"finished","description":"","start":1584082024649,"stop":1584082041115}]}

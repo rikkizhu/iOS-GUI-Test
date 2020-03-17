@@ -24,6 +24,7 @@ public class PlayPause extends AbstractTestCase {
     public void testPlayPause() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(iosDriver, 10);
         //点击第一条声音开始播放
+        wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.FIRST_EPISODE()));
         iosDriver.findElement(albumPage.FIRST_EPISODE()).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(playerPage.PLAYER_PROGRESS()));
 

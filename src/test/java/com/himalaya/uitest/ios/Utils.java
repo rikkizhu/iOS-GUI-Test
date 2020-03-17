@@ -98,7 +98,7 @@ public class Utils {
         wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.TRENDING_BTN()));
     }
 
-    public void enterMyShow( IOSDriver iosDriver) {
+    public void enterMyShow(IOSDriver iosDriver) {
         WebDriverWait wait = new WebDriverWait(iosDriver, 10);
 
         //进入profile
@@ -111,13 +111,11 @@ public class Utils {
         wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.RECORD_BTN_IN_MYSHOW()));
     }
 
-    public void swipePage(IOSDriver iosDriver,Integer int_height,Integer end_height){
+    public void swipePage(IOSDriver iosDriver, Integer int_height, Integer end_height) {
         TouchAction action = new TouchAction(iosDriver);
         action.longPress(PointOption.point(iosDriver.manage().window().getSize().width / 2, int_height))
                 .waitAction(WaitOptions.waitOptions(Duration.ofNanos(15000)))
                 .moveTo(PointOption.point(iosDriver.manage().window().getSize().width / 2, end_height))
                 .release().perform();
     }
-
-
 }

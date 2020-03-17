@@ -3,9 +3,11 @@ package com.***REMOVED***.uitest.ios;
 import com.***REMOVED***.uitest.ios.elements.*;
 import io.appium.java_client.ios.IOSDriver;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 
 import java.net.MalformedURLException;
 
+@Listeners({TestFailListener.class})
 public class AbstractTestCase {
 
 
@@ -20,7 +22,7 @@ public class AbstractTestCase {
     @BeforeClass
     public static void launch***REMOVED***() throws MalformedURLException {
         Utils utils = new Utils();
-        iosDriver=utils.resetLaunchSimulator();
+        iosDriver = utils.resetLaunchSimulator();
     }
 
     //@AfterClass

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="***REMOVED*** ios ui-test" verbose="1" >
+<suite name="***REMOVED*** ios ui-test" verbose="1">
     <test name="***REMOVED*** ios ui-test">
         <packages>
             <package name="com.***REMOVED***.uitest.ios.player"></package>
             <package name="com.***REMOVED***.uitest.ios.account"></package>
         </packages>
     </test>
+    <listeners>
+        <listener class-name="com.***REMOVED***.uitest.ios.TestFailListener"></listener>
+    </listeners>
 </suite>
+
+

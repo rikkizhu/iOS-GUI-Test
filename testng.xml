@@ -7,9 +7,6 @@
             <package name="com.***REMOVED***.uitest.ios.account"></package>
         </packages>
     </test>
-    <listeners>
-        <listener class-name="com.***REMOVED***.uitest.ios.TestFailListener"></listener>
-    </listeners>
 </suite>
 
 

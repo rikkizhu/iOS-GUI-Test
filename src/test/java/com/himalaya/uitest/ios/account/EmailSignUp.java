@@ -1,7 +1,7 @@
 package com.***REMOVED***.uitest.ios.account;
 
 import com.***REMOVED***.uitest.ios.AbstractTestCase;
-import com.***REMOVED***.uitest.ios.Utils;
+import com.***REMOVED***.uitest.ios.Steps;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -28,7 +28,7 @@ public class EmailSignUp extends AbstractTestCase {
 
         //输入密码
         wait.until(ExpectedConditions.elementToBeClickable(accountPage.PASSWORD_INPUT()));
-        iosDriver.findElement(accountPage.PASSWORD_INPUT()).sendKeys(Utils.EMAIL_PASSWORD);
+        iosDriver.findElement(accountPage.PASSWORD_INPUT()).sendKeys(Steps.EMAIL_PASSWORD);
 
         //点击 SignUp
         wait.until(ExpectedConditions.elementToBeClickable(accountPage.SIGH_UP()));

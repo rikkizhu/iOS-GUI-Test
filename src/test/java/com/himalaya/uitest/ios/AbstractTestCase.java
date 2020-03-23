@@ -18,6 +18,7 @@ public class AbstractTestCase {
     protected static ProfilePage profilePage = new ProfilePage();
     protected static AlbumPage albumPage = new AlbumPage();
     protected static PlayerPage playerPage = new PlayerPage();
+    protected static LibraryPage libraryPage = new LibraryPage();
 
     @BeforeClass
     public static void launch***REMOVED***() throws MalformedURLException {

@@ -37,12 +37,33 @@ public class AccountPage {
         return MobileBy.AccessibilityId("What categories are you interested in?");
     }
 
-    public By SUGGESTIONS_TITLE_ON_GUIDE() {
+    public By SELECT_SHOW_TITLE_ON_GUIDE() {
+        return MobileBy.AccessibilityId("Select some of your future-favorite shows.");
+    }
+
+    public By SHOW_SUGGESTIONS_TITLE_ON_GUIDE(){
         return MobileBy.AccessibilityId("Need suggestions?");
     }
 
     public By SIGH_UP() {
         return MobileBy.AccessibilityId("Sign Up");
     }
+
+    public By CATEGORIES_ON_GUIDE() {
+        return MobileBy.className("XCUIElementTypeCell");
+    }
+
+    public By SHOW1_ON_GUIDE(){
+        return MobileBy.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeStaticText[1]");
+    }
+
+    public By SHOW2_ON_GUIDE(){
+        return MobileBy.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeStaticText[1]");
+    }
+
+    public By DONE_BTN() {
+        return MobileBy.AccessibilityId("Done!");
+    }
+
 
 }

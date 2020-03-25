@@ -39,7 +39,7 @@ public class EmailSignUp extends AbstractTestCase {
         iosDriver.findElement(accountPage.SKIP_BTN_ON_GUIDE()).click();
 
         //跳过专辑建议选择
-        wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.SUGGESTIONS_TITLE_ON_GUIDE()));
+        wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.SELECT_SHOW_TITLE_ON_GUIDE()));
         iosDriver.findElement(accountPage.SKIP_BTN_ON_GUIDE()).click();
 
         //accept 弹窗
@@ -47,7 +47,7 @@ public class EmailSignUp extends AbstractTestCase {
         iosDriver.switchTo().alert().accept();
 
         //断言测试成功
-        wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.TRENDING_BTN()));
+        wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.DISCOVER_TAB_BTN()));
         Assert.assertTrue(iosDriver.findElement(discoverPage.DISCOVER_TAB_BTN()).isDisplayed(), "验证是否进入 discover");
     }
 

@@ -3,18 +3,15 @@ package com.***REMOVED***.uitest.ios.account;
 import com.***REMOVED***.uitest.ios.AbstractTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.List;
-
 //40版本后加了AB测试，不一定会走新手引导
-public class OnBoardingSkipFollow extends AbstractTestCase {
-    @Test(description = "新手引导跳过关注")
-    public void testSkipFollow_OnBoarding() {
+public class OnBoardingFollowAlbums extends AbstractTestCase {
+    @Test(description = "新手引导关注专辑")
+    public void testFollowAlbum_OnBoarding() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(iosDriver, 10);
 
         // 点击 "邮箱登录"按钮
@@ -37,15 +34,17 @@ public class OnBoardingSkipFollow extends AbstractTestCase {
         wait.until(ExpectedConditions.elementToBeClickable(accountPage.SIGH_UP()));
         iosDriver.findElement(accountPage.SIGH_UP()).click();
 
-        //选择感兴趣的分类
-        wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.CATEGORIES_ON_GUIDE()));
-        List<WebElement> categoryList=iosDriver.findElements(accountPage.CATEGORIES_ON_GUIDE());
-        categoryList.get(0).click();
-        iosDriver.findElement(accountPage.CONTINUE_BUTTON()).click();
-
-        //跳过专辑建议选择
-        wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.SELECT_SHOW_TITLE_ON_GUIDE()));
+        //跳过感兴趣的分类选择
+        wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.CATEGORY_TITLE_ON_GUIDE()));
         iosDriver.findElement(accountPage.SKIP_BTN_ON_GUIDE()).click();
+
+        //选择感兴趣的专辑
+        wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.SHOW_SUGGESTIONS_TITLE_ON_GUIDE()));
+        iosDriver.findElement(accountPage.SHOW1_ON_GUIDE()).click();
+        iosDriver.findElement(accountPage.SHOW2_ON_GUIDE()).click();
+
+        //点击完成按钮
+        iosDriver.findElement(accountPage.DONE_BTN()).click();
 
         //accept 弹窗
         wait.until(ExpectedConditions.alertIsPresent());
@@ -55,9 +54,10 @@ public class OnBoardingSkipFollow extends AbstractTestCase {
         wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.Library_TAB_BTN()));
         iosDriver.findElement(libraryPage.Library_TAB_BTN()).click();
 
-        //验证没有关注专辑
+        //验证有关注两个专辑
         wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.TITLE_ON_LIBRARY_PAGE()));
-        Assert.assertTrue(iosDriver.findElement(libraryPage.FOLLOW_HINTS_LIBRARY()).isDisplayed(), "验证关注专辑提示存在，表明没有关注专辑");
-        Assert.assertTrue(iosDriver.findElement(libraryPage.ZERO_SHOW_COUNT()).isDisplayed(), "验证关注专辑计数为0");
+        Assert.assertTrue(iosDriver.findElement(libraryPage.TWO_SHOW_COUNT()).isDisplayed(),"验证专辑专注数为2");
+        Assert.assertTrue(iosDriver.findElement(libraryPage.ONE_SHOW_LIBRARY()).isDisplayed(),"验证library有关注的专辑存在");
+
     }
 }

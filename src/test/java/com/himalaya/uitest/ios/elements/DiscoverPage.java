@@ -8,6 +8,6 @@ public class DiscoverPage {
     }
 
     public By DISCOVER_TAB_BTN(){
-        return By.xpath("//XCUIElementTypeStaticText[@name='Discover']");
+        return By.xpath("//XCUIElementTypeButton[@name='Discover']");
     }
 }

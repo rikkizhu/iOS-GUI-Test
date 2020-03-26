@@ -34,13 +34,16 @@ public class EmailSignUp extends AbstractTestCase {
         wait.until(ExpectedConditions.elementToBeClickable(accountPage.SIGH_UP()));
         iosDriver.findElement(accountPage.SIGH_UP()).click();
 
-        //跳过感兴趣的分类选择
-        wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.CATEGORY_TITLE_ON_GUIDE()));
-        iosDriver.findElement(accountPage.SKIP_BTN_ON_GUIDE()).click();
+        try {
+            //跳过感兴趣的分类选择
+            wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.CATEGORY_TITLE_ON_GUIDE()));
+            iosDriver.findElement(accountPage.SKIP_BTN_ON_GUIDE()).click();
 
-        //跳过专辑建议选择
-        wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.SELECT_SHOW_TITLE_ON_GUIDE()));
-        iosDriver.findElement(accountPage.SKIP_BTN_ON_GUIDE()).click();
+            //跳过专辑建议选择
+            wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.SHOW_SUGGESTIONS_TITLE_ON_GUIDE()));
+            iosDriver.findElement(accountPage.SKIP_BTN_ON_GUIDE()).click();
+        } catch (Exception e) {
+        }
 
         //accept 弹窗
         wait.until(ExpectedConditions.alertIsPresent());

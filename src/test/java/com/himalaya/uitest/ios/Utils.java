@@ -56,11 +56,19 @@ public class Utils {
         return new IOSDriver(new URL("HTTP://127.0.0.1:4723/wd/hub"), capabilities);
     }
 
-    public void swipePage(IOSDriver iosDriver, Integer int_height, Integer end_height) {
+    public void swipePageUpDown(IOSDriver iosDriver, Integer init_height, Integer end_height) {
         TouchAction action = new TouchAction(iosDriver);
-        action.longPress(PointOption.point(iosDriver.manage().window().getSize().width / 2, int_height))
+        action.longPress(PointOption.point(iosDriver.manage().window().getSize().width / 2, init_height))
                 .waitAction(WaitOptions.waitOptions(Duration.ofNanos(15000)))
                 .moveTo(PointOption.point(iosDriver.manage().window().getSize().width / 2, end_height))
+                .release().perform();
+    }
+
+    public void swipePageLeftRight(IOSDriver iosDriver, Integer init_width, Integer end_width) {
+        TouchAction action = new TouchAction(iosDriver);
+        action.longPress(PointOption.point(init_width, iosDriver.manage().window().getSize().height / 2))
+                .waitAction(WaitOptions.waitOptions(Duration.ofNanos(15000)))
+                .moveTo(PointOption.point(end_width, iosDriver.manage().window().getSize().height / 2))
                 .release().perform();
     }
 }

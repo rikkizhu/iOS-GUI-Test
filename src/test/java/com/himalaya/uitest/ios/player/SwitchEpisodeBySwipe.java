@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class SwitchEpisodeByButton extends AbstractTestCase {
+public class SwitchEpisodeBySwipe extends AbstractTestCase {
     Steps steps = new Steps();
     Utils utils = new Utils();
 
@@ -22,8 +22,8 @@ public class SwitchEpisodeByButton extends AbstractTestCase {
         steps.enterMyShow(iosDriver);
     }
 
-    @Test(description = "大播放页按钮切换上下首")
-    public void testSwitchEpisodeByBtn() throws InterruptedException {
+    @Test(description = "大播放页滑动切换上下首")
+    public void testSwitchEpisodeBySwipe() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(iosDriver, 10);
 
         //点击第一条声音开始播放
@@ -40,8 +40,9 @@ public class SwitchEpisodeByButton extends AbstractTestCase {
         String FIRST_EPISODE_NAME = iosDriver.findElement((playerPage.EPISODE_NAME_PLAYER())).getAttribute("value");
 
         //切换下一首
-        wait.until(ExpectedConditions.presenceOfElementLocated(playerPage.SWITCH_NEXT_EPISODE_BTN())).isDisplayed();
-        iosDriver.findElement(playerPage.SWITCH_NEXT_EPISODE_BTN()).click();
+        int width = iosDriver.manage().window().getSize().width;
+        utils.swipePageLeftRight(iosDriver,width*3/4,width/4);
+
         Thread.sleep(3000);
 
         //获取下一首的声音名称
@@ -62,4 +63,5 @@ public class SwitchEpisodeByButton extends AbstractTestCase {
         //验证切换回上一首成功
         Assert.assertTrue("验证切换回上一首成功，声音名为第一首声音", FIRST_EPISODE_NAME.equals(FIRST_EPISODE_NAME2));
     }
+
 }

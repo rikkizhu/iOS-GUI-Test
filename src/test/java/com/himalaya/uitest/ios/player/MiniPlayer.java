@@ -32,7 +32,7 @@ public class MiniPlayer extends AbstractTestCase {
 
         //下滑大播放页，打开 minibar
         int height = iosDriver.manage().window().getSize().height;
-        utils.swipePage(iosDriver, height / 4, height * 3 / 4);
+        utils.swipePageUpDown(iosDriver, height / 4, height * 3 / 4);
         //验证打开 minibar
         wait.until(ExpectedConditions.presenceOfElementLocated(playerPage.IMAGE_BTN_IN_MINIBAR()));
         Assert.assertTrue(iosDriver.findElement(playerPage.IMAGE_BTN_IN_MINIBAR()).isDisplayed(), "验证打开minibar");
@@ -60,7 +60,7 @@ public class MiniPlayer extends AbstractTestCase {
         Assert.assertTrue(iosDriver.findElement(playerPage.PLAY_PAUSE_BTN()).isDisplayed(), "验证成功唤起大播放页");
 
         //返回minibar并点击回退按钮
-        utils.swipePage(iosDriver, height / 4, height * 3 / 4);
+        utils.swipePageUpDown(iosDriver, height / 4, height * 3 / 4);
         wait.until(ExpectedConditions.presenceOfElementLocated(playerPage.IMAGE_BTN_IN_MINIBAR()));
         int seek_progress1 = Integer.parseInt(iosDriver.findElement(playerPage.PLAYER_PROGRESS()).getAttribute("value").replace("%", ""));
         for (int i = 0; i < 4; i++) {

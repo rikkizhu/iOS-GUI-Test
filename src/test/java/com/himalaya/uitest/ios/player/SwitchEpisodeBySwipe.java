@@ -53,8 +53,8 @@ public class SwitchEpisodeBySwipe extends AbstractTestCase {
         //验证当前首声音，上一首按钮可以点击
         Assert.assertTrue(iosDriver.findElement(playerPage.SWITCH_PREVIOUS_EPISODE_BTN()).getAttribute("enabled").equals("true"));
 
-        //点击上一首按钮
-        iosDriver.findElement(playerPage.SWITCH_PREVIOUS_EPISODE_BTN()).click();
+        //滑动切换下一首
+        utils.swipePageLeftRight(iosDriver,width/4,width*3/4);
         Thread.sleep(3000);
 
         //获取上一首的声音名称

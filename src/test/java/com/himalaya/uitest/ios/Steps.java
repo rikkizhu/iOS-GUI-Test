@@ -56,4 +56,19 @@ public class Steps {
         iosDriver.findElement(profilePage.MYSHOW_BTN()).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.RECORD_BTN_IN_MYSHOW()));
     }
+
+    public void loginBySkip(IOSDriver iosDriver){
+        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+
+        //点击游客登录按钮
+        wait.until(ExpectedConditions.visibilityOfElementLocated(accountPage.TOURIST_LOGIN_BTN()));
+        iosDriver.findElement(accountPage.TOURIST_LOGIN_BTN()).click();
+
+        //accept 弹窗
+        wait.until(ExpectedConditions.alertIsPresent());
+        iosDriver.switchTo().alert().accept();
+
+        //等待进入首页
+        wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.DISCOVER_TAB_BTN()));
+    }
 }

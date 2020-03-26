@@ -20,7 +20,7 @@ public class TouristLogin extends AbstractTestCase {
         iosDriver.switchTo().alert().accept();
 
         //断言测试成功
-        wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.TRENDING_BTN()));
-        Assert.assertTrue(iosDriver.findElement(discoverPage.DISCOVER_TAB_BTN()).isDisplayed(),"验证是否进入discover");
+        wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.DISCOVER_TAB_BTN()));
+        Assert.assertTrue(iosDriver.findElement(discoverPage.DISCOVER_TAB_BTN()).isDisplayed(), "验证是否进入discover");
     }
 }

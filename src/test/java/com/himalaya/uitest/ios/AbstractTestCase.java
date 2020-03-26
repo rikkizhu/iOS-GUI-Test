@@ -2,7 +2,6 @@ package com.***REMOVED***.uitest.ios;
 
 import com.***REMOVED***.uitest.ios.elements.*;
 import io.appium.java_client.ios.IOSDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 
@@ -20,6 +19,7 @@ public class AbstractTestCase {
     protected static AlbumPage albumPage = new AlbumPage();
     protected static PlayerPage playerPage = new PlayerPage();
     protected static LibraryPage libraryPage = new LibraryPage();
+    protected static SearchPage searchPage = new SearchPage();
 
     @BeforeClass
     public static void launch***REMOVED***() throws MalformedURLException {

@@ -51,6 +51,8 @@
 ## appnium 启动
 
 可参考我的配置(真机)
+
+```
 {
   "platformName": "iOS",
   "platformVersion": "12.4.4",
@@ -59,6 +61,7 @@
   "udid": "6027272dcff3571a8c89ad0b5dcb200db6ac98ff",
   "bundleId": "com.***REMOVED***"
 }
+```
 
 ***REMOVED***
 
@@ -68,6 +71,8 @@ bundleId 用 ideviceinstaller -l 查，若 ideviceinstaller -l 失败解决方�
 
 
 模拟器配置可参考：
+
+```
 {
   "platformName": "iOS",
   "platformVersion": "12.4",
@@ -75,6 +80,7 @@ bundleId 用 ideviceinstaller -l 查，若 ideviceinstaller -l 失败解决方�
   "automationName": "XCUITest",
   "app": "/Users/***REMOVED***/Library/Developer/Xcode/DerivedData/TestApp-dnlcmpeeuewymkcljdldzrnrbduz/Build/Products/Debug-iphonesimulator/TestApp.app"
 }
+```
 
 
 ## 搭建 java

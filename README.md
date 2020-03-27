@@ -48,7 +48,7 @@
 
 找开发要包；也可考虑支持 jenkins 打模拟器包。
 
-**appnium 启动**
+## appnium 启动
 
 可参考我的配置(真机)
 {
@@ -77,7 +77,7 @@ bundleId 用 ideviceinstaller -l 查，若 ideviceinstaller -l 失败解决方�
 }
 
 
-**搭建 java**
+## 搭建 java
 
 1、官网安装 idea 
 2、idea破解方法
@@ -95,7 +95,7 @@ https://www.algerfan.cn/articles/2019/03/06/1551868940012.html
 http://www.testclass.net/testng/data-provider
 
 
-**集成 allure 生成美观的测试报告**
+## 集成 allure 生成美观的测试报告
 
 1、pom.xml 添加依赖
 ```

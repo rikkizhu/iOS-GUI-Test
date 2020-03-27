@@ -86,17 +86,21 @@ bundleId 用 ideviceinstaller -l 查，若 ideviceinstaller -l 失败解决方�
 ## 搭建 java
 
 1、官网安装 idea 
+
 2、idea破解方法
 https://www.algerfan.cn/articles/2019/03/06/1551868940012.html
+
 3、按照四中的真机及模拟器启动app配置，用 java 编写启动代码
 ***REMOVED***
 
 注意点：
 1：启动的时候 appium 要 start server
+
 2：报 Keyboard is not present，模拟器不能唤起键盘
 - Open your Simulator
 - Select Hardware
 - Select 'Connect Software Keyboard’
+
 3:关于 testng 学习网站
 http://www.testclass.net/testng/data-provider
 

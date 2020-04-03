@@ -1,7 +1,7 @@
 package com.***REMOVED***.uitest.ios.account;
 
 import com.***REMOVED***.uitest.ios.AbstractTestCase;
-import com.***REMOVED***.uitest.ios.Steps;
+import com.***REMOVED***.uitest.ios.Utils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -31,7 +31,7 @@ public class OnBoardingSkipFollow extends AbstractTestCase {
 
         //输入密码
         wait.until(ExpectedConditions.elementToBeClickable(accountPage.PASSWORD_INPUT()));
-        iosDriver.findElement(accountPage.PASSWORD_INPUT()).sendKeys(Steps.EMAIL_PASSWORD);
+        iosDriver.findElement(accountPage.PASSWORD_INPUT()).sendKeys(Utils.getProperties("EMAIL_PASSWORD"));
 
         //点击 SignUp
         wait.until(ExpectedConditions.elementToBeClickable(accountPage.SIGH_UP()));
@@ -39,7 +39,7 @@ public class OnBoardingSkipFollow extends AbstractTestCase {
 
         //选择感兴趣的分类
         wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.CATEGORIES_ON_GUIDE()));
-        List<WebElement> categoryList=iosDriver.findElements(accountPage.CATEGORIES_ON_GUIDE());
+        List<WebElement> categoryList = iosDriver.findElements(accountPage.CATEGORIES_ON_GUIDE());
         categoryList.get(0).click();
         iosDriver.findElement(accountPage.CONTINUE_BUTTON()).click();
 

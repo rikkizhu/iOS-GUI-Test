@@ -2,6 +2,7 @@ package com.***REMOVED***.uitest.ios.search;
 
 import com.***REMOVED***.uitest.ios.AbstractTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
+import com.***REMOVED***.uitest.ios.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -35,7 +36,7 @@ public class SearchAlbum extends AbstractTestCase {
         iosDriver.findElement(searchPage.SEARCH_BAR_SEARCH_TAB()).click();
 
         //输入搜索内容
-        iosDriver.findElement(searchPage.INIT_SEARCH_INPUT()).sendKeys("testiosgui");
+        iosDriver.findElement(searchPage.INIT_SEARCH_INPUT()).sendKeys(Utils.getProperties("SEARCH_ALBUM"));
         iosDriver.findElement(searchPage.KEYBOARD_SEARCH()).click();
 
         //验证有返回搜索结果选择框
@@ -45,7 +46,7 @@ public class SearchAlbum extends AbstractTestCase {
 
         //验证搜索出专辑
         Assert.assertTrue(iosDriver.findElement(searchPage.RESULT_ALBUM_CELL()).isDisplayed(), "验证有专辑搜索结果");
-        Assert.assertTrue(iosDriver.findElements(By.xpath("//XCUIElementTypeStaticText[@name='testiosgui']")).size() > 0,
+        Assert.assertTrue(iosDriver.findElements(By.xpath("//XCUIElementTypeStaticText[@name='" + Utils.getProperties("SEARCH_ALBUM") + "']")).size() > 0,
                 "验证搜索结果中有目标专辑 testiosgui");
     }
 

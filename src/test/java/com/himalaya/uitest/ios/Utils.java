@@ -7,9 +7,13 @@ import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
+import java.util.Properties;
 
 public class Utils {
 
@@ -71,4 +75,24 @@ public class Utils {
                 .moveTo(PointOption.point(end_width, iosDriver.manage().window().getSize().height / 2))
                 .release().perform();
     }
+
+    public static String getProperties(String key) {
+        FileInputStream fileInputStream = null;
+        try {
+            Properties prop = new Properties();
+            prop.load(new FileInputStream(new File(Utils.class.getResource("/TestData.properties").getPath())));
+            return prop.getProperty(key);
+        } catch (IOException e) {
+            throw new IllegalStateException("读取配置文件失败");
+        } finally {
+            if (fileInputStream != null) {
+                try {
+                    fileInputStream.close();
+                } catch (IOException e) {
+                    throw new IllegalStateException("读取配置文件时关闭文件失败");
+                }
+            }
+        }
+    }
+
 }

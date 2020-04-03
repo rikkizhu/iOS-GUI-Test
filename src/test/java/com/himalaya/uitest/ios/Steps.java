@@ -11,8 +11,6 @@ public class Steps {
     AccountPage accountPage = new AccountPage();
     DiscoverPage discoverPage = new DiscoverPage();
     ProfilePage profilePage = new ProfilePage();
-    public static String EMAIL_ACCOUNT = "***REMOVED***";
-    public static String EMAIL_PASSWORD = "***REMOVED***";
 
     public void loginByEmail(IOSDriver iosDriver) {
         WebDriverWait wait = new WebDriverWait(iosDriver, 10);
@@ -23,7 +21,7 @@ public class Steps {
 
         //输入邮箱
         wait.until(ExpectedConditions.elementToBeClickable(accountPage.EMAIL_INPUT()));
-        iosDriver.findElement(accountPage.EMAIL_INPUT()).sendKeys(EMAIL_ACCOUNT);
+        iosDriver.findElement(accountPage.EMAIL_INPUT()).sendKeys(Utils.getProperties("EMAIL_ACCOUNT"));
 
         //点击 continue 进入下一页
         wait.until(ExpectedConditions.elementToBeClickable(accountPage.CONTINUE_BUTTON()));
@@ -31,7 +29,7 @@ public class Steps {
 
         //输入密码
         wait.until(ExpectedConditions.elementToBeClickable(accountPage.PASSWORD_INPUT()));
-        iosDriver.findElement(accountPage.PASSWORD_INPUT()).sendKeys(EMAIL_PASSWORD);
+        iosDriver.findElement(accountPage.PASSWORD_INPUT()).sendKeys(Utils.getProperties("EMAIL_PASSWORD"));
 
         //点击 Login
         wait.until(ExpectedConditions.elementToBeClickable(accountPage.LOGIN_BTN()));
@@ -57,7 +55,7 @@ public class Steps {
         wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.RECORD_BTN_IN_MYSHOW()));
     }
 
-    public void loginBySkip(IOSDriver iosDriver){
+    public void loginBySkip(IOSDriver iosDriver) {
         WebDriverWait wait = new WebDriverWait(iosDriver, 10);
 
         //点击游客登录按钮

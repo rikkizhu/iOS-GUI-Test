@@ -12,7 +12,7 @@ public class FollowUnfollowedAlbum extends AbstractTestCase {
     Steps steps = new Steps();
     Utils utils = new Utils();
 
-    @Test
+    @Test(description = "关注专辑")
     public void testFollowAlbum() {
         WebDriverWait wait = new WebDriverWait(iosDriver, 10);
 
@@ -43,7 +43,7 @@ public class FollowUnfollowedAlbum extends AbstractTestCase {
         Assert.assertTrue(ALBUM_NAME.equals("买断专辑测试"), "验证library中存在关注的专辑");
     }
 
-    @Test(dependsOnMethods = {"testFollowAlbum"})
+    @Test(dependsOnMethods = {"testFollowAlbum"},description = "取消关注专辑")
     public void testUnFollowAlbum() {
         WebDriverWait wait = new WebDriverWait(iosDriver, 10);
 

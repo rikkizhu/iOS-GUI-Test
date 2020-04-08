@@ -65,5 +65,24 @@ public class AccountPage {
         return MobileBy.AccessibilityId("Done!");
     }
 
+    public By FB_ACCOUNT(){
+       return By.xpath("//XCUIElementTypeOther[@name='main']/XCUIElementTypeTextField");
+    }
+
+    public By FB_PASSWORD(){
+        return By.xpath("//XCUIElementTypeOther[@name='main']/XCUIElementTypeSecureTextField");
+    }
+
+    public By FB_LOGIN(){
+        return MobileBy.AccessibilityId("Log In");
+    }
+
+    public By FB_LOGIN_BTN(){
+        return MobileBy.AccessibilityId("Continue with Facebook");
+    }
+
+    public By FB_CONTINUE(){
+        return By.xpath("//XCUIElementTypeOther[@name='main']/XCUIElementTypeOther[4]/XCUIElementTypeButton");
+    }
 
 }

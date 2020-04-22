@@ -41,7 +41,7 @@ public class AccountPage {
         return MobileBy.AccessibilityId("Select some of your future-favorite shows.");
     }
 
-    public By SHOW_SUGGESTIONS_TITLE_ON_GUIDE(){
+    public By SHOW_SUGGESTIONS_TITLE_ON_GUIDE() {
         return MobileBy.AccessibilityId("Need suggestions?");
     }
 
@@ -53,11 +53,11 @@ public class AccountPage {
         return MobileBy.className("XCUIElementTypeCell");
     }
 
-    public By SHOW1_ON_GUIDE(){
+    public By SHOW1_ON_GUIDE() {
         return MobileBy.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeStaticText[1]");
     }
 
-    public By SHOW2_ON_GUIDE(){
+    public By SHOW2_ON_GUIDE() {
         return MobileBy.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeStaticText[1]");
     }
 
@@ -65,24 +65,32 @@ public class AccountPage {
         return MobileBy.AccessibilityId("Done!");
     }
 
-    public By FB_ACCOUNT(){
-       return By.xpath("//XCUIElementTypeOther[@name='main']/XCUIElementTypeTextField");
+    public By FB_ACCOUNT() {
+        return By.xpath("//XCUIElementTypeOther[@name='main']/XCUIElementTypeTextField");
     }
 
-    public By FB_PASSWORD(){
+    public By FB_PASSWORD() {
         return By.xpath("//XCUIElementTypeOther[@name='main']/XCUIElementTypeSecureTextField");
     }
 
-    public By FB_LOGIN(){
+    public By FB_LOGIN() {
         return MobileBy.AccessibilityId("Log In");
     }
 
-    public By FB_LOGIN_BTN(){
+    public By FB_LOGIN_BTN() {
         return MobileBy.AccessibilityId("Continue with Facebook");
     }
 
-    public By FB_CONTINUE(){
+    public By FB_CONTINUE() {
         return By.xpath("//XCUIElementTypeOther[@name='main']/XCUIElementTypeOther[4]/XCUIElementTypeButton");
+    }
+
+    public By CHOOSE_MULTI_ALBUM_HINT() {
+        return MobileBy.AccessibilityId("Use ***REMOVED*** as...");
+    }
+
+    public By FIRST_MULTI_ALBUM_ACCOUNT() {
+        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]");
     }
 
 }

@@ -15,7 +15,7 @@ import java.util.List;
 public class OnBoardingSkipFollow extends AbstractTestCase {
     @Test(description = "新手引导跳过关注")
     public void testSkipFollow_OnBoarding() {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         // 点击 "邮箱登录"按钮
         wait.until(ExpectedConditions.visibilityOfElementLocated(accountPage.EMAIL_LOGIN_BTN()));

@@ -25,7 +25,7 @@ public class MiniPlayer extends AbstractTestCase {
 
     @Test(description = "minibar 的打开、唤起、关闭、播放、暂停、回退")
     public void testMiniPlayer() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
         //点击第一条声音开始播放
         iosDriver.findElement(albumPage.FIRST_EPISODE()).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(playerPage.PLAYER_PROGRESS()));

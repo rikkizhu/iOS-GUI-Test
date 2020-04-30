@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class TouristLogin extends AbstractTestCase {
     @Test(description = "游客登录")
     public void testTouristLogin() {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         //点击游客登录按钮
         wait.until(ExpectedConditions.visibilityOfElementLocated(accountPage.TOURIST_LOGIN_BTN()));

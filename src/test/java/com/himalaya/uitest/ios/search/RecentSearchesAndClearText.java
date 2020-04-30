@@ -20,7 +20,7 @@ public class RecentSearchesAndClearText extends AbstractTestCase {
 
     @Test(description = "搜索历史和清空搜索内容测试")
     public void testRecentSearchesAndClearText() {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         //点击discover上方搜索按钮，进入搜索页
         iosDriver.findElement(discoverPage.SEARCH_BAR_DISCOVER_TAB()).click();

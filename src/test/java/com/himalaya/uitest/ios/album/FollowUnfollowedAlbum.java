@@ -14,7 +14,7 @@ public class FollowUnfollowedAlbum extends AbstractTestCase {
 
     @Test(description = "关注专辑")
     public void testFollowAlbum() {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         //邮箱登录
         steps.singUpByEmail(iosDriver);
@@ -45,7 +45,7 @@ public class FollowUnfollowedAlbum extends AbstractTestCase {
 
     @Test(dependsOnMethods = {"testFollowAlbum"},description = "取消关注专辑")
     public void testUnFollowAlbum() {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         //从 library 进入专辑页
         wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.FOLLOWED_SHOWS_CELL())).click();

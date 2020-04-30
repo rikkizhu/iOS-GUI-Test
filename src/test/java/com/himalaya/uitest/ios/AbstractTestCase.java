@@ -2,7 +2,6 @@ package com.***REMOVED***.uitest.ios;
 
 import com.***REMOVED***.uitest.ios.elements.*;
 import io.appium.java_client.ios.IOSDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -11,8 +10,6 @@ import java.net.MalformedURLException;
 
 @Listeners({TestFailListener.class})
 public class AbstractTestCase {
-
-
     protected static IOSDriver iosDriver;
 
     protected static AccountPage accountPage = new AccountPage();
@@ -26,7 +23,7 @@ public class AbstractTestCase {
     @BeforeClass
     public static void launch***REMOVED***() throws MalformedURLException {
         Utils utils = new Utils();
-        iosDriver = utils.resetLaunchSimulator();
+        iosDriver = utils.launchApp();
 
     }
 
@@ -36,7 +33,6 @@ public class AbstractTestCase {
             iosDriver.switchTo().alert().accept();
         } catch (Exception e) {
         }
-//        iosDriver.quit();
     }
 
 }

@@ -24,7 +24,7 @@ public class SwitchEpisodeByButton extends AbstractTestCase {
 
     @Test(description = "大播放页按钮切换上下首")
     public void testSwitchEpisodeByBtn() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         //点击第一条声音开始播放
         wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.FIRST_EPISODE()));

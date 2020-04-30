@@ -13,7 +13,7 @@ public class MultiAlbumLoginSwitch extends AbstractTestCase {
 
     @Test(description = "多专辑账号登录及切换")
     public void testMultiAlbumLoginSwitch() {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         // 点击 "邮箱登录"按钮
         wait.until(ExpectedConditions.visibilityOfElementLocated(accountPage.EMAIL_LOGIN_BTN()));

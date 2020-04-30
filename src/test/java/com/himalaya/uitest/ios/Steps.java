@@ -17,10 +17,10 @@ public class Steps {
     ProfilePage profilePage = new ProfilePage();
 
     public void loginByEmail(IOSDriver iosDriver) {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         // 点击 "邮箱登录"按钮
-        new WebDriverWait(iosDriver, 10).until(ExpectedConditions.visibilityOfElementLocated(accountPage.EMAIL_LOGIN_BTN()));
+        new WebDriverWait(iosDriver, 15).until(ExpectedConditions.visibilityOfElementLocated(accountPage.EMAIL_LOGIN_BTN()));
         iosDriver.findElement(accountPage.EMAIL_LOGIN_BTN()).click();
 
         //输入邮箱
@@ -43,11 +43,11 @@ public class Steps {
         wait.until(ExpectedConditions.alertIsPresent());
         iosDriver.switchTo().alert().accept();
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.TRENDING_BTN()));
+        wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.DISCOVER_TAB_BTN()));
     }
 
     public void enterMyShow(IOSDriver iosDriver) {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         //进入profile
         wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.PROFILE_BTN()));
@@ -60,7 +60,7 @@ public class Steps {
     }
 
     public void loginBySkip(IOSDriver iosDriver) {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         //点击游客登录按钮
         wait.until(ExpectedConditions.visibilityOfElementLocated(accountPage.TOURIST_LOGIN_BTN()));
@@ -75,7 +75,7 @@ public class Steps {
     }
 
     public void searchAlbum(IOSDriver iosDriver){
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         //点击discover上方搜索按钮，查看是否进入搜索页
         wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.SEARCH_BAR_DISCOVER_TAB())).click();
@@ -91,7 +91,7 @@ public class Steps {
     }
 
     public void singUpByEmail(IOSDriver iosDriver){
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         // 点击 "邮箱登录"按钮
         wait.until(ExpectedConditions.visibilityOfElementLocated(accountPage.EMAIL_LOGIN_BTN()));

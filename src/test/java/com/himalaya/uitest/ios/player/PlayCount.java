@@ -24,7 +24,7 @@ public class PlayCount extends AbstractTestCase {
 
     @Test(description = "播放计数")
     public void testPlayCount() {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         //记录一开始的播放个数
         String before_play = wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.PLAY_COUNT()))

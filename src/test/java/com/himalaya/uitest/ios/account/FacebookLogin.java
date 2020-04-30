@@ -11,7 +11,7 @@ public class FacebookLogin extends AbstractTestCase {
 
     @Test(description = "fb登录")
     public void testFacebookLogin() {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         //点击 FB 登录按钮
         wait.until(ExpectedConditions.visibilityOfElementLocated(accountPage.FB_LOGIN_BTN())).click();

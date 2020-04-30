@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class OnBoardingFollowAlbums extends AbstractTestCase {
     @Test(description = "新手引导关注专辑")
     public void testFollowAlbum_OnBoarding() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         // 点击 "邮箱登录"按钮
         wait.until(ExpectedConditions.visibilityOfElementLocated(accountPage.EMAIL_LOGIN_BTN()));

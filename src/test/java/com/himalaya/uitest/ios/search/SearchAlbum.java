@@ -20,7 +20,7 @@ public class SearchAlbum extends AbstractTestCase {
 
     @Test(description = "搜索专辑")
     public void testSearchAlbum() {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         //点击discover上方搜索按钮，查看是否进入搜索页
         iosDriver.findElement(discoverPage.SEARCH_BAR_DISCOVER_TAB()).click();

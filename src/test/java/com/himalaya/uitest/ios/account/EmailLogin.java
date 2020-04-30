@@ -13,7 +13,7 @@ public class EmailLogin extends AbstractTestCase {
 
     @Test(description = "邮箱登录")
     public void testEmail_Login() throws InterruptedException, IOException {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         // 点击 "邮箱登录"按钮
         wait.until(ExpectedConditions.visibilityOfElementLocated(accountPage.EMAIL_LOGIN_BTN()));

@@ -12,7 +12,7 @@ public class EmailSignUp extends AbstractTestCase {
 
     @Test(description = "邮箱注册测试")
     public void testEmail_SignUp() {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 10);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         // 点击 "邮箱登录"按钮
         wait.until(ExpectedConditions.visibilityOfElementLocated(accountPage.EMAIL_LOGIN_BTN()));

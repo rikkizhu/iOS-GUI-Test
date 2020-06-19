@@ -13,12 +13,20 @@ public class AccountPage {
         return By.xpath("/XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField");
     }
 
+    public By  EMAIL_INPUT_HALF_SCREEN(){
+        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField");
+    }
+
     public By CONTINUE_BUTTON() {
         return By.xpath("//XCUIElementTypeButton[@name='Continue']");
     }
 
     public By PASSWORD_INPUT() {
         return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField");
+    }
+
+    public By PASSWORD_INPUT_HALF_SCREEN(){
+        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeSecureTextField");
     }
 
     public By LOGIN_BTN() {
@@ -91,6 +99,10 @@ public class AccountPage {
 
     public By FIRST_MULTI_ALBUM_ACCOUNT() {
         return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]");
+    }
+
+    public By FB_OPEN(){
+        return By.xpath("//XCUIElementTypeButton[@name='Open']");
     }
 
 }

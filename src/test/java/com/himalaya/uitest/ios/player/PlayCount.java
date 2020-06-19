@@ -15,16 +15,18 @@ public class PlayCount extends AbstractTestCase {
 
     @BeforeMethod
     public void setup() {
-        // 邮箱登录
-        steps.loginByEmail(iosDriver);
-
         //搜索专辑
         steps.searchAlbum(iosDriver);
+        try {
+            iosDriver.findElement(playerPage.CLOSE_BTN_IN_MINIBAR()).click();
+        } catch (Exception e) {
+
+        }
     }
 
     @Test(description = "播放计数")
     public void testPlayCount() {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 30);
 
         //记录一开始的播放个数
         String before_play = wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.PLAY_COUNT()))

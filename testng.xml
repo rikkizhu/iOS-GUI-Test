@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="iOS 自动化测试" verbose="1">
-    <test name="运行全部测试用例">
+    <test name="P0级别测试用例-登录相关">
+        <groups>
+            <run>
+                <include name="account"></include>
+            </run>
+        </groups>
         <packages>
-            <package name="com.***REMOVED***.uitest.ios.search"></package>
-            <package name="com.***REMOVED***.uitest.ios.player"></package>
             <package name="com.***REMOVED***.uitest.ios.account"></package>
         </packages>
     </test>
-
-    <!--    <test name="指定运行某几个测试类，会按照顺序执行">-->
-    <!--        <classes>-->
-    <!--            <class name="com.***REMOVED***.uitest.ios.search.SearchAlbum"></class>-->
-    <!--            <class name="com.***REMOVED***.uitest.ios.account.TouristLogin"></class>-->
-    <!--            <class name="com.***REMOVED***.uitest.ios.player.SwitchEpisodeByButton"></class>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="P0级别测试用例-邮箱登录(前置条件)">
+        <classes>
+            <class name="com.***REMOVED***.uitest.ios.account.EmailLogin"></class>
+        </classes>
+    </test>
+    <test name="P0级别测试用例-非登录用例">
+        <packages>
+            <package name="com.***REMOVED***.uitest.ios.album"></package>
+            <package name="com.***REMOVED***.uitest.ios.search"></package>
+            <package name="com.***REMOVED***.uitest.ios.player"></package>
+        </packages>
+    </test>
 </suite>
+
+
+

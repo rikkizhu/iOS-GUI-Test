@@ -1,34 +1,18 @@
 package com.***REMOVED***.uitest.ios.search;
 
 import com.***REMOVED***.uitest.ios.AbstractTestCase;
-import com.***REMOVED***.uitest.ios.Steps;
 import com.***REMOVED***.uitest.ios.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class SearchAlbum extends AbstractTestCase {
-    Steps steps = new Steps();
-
-    @BeforeMethod
-    public void setup() {
-        steps.loginBySkip(iosDriver);
-    }
 
     @Test(description = "搜索专辑")
     public void testSearchAlbum() {
         WebDriverWait wait = new WebDriverWait(iosDriver, 15);
-
-        //点击discover上方搜索按钮，查看是否进入搜索页
-        iosDriver.findElement(discoverPage.SEARCH_BAR_DISCOVER_TAB()).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(searchPage.CANCEL_SEARCH_BTN())).isDisplayed();
-
-        //点击cancel按钮，返回discover
-        iosDriver.findElement(searchPage.CANCEL_SEARCH_BTN()).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(searchPage.SEARCH_TAB_BTN()));
 
         //进入search tab点击搜索框
         iosDriver.findElement(searchPage.SEARCH_TAB_BTN()).click();
@@ -49,6 +33,5 @@ public class SearchAlbum extends AbstractTestCase {
         Assert.assertTrue(iosDriver.findElements(By.xpath("//XCUIElementTypeStaticText[@name='" + Utils.getProperties("SEARCH_ALBUM") + "']")).size() > 0,
                 "验证搜索结果中有目标专辑 testiosgui");
     }
-
 
 }

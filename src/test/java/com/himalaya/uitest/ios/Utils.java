@@ -26,8 +26,7 @@ public class Utils {
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 6");
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
         capabilities.setCapability(MobileCapabilityType.UDID, "6027272dcff3571a8c89ad0b5dcb200db6ac98ff");
-        capabilities.setCapability(MobileCapabilityType.APP,"/Users/***REMOVED***/Downloads/***REMOVED***i.ipa");
-//        capabilities.setCapability("bundleId", "com.***REMOVED***");
+        capabilities.setCapability("bundleId", "com.***REMOVED***");
 
         iosDriver = new IOSDriver(new URL("HTTP://127.0.0.1:4723/wd/hub"), capabilities);
         return iosDriver;

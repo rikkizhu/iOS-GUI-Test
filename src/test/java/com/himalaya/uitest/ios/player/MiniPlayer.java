@@ -16,16 +16,19 @@ public class MiniPlayer extends AbstractTestCase {
 
     @BeforeMethod
     public void setup() {
-        // 邮箱登录
-        steps.loginByEmail(iosDriver);
-
         //进入MyShow
         steps.enterMyShow(iosDriver);
+        try {
+            iosDriver.findElement(playerPage.CLOSE_BTN_IN_MINIBAR()).click();
+        } catch (Exception e) {
+
+        }
     }
 
     @Test(description = "minibar 的打开、唤起、关闭、播放、暂停、回退")
     public void testMiniPlayer() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 30);
+
         //点击第一条声音开始播放
         iosDriver.findElement(albumPage.FIRST_EPISODE()).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(playerPage.PLAYER_PROGRESS()));

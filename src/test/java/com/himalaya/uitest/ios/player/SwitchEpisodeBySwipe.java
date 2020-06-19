@@ -15,16 +15,18 @@ public class SwitchEpisodeBySwipe extends AbstractTestCase {
 
     @BeforeMethod
     public void setup() {
-        // 邮箱登录
-        steps.loginByEmail(iosDriver);
-
         //进入MyShow
         steps.enterMyShow(iosDriver);
+        try {
+            iosDriver.findElement(playerPage.CLOSE_BTN_IN_MINIBAR()).click();
+        } catch (Exception e) {
+
+        }
     }
 
     @Test(description = "大播放页滑动切换上下首")
     public void testSwitchEpisodeBySwipe() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 30);
 
         //点击第一条声音开始播放
         wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.FIRST_EPISODE()));
@@ -41,7 +43,7 @@ public class SwitchEpisodeBySwipe extends AbstractTestCase {
 
         //切换下一首
         int width = iosDriver.manage().window().getSize().width;
-        utils.swipePageLeftRight(iosDriver,width*3/4,width/4);
+        utils.swipePageLeftRight(iosDriver, width * 3 / 4, width / 4);
 
         Thread.sleep(3000);
 
@@ -53,8 +55,8 @@ public class SwitchEpisodeBySwipe extends AbstractTestCase {
         //验证当前首声音，上一首按钮可以点击
         Assert.assertTrue(iosDriver.findElement(playerPage.SWITCH_PREVIOUS_EPISODE_BTN()).getAttribute("enabled").equals("true"));
 
-        //滑动切换下一首
-        utils.swipePageLeftRight(iosDriver,width/4,width*3/4);
+        //滑动切换上一首
+        utils.swipePageLeftRight(iosDriver, width / 4, width * 3 / 4);
         Thread.sleep(3000);
 
         //获取上一首的声音名称

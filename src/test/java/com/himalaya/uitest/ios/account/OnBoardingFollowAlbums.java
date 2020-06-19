@@ -1,15 +1,34 @@
 package com.***REMOVED***.uitest.ios.account;
 
 import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.Steps;
 import com.***REMOVED***.uitest.ios.Utils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-//40版本后加了AB测试，不一定会走新手引导
+@Test(groups = {"account"})
+//新手引导有AB测试，有的设备不一定走新手引导
 public class OnBoardingFollowAlbums extends AbstractTestCase {
+    Steps steps = new Steps();
+
+    @BeforeMethod(alwaysRun = true)
+    public void setUp(){
+        try{
+            steps.logOut(iosDriver);
+        }catch (Exception e){
+        }
+    }
+
+    @AfterMethod(alwaysRun = true)
+    public void tearDown() {
+        steps.logOut(iosDriver);
+    }
+
     @Test(description = "新手引导关注专辑")
     public void testFollowAlbum_OnBoarding() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(iosDriver, 15);
@@ -20,6 +39,7 @@ public class OnBoardingFollowAlbums extends AbstractTestCase {
 
         //输入邮箱
         wait.until(ExpectedConditions.elementToBeClickable(accountPage.EMAIL_INPUT()));
+        iosDriver.findElement(accountPage.EMAIL_INPUT()).clear();
         iosDriver.findElement(accountPage.EMAIL_INPUT()).sendKeys(RandomStringUtils.randomAlphanumeric(6) + "@hi.com");
 
         //点击 continue 进入下一页
@@ -47,17 +67,17 @@ public class OnBoardingFollowAlbums extends AbstractTestCase {
         iosDriver.findElement(accountPage.DONE_BTN()).click();
 
         //accept 弹窗
-        wait.until(ExpectedConditions.alertIsPresent());
-        iosDriver.switchTo().alert().accept();
+        try {
+            iosDriver.switchTo().alert().accept();
+        } catch (Exception e) {
+        }
 
         //进入 library 页
         wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.Library_TAB_BTN()));
         iosDriver.findElement(libraryPage.Library_TAB_BTN()).click();
 
         //验证有关注两个专辑
-        wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.TITLE_ON_LIBRARY_PAGE()));
-        Assert.assertTrue(iosDriver.findElement(libraryPage.TWO_SHOW_COUNT()).isDisplayed(), "验证专辑专注数为2");
-        Assert.assertTrue(iosDriver.findElement(libraryPage.FOLLOWED_SHOWS_CELL()).isDisplayed(), "验证library有关注的专辑存在");
-
+        wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.View_As_Shows_Btn()));
+        Assert.assertEquals(iosDriver.findElements(libraryPage.FOLLOWED_SHOWS_CELL()).size(), 2, "验证关注专辑数为2");
     }
 }

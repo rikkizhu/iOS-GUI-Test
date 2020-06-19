@@ -11,9 +11,10 @@ import java.io.IOException;
 
 public class EmailLogin extends AbstractTestCase {
 
-    @Test(description = "邮箱登录")
+    @Test(description = "邮箱登录_前置条件")
     public void testEmail_Login() throws InterruptedException, IOException {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
+
+        WebDriverWait wait = new WebDriverWait(iosDriver, 30);
 
         // 点击 "邮箱登录"按钮
         wait.until(ExpectedConditions.visibilityOfElementLocated(accountPage.EMAIL_LOGIN_BTN()));
@@ -21,6 +22,7 @@ public class EmailLogin extends AbstractTestCase {
 
         //输入邮箱
         wait.until(ExpectedConditions.elementToBeClickable(accountPage.EMAIL_INPUT()));
+        iosDriver.findElement(accountPage.EMAIL_INPUT()).clear();
         iosDriver.findElement(accountPage.EMAIL_INPUT()).sendKeys(Utils.getProperties("EMAIL_ACCOUNT"));
 
         //点击 continue 进入下一页
@@ -36,8 +38,11 @@ public class EmailLogin extends AbstractTestCase {
         iosDriver.findElement(accountPage.LOGIN_BTN()).click();
 
         //accept 弹窗
-        wait.until(ExpectedConditions.alertIsPresent());
-        iosDriver.switchTo().alert().accept();
+        try {
+            iosDriver.switchTo().alert().accept();
+        } catch (Exception e) {
+
+        }
 
         //断言测试成功
         wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.DISCOVER_TAB_BTN()));

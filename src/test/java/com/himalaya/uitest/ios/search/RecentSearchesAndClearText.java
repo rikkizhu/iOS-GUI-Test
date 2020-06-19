@@ -1,29 +1,22 @@
 package com.***REMOVED***.uitest.ios.search;
 
 import com.***REMOVED***.uitest.ios.AbstractTestCase;
-import com.***REMOVED***.uitest.ios.Steps;
 import com.***REMOVED***.uitest.ios.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class RecentSearchesAndClearText extends AbstractTestCase {
-    Steps steps = new Steps();
-
-    @BeforeMethod
-    public void setup() {
-        steps.loginBySkip(iosDriver);
-    }
 
     @Test(description = "搜索历史和清空搜索内容测试")
     public void testRecentSearchesAndClearText() {
         WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
-        //点击discover上方搜索按钮，进入搜索页
-        iosDriver.findElement(discoverPage.SEARCH_BAR_DISCOVER_TAB()).click();
+        //进入搜搜页，点击搜索框
+        wait.until(ExpectedConditions.presenceOfElementLocated(searchPage.SEARCH_TAB_BTN())).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(searchPage.SEARCH_BAR_SEARCH_TAB())).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(searchPage.CANCEL_SEARCH_BTN())).isDisplayed();
 
         //输入搜索内容

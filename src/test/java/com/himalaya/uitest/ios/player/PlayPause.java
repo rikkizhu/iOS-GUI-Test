@@ -2,7 +2,6 @@ package com.***REMOVED***.uitest.ios.player;
 
 import com.***REMOVED***.uitest.ios.AbstractTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
-import com.***REMOVED***.uitest.ios.Utils;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -10,24 +9,24 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class PlayPause extends AbstractTestCase {
-    Utils utils = new Utils();
     Steps steps = new Steps();
 
     @BeforeMethod
     public void setup() {
-        // 邮箱登录
-        steps.loginByEmail(iosDriver);
-
         //进入MyShow
         steps.enterMyShow(iosDriver);
+        try {
+            iosDriver.findElement(playerPage.CLOSE_BTN_IN_MINIBAR()).click();
+        } catch (Exception e) {
+
+        }
     }
 
     @Test(description = "播放和暂停")
     public void testPlayPause() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 30);
         //点击第一条声音开始播放
-        wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.FIRST_EPISODE()));
-        iosDriver.findElement(albumPage.FIRST_EPISODE()).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.SECOND_EPISODE())).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(playerPage.PLAYER_PROGRESS()));
 
         //获取一开始的播放进度

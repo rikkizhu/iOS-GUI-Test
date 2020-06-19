@@ -20,14 +20,15 @@ public class AbstractTestCase {
     protected static LibraryPage libraryPage = new LibraryPage();
     protected static SearchPage searchPage = new SearchPage();
 
-    @BeforeClass
+
+    @BeforeClass(alwaysRun = true)
     public static void launch***REMOVED***() throws MalformedURLException {
         Utils utils = new Utils();
         iosDriver = utils.launchApp();
 
     }
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public static void quit***REMOVED***() {
         try {
             iosDriver.switchTo().alert().accept();

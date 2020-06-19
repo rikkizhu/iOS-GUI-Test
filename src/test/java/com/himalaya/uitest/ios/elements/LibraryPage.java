@@ -16,6 +16,10 @@ public class LibraryPage {
         return By.xpath("//XCUIElementTypeStaticText[@name='Library']");
     }
 
+    public By View_As_Shows_Btn(){
+        return By.xpath("//XCUIElementTypeButton[@name='View As Shows']");
+    }
+
     public By ZERO_SHOW_COUNT() {
         return MobileBy.AccessibilityId("0 Shows");
     }
@@ -25,7 +29,7 @@ public class LibraryPage {
     }
 
     public By FOLLOWED_SHOWS_CELL() {
-        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell");
+        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell");
     }
 
     public By FOLLOWED_SHOWS_NAME(){

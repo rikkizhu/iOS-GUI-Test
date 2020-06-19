@@ -46,7 +46,7 @@ public class SearchPage {
     }
 
     public By SEARCH_BAR_SEARCH_TAB(){
-        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeOther[1]");
+        return By.xpath("//XCUIElementTypeNavigationBar[@name='Search']");
     }
 
     public By SEARCH_CONTENT_SEARCH_INPUT(){

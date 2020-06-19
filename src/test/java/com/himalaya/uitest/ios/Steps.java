@@ -15,6 +15,7 @@ public class Steps {
     AccountPage accountPage = new AccountPage();
     DiscoverPage discoverPage = new DiscoverPage();
     ProfilePage profilePage = new ProfilePage();
+    Utils utils = new Utils();
 
     public void loginByEmail(IOSDriver iosDriver) {
         WebDriverWait wait = new WebDriverWait(iosDriver, 15);
@@ -25,6 +26,7 @@ public class Steps {
 
         //输入邮箱
         wait.until(ExpectedConditions.elementToBeClickable(accountPage.EMAIL_INPUT()));
+        iosDriver.findElement(accountPage.EMAIL_INPUT()).clear();
         iosDriver.findElement(accountPage.EMAIL_INPUT()).sendKeys(Utils.getProperties("EMAIL_ACCOUNT"));
 
         //点击 continue 进入下一页
@@ -40,10 +42,34 @@ public class Steps {
         iosDriver.findElement(accountPage.LOGIN_BTN()).click();
 
         //accept 弹窗
-        wait.until(ExpectedConditions.alertIsPresent());
-        iosDriver.switchTo().alert().accept();
+        try {
+            iosDriver.switchTo().alert().accept();
+        } catch (Exception e) {
+
+        }
+
 
         wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.DISCOVER_TAB_BTN()));
+    }
+
+
+    public void logOut(IOSDriver iosDriver) {
+        WebDriverWait wait = new WebDriverWait(iosDriver, 3);
+
+        //点击 Settings
+        wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.PROFILE_BTN())).click();
+        int height = iosDriver.manage().window().getSize().height;
+        utils.swipePageUpDown(iosDriver, height * 3 / 4, height / 4);
+        wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.Setting_Btn())).click();
+
+        //点击退出
+        wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.LogOut_Btn())).click();
+
+        //确认退出
+        wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.Log_Out_Alert())).click();
+
+        //确认回到登录页
+        wait.until(ExpectedConditions.visibilityOfElementLocated(accountPage.EMAIL_LOGIN_BTN()));
     }
 
     public void enterMyShow(IOSDriver iosDriver) {
@@ -74,14 +100,16 @@ public class Steps {
         wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.DISCOVER_TAB_BTN()));
     }
 
-    public void searchAlbum(IOSDriver iosDriver){
-        WebDriverWait wait = new WebDriverWait(iosDriver, 15);
+    public void searchAlbum(IOSDriver iosDriver) {
+        WebDriverWait wait = new WebDriverWait(iosDriver, 30);
 
-        //点击discover上方搜索按钮，查看是否进入搜索页
-        wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.SEARCH_BAR_DISCOVER_TAB())).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(searchPage.CANCEL_SEARCH_BTN())).isDisplayed();
+        //进入search tab点击搜索框
+        iosDriver.findElement(searchPage.SEARCH_TAB_BTN()).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(searchPage.SEARCH_BAR_SEARCH_TAB()));
+        iosDriver.findElement(searchPage.SEARCH_BAR_SEARCH_TAB()).click();
 
         //输入搜索内容
+        wait.until(ExpectedConditions.presenceOfElementLocated(searchPage.INIT_SEARCH_INPUT()));
         iosDriver.findElement(searchPage.INIT_SEARCH_INPUT()).sendKeys(Utils.getProperties("FOLLOW_ALBUM_ID"));
         iosDriver.findElement(searchPage.KEYBOARD_SEARCH()).click();
 
@@ -90,7 +118,7 @@ public class Steps {
         wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.JOIN_MEMBERSHIP()));
     }
 
-    public void singUpByEmail(IOSDriver iosDriver){
+    public void signUpByEmail(IOSDriver iosDriver) {
         WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         // 点击 "邮箱登录"按钮

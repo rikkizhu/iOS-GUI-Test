@@ -19,7 +19,7 @@ import java.util.List;
 public class OnBoardingSkipFollow extends AbstractTestCase {
     Steps steps = new Steps();
 
-    @BeforeMethod(alwaysRun = true)
+    @BeforeMethod
     public void setUp(){
         try{
             steps.logOut(iosDriver);
@@ -27,7 +27,7 @@ public class OnBoardingSkipFollow extends AbstractTestCase {
         }
     }
 
-    @AfterMethod(alwaysRun = true)
+    @AfterMethod
     public void tearDown() {
         steps.logOut(iosDriver);
     }

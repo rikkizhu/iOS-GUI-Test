@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 public class OnBoardingFollowAlbums extends AbstractTestCase {
     Steps steps = new Steps();
 
-    @BeforeMethod(alwaysRun = true)
+    @BeforeMethod
     public void setUp(){
         try{
             steps.logOut(iosDriver);
@@ -24,7 +24,7 @@ public class OnBoardingFollowAlbums extends AbstractTestCase {
         }
     }
 
-    @AfterMethod(alwaysRun = true)
+    @AfterMethod
     public void tearDown() {
         steps.logOut(iosDriver);
     }

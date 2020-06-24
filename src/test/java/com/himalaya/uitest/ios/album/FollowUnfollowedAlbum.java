@@ -2,10 +2,13 @@ package com.***REMOVED***.uitest.ios.album;
 
 import com.***REMOVED***.uitest.ios.AbstractTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
+import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class FollowUnfollowedAlbum extends AbstractTestCase {
     Steps steps = new Steps();
@@ -27,7 +30,9 @@ public class FollowUnfollowedAlbum extends AbstractTestCase {
         Assert.assertTrue(iosDriver.findElement(albumPage.LISTENERS_ALSO_FOLLOWED()).isDisplayed(), "验证 Listeners Also Followed 存在");
 
         //退出回到 search 页
-        iosDriver.findElement(albumPage.BACKWARD_BTN()).click();
+        List<IOSElement> BACKWARD_BTN_TYPE = iosDriver.findElements(albumPage.BACKWARD_BTN_TYPE());
+        BACKWARD_BTN_TYPE.get(0).click();
+
         wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.Library_TAB_BTN()));
 
         //点击 library tab
@@ -36,8 +41,8 @@ public class FollowUnfollowedAlbum extends AbstractTestCase {
 
         //验证library页存在该专辑
         iosDriver.findElement(libraryPage.FOLLOWED_SHOWS_CELL()).click();
-        String ALBUM_NAME = iosDriver.findElement(albumPage.ALBUM_TITLE_ALBUM_PAGE()).getAttribute("value");
-        Assert.assertEquals(ALBUM_NAME, "买断专辑测试", "验证该专辑被follow");
+        wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.FOLLOWING_BTN()));
+        Assert.assertTrue(iosDriver.findElement(albumPage.ALBUM_TITLE_ALBUM_PAGE()).isDisplayed(), "验证该专辑被follow");
     }
 
 
@@ -54,7 +59,8 @@ public class FollowUnfollowedAlbum extends AbstractTestCase {
         Assert.assertTrue(iosDriver.findElement(albumPage.FOLLOW_BTN()).isDisplayed(), "验证 follow 按钮存在");
 
         //退出回到 library 页
-        iosDriver.findElement(albumPage.BACKWARD_BTN()).click();
+        List<IOSElement> BACKWARD_BTN_TYPE = iosDriver.findElements(albumPage.BACKWARD_BTN_TYPE());
+        BACKWARD_BTN_TYPE.get(0).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.Library_TAB_BTN()));
 
         //验证library页不存在该专辑

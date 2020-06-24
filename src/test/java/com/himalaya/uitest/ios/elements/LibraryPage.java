@@ -5,35 +5,19 @@ import org.openqa.selenium.By;
 
 public class LibraryPage {
     public By Library_TAB_BTN() {
-        return By.xpath("//XCUIElementTypeButton[@name='Library']");
+        return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='Library'");
     }
 
     public By FOLLOW_HINTS_LIBRARY() {
         return MobileBy.AccessibilityId("You can easily access all your favorite podcasts here");
     }
 
-    public By TITLE_ON_LIBRARY_PAGE() {
-        return By.xpath("//XCUIElementTypeStaticText[@name='Library']");
-    }
-
-    public By View_As_Shows_Btn(){
-        return By.xpath("//XCUIElementTypeButton[@name='View As Shows']");
-    }
-
-    public By ZERO_SHOW_COUNT() {
-        return MobileBy.AccessibilityId("0 Shows");
-    }
-
-    public By TWO_SHOW_COUNT() {
-        return MobileBy.AccessibilityId("2 Shows");
+    public By View_As_Shows_Btn() {
+        return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='View As Shows'");
     }
 
     public By FOLLOWED_SHOWS_CELL() {
-        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell");
-    }
-
-    public By FOLLOWED_SHOWS_NAME(){
-        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeStaticText[1]");
+        return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeCell'");
     }
 
 }

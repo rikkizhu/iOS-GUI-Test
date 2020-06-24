@@ -6,15 +6,15 @@ import org.openqa.selenium.By;
 
 public class ProfilePage {
     public By PROFILE_BTN() {
-        return By.xpath("//XCUIElementTypeButton[@name='Profile']");
+        return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='Profile'");
     }
 
     public By MYSHOW_BTN() {
-        return By.xpath("//XCUIElementTypeButton[@name='My Show']");
+        return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='My Show'");
     }
 
     public By RECORD_BTN_IN_MYSHOW() {
-        return By.xpath("//XCUIElementTypeButton[@name='Record']");
+        return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='Record'");
     }
 
     public By Switch_Show_Btn() {
@@ -30,7 +30,7 @@ public class ProfilePage {
     }
 
     public By Log_Out_Alert(){
-        return By.xpath("//XCUIElementTypeButton[@name='Log Out']");
+        return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='Log Out'");
     }
 
     public By HALF_SCREEN_SIGNIN(){return MobileBy.AccessibilityId("Sign in");}

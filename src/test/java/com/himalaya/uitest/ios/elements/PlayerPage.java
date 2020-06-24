@@ -1,7 +1,9 @@
 package com.***REMOVED***.uitest.ios.elements;
 
+import com.***REMOVED***.uitest.ios.Utils;
 import io.appium.java_client.MobileBy;
 import org.openqa.selenium.By;
+import org.openqa.selenium.UnableToSetCookieException;
 
 public class PlayerPage {
     public By PLAYER_PROGRESS() {
@@ -12,23 +14,31 @@ public class PlayerPage {
         return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther");
     }
 
-    public By SEEK_BTN_IN_MINiBAR() {
-        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeButton[1]");
+    public By PRE_SEEK_PLAYER() {
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeButton' AND name=='player ic prev15sec'");
+    }
+
+    public By SEEK_BTN_IN_MINIBAR() {
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeButton' AND name CONTAINS 'playbar ic prev15sec'");
     }
 
     public By PAUSE_BTN_IN_MINIBAR() {
-        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeButton[2]");
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeButton' AND name CONTAINS 'playbar btn pause'");
+    }
+
+    public By PLAY_BTN_IN_MINIBAR() {
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeButton' AND name CONTAINS 'playbar btn play'");
     }
 
     public By CLOSE_BTN_IN_MINIBAR() {
-        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeButton[3]");
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeButton' AND name CONTAINS 'playbar btn close'");
     }
 
     public By IMAGE_BTN_IN_MINIBAR() {
         return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]");
     }
 
-    public By SWITCH_PREVIOUS_EPISODE_BTN() {
+    public By SWITCH_PRE_EPISODE_BTN() {
         return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[2]");
     }
 

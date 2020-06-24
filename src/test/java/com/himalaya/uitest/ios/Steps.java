@@ -3,12 +3,15 @@ package com.***REMOVED***.uitest.ios;
 import com.***REMOVED***.uitest.ios.elements.AccountPage;
 import com.***REMOVED***.uitest.ios.elements.DiscoverPage;
 import com.***REMOVED***.uitest.ios.elements.ProfilePage;
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.ios.IOSElement;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static com.***REMOVED***.uitest.ios.AbstractTestCase.albumPage;
+import java.util.List;
+
 import static com.***REMOVED***.uitest.ios.AbstractTestCase.searchPage;
 
 public class Steps {
@@ -45,16 +48,14 @@ public class Steps {
         try {
             iosDriver.switchTo().alert().accept();
         } catch (Exception e) {
-
         }
-
 
         wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.DISCOVER_TAB_BTN()));
     }
 
 
     public void logOut(IOSDriver iosDriver) {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 3);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 5);
 
         //点击 Settings
         wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.PROFILE_BTN())).click();
@@ -111,11 +112,12 @@ public class Steps {
         //输入搜索内容
         wait.until(ExpectedConditions.presenceOfElementLocated(searchPage.INIT_SEARCH_INPUT()));
         iosDriver.findElement(searchPage.INIT_SEARCH_INPUT()).sendKeys(Utils.getProperties("FOLLOW_ALBUM_ID"));
-        iosDriver.findElement(searchPage.KEYBOARD_SEARCH()).click();
+        List<IOSElement> SEARCH_BUTTONS = iosDriver.findElements(searchPage.KEYBOARD_SEARCH());
+        SEARCH_BUTTONS.get(1).click();
 
-        //点击进入第一个
-        iosDriver.findElement(searchPage.FIRST_ALBUM_SEARCHED()).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.JOIN_MEMBERSHIP()));
+        //点击进入专辑
+        wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("FOLLOW_ALBUM_NAME") + "'")));
+        iosDriver.findElement(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("FOLLOW_ALBUM_NAME") + "'")).click();
     }
 
     public void signUpByEmail(IOSDriver iosDriver) {

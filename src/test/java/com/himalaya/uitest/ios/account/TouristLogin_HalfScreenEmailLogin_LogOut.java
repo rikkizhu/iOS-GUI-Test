@@ -32,6 +32,8 @@ public class TouristLogin_HalfScreenEmailLogin_LogOut extends AbstractTestCase {
 
         //accept 弹窗
         try {
+            WebDriverWait wait2 = new WebDriverWait(iosDriver, 3);
+            wait2.until(ExpectedConditions.alertIsPresent());
             iosDriver.switchTo().alert().accept();
         } catch (Exception e) {
 
@@ -54,16 +56,16 @@ public class TouristLogin_HalfScreenEmailLogin_LogOut extends AbstractTestCase {
         iosDriver.findElement(accountPage.EMAIL_LOGIN_BTN()).click();
 
         //输入邮箱
-        wait.until(ExpectedConditions.elementToBeClickable(accountPage.EMAIL_INPUT_HALF_SCREEN())).clear();
-        iosDriver.findElement(accountPage.EMAIL_INPUT_HALF_SCREEN()).sendKeys(Utils.getProperties("EMAIL_ACCOUNT"));
+        wait.until(ExpectedConditions.elementToBeClickable(accountPage.EMAIL_INPUT())).clear();
+        iosDriver.findElement(accountPage.EMAIL_INPUT()).sendKeys(Utils.getProperties("EMAIL_ACCOUNT"));
 
         //点击 continue 进入下一页
         wait.until(ExpectedConditions.elementToBeClickable(accountPage.CONTINUE_BUTTON()));
         iosDriver.findElement(accountPage.CONTINUE_BUTTON()).click();
 
         //输入密码
-        wait.until(ExpectedConditions.elementToBeClickable(accountPage.PASSWORD_INPUT_HALF_SCREEN()));
-        iosDriver.findElement(accountPage.PASSWORD_INPUT_HALF_SCREEN()).sendKeys(Utils.getProperties("EMAIL_PASSWORD"));
+        wait.until(ExpectedConditions.elementToBeClickable(accountPage.PASSWORD_INPUT()));
+        iosDriver.findElement(accountPage.PASSWORD_INPUT()).sendKeys(Utils.getProperties("EMAIL_PASSWORD"));
 
         //点击 Login
         wait.until(ExpectedConditions.elementToBeClickable(accountPage.LOGIN_BTN()));

@@ -2,11 +2,14 @@ package com.***REMOVED***.uitest.ios.search;
 
 import com.***REMOVED***.uitest.ios.AbstractTestCase;
 import com.***REMOVED***.uitest.ios.Utils;
-import org.openqa.selenium.By;
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class RecentSearchesAndClearText extends AbstractTestCase {
 
@@ -21,7 +24,8 @@ public class RecentSearchesAndClearText extends AbstractTestCase {
 
         //输入搜索内容
         iosDriver.findElement(searchPage.INIT_SEARCH_INPUT()).sendKeys(Utils.getProperties("SEARCH_ALBUM"));
-        iosDriver.findElement(searchPage.KEYBOARD_SEARCH()).click();
+        List<IOSElement> SEARCH_BUTTONS=iosDriver.findElements(searchPage.KEYBOARD_SEARCH());
+        SEARCH_BUTTONS.get(1).click();
 
         //验证输入框中显示搜索内容
         Assert.assertTrue(iosDriver.findElement(searchPage.SEARCH_CONTENT_SEARCH_INPUT()).getAttribute("value").equals(Utils.getProperties("SEARCH_ALBUM")),
@@ -38,7 +42,7 @@ public class RecentSearchesAndClearText extends AbstractTestCase {
         Assert.assertTrue(iosDriver.findElement(searchPage.RECENT_SEARCH_TITLE()).isDisplayed(), "验证显示搜索历史");
 
         //验证搜索过文字存在
-        Assert.assertTrue(iosDriver.findElement(By.xpath("//XCUIElementTypeStaticText[@name='" + Utils.getProperties("SEARCH_ALBUM") + "']")).isDisplayed(),
+        Assert.assertTrue(iosDriver.findElement(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name =='" + Utils.getProperties("SEARCH_ALBUM") + "'")).isDisplayed(),
                 "验证搜索过的文字存在");
     }
 }

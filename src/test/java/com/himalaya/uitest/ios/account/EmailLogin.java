@@ -17,7 +17,7 @@ public class EmailLogin extends AbstractTestCase {
         WebDriverWait wait = new WebDriverWait(iosDriver, 30);
 
         // 点击 "邮箱登录"按钮
-        wait.until(ExpectedConditions.visibilityOfElementLocated(accountPage.EMAIL_LOGIN_BTN()));
+        wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.EMAIL_LOGIN_BTN()));
         iosDriver.findElement(accountPage.EMAIL_LOGIN_BTN()).click();
 
         //输入邮箱
@@ -39,6 +39,8 @@ public class EmailLogin extends AbstractTestCase {
 
         //accept 弹窗
         try {
+            WebDriverWait wait2 = new WebDriverWait(iosDriver, 3);
+            wait2.until(ExpectedConditions.alertIsPresent());
             iosDriver.switchTo().alert().accept();
         } catch (Exception e) {
 

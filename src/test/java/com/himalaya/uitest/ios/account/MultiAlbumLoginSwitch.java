@@ -4,7 +4,6 @@ import com.***REMOVED***.uitest.ios.AbstractTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
 import com.***REMOVED***.uitest.ios.Utils;
 import io.appium.java_client.MobileBy;
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -17,10 +16,10 @@ public class MultiAlbumLoginSwitch extends AbstractTestCase {
     Steps steps = new Steps();
 
     @BeforeMethod
-    public void setUp(){
-        try{
+    public void setUp() {
+        try {
             steps.logOut(iosDriver);
-        }catch (Exception e){
+        } catch (Exception e) {
         }
     }
 
@@ -60,6 +59,8 @@ public class MultiAlbumLoginSwitch extends AbstractTestCase {
 
         //accept 弹窗
         try {
+            WebDriverWait wait2 = new WebDriverWait(iosDriver, 3);
+            wait2.until(ExpectedConditions.alertIsPresent());
             iosDriver.switchTo().alert().accept();
         } catch (Exception e) {
 
@@ -72,19 +73,19 @@ public class MultiAlbumLoginSwitch extends AbstractTestCase {
         //进入 profile 页
         iosDriver.findElement(profilePage.PROFILE_BTN()).click();
 
-        //断言用户名子用户1： bdmy2
-        Assert.assertTrue(iosDriver.findElement(By.xpath("//XCUIElementTypeStaticText[@name='bdmy2']")).isDisplayed(), "断言断言用户名子用户1： bdmy2");
+        //断言用户名子用户1正确
+        Assert.assertTrue(iosDriver.findElement(MobileBy.iOSNsPredicateString("type =='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("Multi_Album_NAME1") + "'")).isDisplayed(), "断言断言用户名子用户1正确");
 
         //切换用户
         iosDriver.findElement(profilePage.Switch_Show_Btn()).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("bdmy2子专辑1")));
-        iosDriver.findElement(MobileBy.AccessibilityId("bdmy2子专辑1")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId(Utils.getProperties("Multi_Album_NAME2"))));
+        iosDriver.findElement(MobileBy.AccessibilityId(Utils.getProperties("Multi_Album_NAME2"))).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.DISCOVER_TAB_BTN()));
 
         //进入 profile 页
         iosDriver.findElement(profilePage.PROFILE_BTN()).click();
 
-        //断言用户名子用户2：bdmy2子专辑1
-        Assert.assertTrue(iosDriver.findElement(By.xpath("//XCUIElementTypeStaticText[@name='bdmy2子专辑1']")).isDisplayed(), "断言用户名子用户2：bdmy2子专辑1");
+        //断言用户名子用户2正确
+        Assert.assertTrue(iosDriver.findElement(MobileBy.iOSNsPredicateString("type =='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("Multi_Album_NAME2") + "'")).isDisplayed(), "断言断言用户名子用户2正确");
     }
 }

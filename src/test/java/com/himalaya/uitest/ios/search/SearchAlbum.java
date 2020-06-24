@@ -2,11 +2,14 @@ package com.***REMOVED***.uitest.ios.search;
 
 import com.***REMOVED***.uitest.ios.AbstractTestCase;
 import com.***REMOVED***.uitest.ios.Utils;
-import org.openqa.selenium.By;
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class SearchAlbum extends AbstractTestCase {
 
@@ -21,7 +24,8 @@ public class SearchAlbum extends AbstractTestCase {
 
         //输入搜索内容
         iosDriver.findElement(searchPage.INIT_SEARCH_INPUT()).sendKeys(Utils.getProperties("SEARCH_ALBUM"));
-        iosDriver.findElement(searchPage.KEYBOARD_SEARCH()).click();
+        List<IOSElement> SEARCH_BUTTONS = iosDriver.findElements(searchPage.KEYBOARD_SEARCH());
+        SEARCH_BUTTONS.get(1).click();
 
         //验证有返回搜索结果选择框
         wait.until(ExpectedConditions.presenceOfElementLocated(searchPage.RESULT_SHOW_TAB())).isDisplayed();
@@ -30,7 +34,7 @@ public class SearchAlbum extends AbstractTestCase {
 
         //验证搜索出专辑
         Assert.assertTrue(iosDriver.findElement(searchPage.RESULT_ALBUM_CELL()).isDisplayed(), "验证有专辑搜索结果");
-        Assert.assertTrue(iosDriver.findElements(By.xpath("//XCUIElementTypeStaticText[@name='" + Utils.getProperties("SEARCH_ALBUM") + "']")).size() > 0,
+        Assert.assertTrue(iosDriver.findElements(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("SEARCH_ALBUM") + "'")).size() > 0,
                 "验证搜索结果中有目标专辑 testiosgui");
     }
 

@@ -3,11 +3,14 @@ package com.***REMOVED***.uitest.ios.player;
 import com.***REMOVED***.uitest.ios.AbstractTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
 import com.***REMOVED***.uitest.ios.Utils;
+import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class PlayCount extends AbstractTestCase {
     Utils utils = new Utils();
@@ -16,7 +19,7 @@ public class PlayCount extends AbstractTestCase {
     @BeforeMethod
     public void setup() {
         //搜索专辑
-        steps.searchAlbum(iosDriver);
+        steps.enterMyShow(iosDriver);
         try {
             iosDriver.findElement(playerPage.CLOSE_BTN_IN_MINIBAR()).click();
         } catch (Exception e) {
@@ -34,7 +37,7 @@ public class PlayCount extends AbstractTestCase {
         Integer before_play_count = Integer.parseInt(before_play);
 
         //点击第一条声音开始播放
-        iosDriver.findElement(albumPage.FIRST_EPISODE()).click();
+        iosDriver.findElement(albumPage.MY_SHOW_FIRST_EPISODE()).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(playerPage.PLAYER_PROGRESS()));
 
         //下滑大播放页，打开 minibar
@@ -45,13 +48,13 @@ public class PlayCount extends AbstractTestCase {
         //关闭minibar
         iosDriver.findElement(playerPage.CLOSE_BTN_IN_MINIBAR()).click();
 
-        //退出回到 search 页
-        iosDriver.findElement(albumPage.BACKWARD_BTN()).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.Library_TAB_BTN()));
+        //退出回到 profile 页
+        List<IOSElement> BACKWARD_BTN_TYPE = iosDriver.findElements(albumPage.BACKWARD_BTN_TYPE());
+        BACKWARD_BTN_TYPE.get(0).click();
 
-        //点击进入第一个
-        iosDriver.findElement(searchPage.FIRST_ALBUM_SEARCHED()).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.JOIN_MEMBERSHIP()));
+        //点击进入专辑
+        wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.MYSHOW_BTN()));
+        iosDriver.findElement(profilePage.MYSHOW_BTN()).click();
 
         String after_play = wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.PLAY_COUNT()))
                 .getAttribute("value").replace(" Plays", "");

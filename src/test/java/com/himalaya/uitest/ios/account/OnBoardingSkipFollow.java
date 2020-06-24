@@ -20,10 +20,10 @@ public class OnBoardingSkipFollow extends AbstractTestCase {
     Steps steps = new Steps();
 
     @BeforeMethod
-    public void setUp(){
-        try{
+    public void setUp() {
+        try {
             steps.logOut(iosDriver);
-        }catch (Exception e){
+        } catch (Exception e) {
         }
     }
 
@@ -68,6 +68,8 @@ public class OnBoardingSkipFollow extends AbstractTestCase {
 
         //accept 弹窗
         try {
+            WebDriverWait wait2 = new WebDriverWait(iosDriver, 3);
+            wait2.until(ExpectedConditions.alertIsPresent());
             iosDriver.switchTo().alert().accept();
         } catch (Exception e) {
         }

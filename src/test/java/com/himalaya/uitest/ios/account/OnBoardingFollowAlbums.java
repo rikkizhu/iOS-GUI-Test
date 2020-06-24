@@ -3,6 +3,7 @@ package com.***REMOVED***.uitest.ios.account;
 import com.***REMOVED***.uitest.ios.AbstractTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
 import com.***REMOVED***.uitest.ios.Utils;
+import io.appium.java_client.ios.IOSElement;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -11,16 +12,18 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 @Test(groups = {"account"})
 //新手引导有AB测试，有的设备不一定走新手引导
 public class OnBoardingFollowAlbums extends AbstractTestCase {
     Steps steps = new Steps();
 
     @BeforeMethod
-    public void setUp(){
-        try{
+    public void setUp() {
+        try {
             steps.logOut(iosDriver);
-        }catch (Exception e){
+        } catch (Exception e) {
         }
     }
 
@@ -60,14 +63,18 @@ public class OnBoardingFollowAlbums extends AbstractTestCase {
 
         //选择感兴趣的专辑
         wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.SHOW_SUGGESTIONS_TITLE_ON_GUIDE()));
-        iosDriver.findElement(accountPage.SHOW1_ON_GUIDE()).click();
-        iosDriver.findElement(accountPage.SHOW2_ON_GUIDE()).click();
+        List<IOSElement> SHOWS1 = iosDriver.findElements(accountPage.SHOWS_ON_GUIDE());
+        SHOWS1.get(0).click();
+        List<IOSElement> SHOWS2 = iosDriver.findElements(accountPage.SHOWS_ON_GUIDE());
+        SHOWS2.get(1).click();
 
         //点击完成按钮
         iosDriver.findElement(accountPage.DONE_BTN()).click();
 
         //accept 弹窗
         try {
+            WebDriverWait wait2 = new WebDriverWait(iosDriver, 3);
+            wait2.until(ExpectedConditions.alertIsPresent());
             iosDriver.switchTo().alert().accept();
         } catch (Exception e) {
         }

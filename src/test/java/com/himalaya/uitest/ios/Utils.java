@@ -7,11 +7,10 @@ import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.time.Duration;
 import java.util.Properties;
 
@@ -80,7 +79,8 @@ public class Utils {
         FileInputStream fileInputStream = null;
         try {
             Properties prop = new Properties();
-            prop.load(new FileInputStream(new File(Utils.class.getResource("/TestData.properties").getPath())));
+            InputStream input = new FileInputStream(new File(Utils.class.getResource("/TestData.properties").getPath()));
+            prop.load(new InputStreamReader(input, Charset.forName("UTF-8")));
             return prop.getProperty(key);
         } catch (IOException e) {
             throw new IllegalStateException("读取配置文件失败");

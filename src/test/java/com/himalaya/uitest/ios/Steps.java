@@ -101,7 +101,7 @@ public class Steps {
         wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.DISCOVER_TAB_BTN()));
     }
 
-    public void searchAlbum(IOSDriver iosDriver) {
+    public void searchAlbum(IOSDriver iosDriver,String searchContent) {
         WebDriverWait wait = new WebDriverWait(iosDriver, 30);
 
         //进入search tab点击搜索框
@@ -111,13 +111,13 @@ public class Steps {
 
         //输入搜索内容
         wait.until(ExpectedConditions.presenceOfElementLocated(searchPage.INIT_SEARCH_INPUT()));
-        iosDriver.findElement(searchPage.INIT_SEARCH_INPUT()).sendKeys(Utils.getProperties("FOLLOW_ALBUM_ID"));
+        iosDriver.findElement(searchPage.INIT_SEARCH_INPUT()).sendKeys(searchContent);
         List<IOSElement> SEARCH_BUTTONS = iosDriver.findElements(searchPage.KEYBOARD_SEARCH());
         SEARCH_BUTTONS.get(1).click();
 
         //点击进入专辑
-        wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("FOLLOW_ALBUM_NAME") + "'")));
-        iosDriver.findElement(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("FOLLOW_ALBUM_NAME") + "'")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" +searchContent + "'")));
+        iosDriver.findElement(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" + searchContent + "'")).click();
     }
 
     public void signUpByEmail(IOSDriver iosDriver) {

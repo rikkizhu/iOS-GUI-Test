@@ -45,5 +45,16 @@ public class AlbumPage {
         return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("FOLLOW_ALBUM_NAME") + "'");
     }
 
+    public By Detail_More_ALBUM_PAGE(){
+        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeButton[2]");
+    }
+
+    public By SEARCH_EPISODES_IN_SHOW_BTN(){
+        return MobileBy.AccessibilityId("Search episodes in this show");
+    }
+
+    public By SEARCH_FIELD_IN_SHOW(){
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeSearchField' AND name=='Search episodes in this show'");
+    }
 
 }

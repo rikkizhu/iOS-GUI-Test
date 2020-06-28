@@ -13,7 +13,7 @@ import java.util.List;
 
 public class SearchAlbum extends AbstractTestCase {
 
-    @Test(description = "搜索专辑")
+    @Test(description = "全局搜索专辑")
     public void testSearchAlbum() {
         WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
@@ -35,7 +35,7 @@ public class SearchAlbum extends AbstractTestCase {
         //验证搜索出专辑
         Assert.assertTrue(iosDriver.findElement(searchPage.RESULT_ALBUM_CELL()).isDisplayed(), "验证有专辑搜索结果");
         Assert.assertTrue(iosDriver.findElements(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("SEARCH_ALBUM") + "'")).size() > 0,
-                "验证搜索结果中有目标专辑 testiosgui");
+                "验证搜索结果中有目标专辑");
     }
 
 }

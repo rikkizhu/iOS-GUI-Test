@@ -2,6 +2,7 @@ package com.***REMOVED***.uitest.ios.album;
 
 import com.***REMOVED***.uitest.ios.AbstractTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
+import com.***REMOVED***.uitest.ios.Utils;
 import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,7 +19,7 @@ public class FollowUnfollowedAlbum extends AbstractTestCase {
         WebDriverWait wait = new WebDriverWait(iosDriver, 30);
 
         //进入专辑页
-        steps.searchAlbum(iosDriver);
+        steps.searchAlbum(iosDriver, Utils.getProperties("FOLLOW_ALBUM_NAME"));
 
         //点击 follow 按钮
         iosDriver.findElement(albumPage.FOLLOW_BTN()).click();

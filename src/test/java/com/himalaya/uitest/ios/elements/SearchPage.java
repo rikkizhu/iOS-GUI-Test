@@ -54,4 +54,8 @@ public class SearchPage {
         return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeSearchField' AND name=='Search'");
     }
 
+    public By RESULT_EPISODE_CELL_IN_ALBUM() {
+        return MobileBy.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell");
+    }
+
 }

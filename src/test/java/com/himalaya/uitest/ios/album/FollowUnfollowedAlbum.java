@@ -19,11 +19,11 @@ public class FollowUnfollowedAlbum extends AbstractTestCase {
         WebDriverWait wait = new WebDriverWait(iosDriver, 30);
 
         //进入专辑页
-        steps.searchAlbum(iosDriver, Utils.getProperties("FOLLOW_ALBUM_NAME"));
+        steps.searchAlbum(iosDriver, Utils.getProperties("SEARCH_ALBUM"));
 
         //点击 follow 按钮
         iosDriver.findElement(albumPage.FOLLOW_BTN()).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.SETTING_BTN_BEHIND_FOLLOWING()));
+        wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.FOLLOWING_BTN()));
 
         //验证 follow 成功
         Assert.assertTrue(iosDriver.findElement(albumPage.FOLLOWING_BTN()).isDisplayed(), "验证 following 按钮存在");
@@ -34,14 +34,24 @@ public class FollowUnfollowedAlbum extends AbstractTestCase {
         List<IOSElement> BACKWARD_BTN_TYPE = iosDriver.findElements(albumPage.BACKWARD_BTN_TYPE());
         BACKWARD_BTN_TYPE.get(0).click();
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.Library_TAB_BTN()));
+        //进入library页
+        wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.Library_TAB_BTN())).click();
 
-        //点击 library tab
-        iosDriver.findElement(libraryPage.Library_TAB_BTN()).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.FOLLOWED_SHOWS_CELL()));
+        //由view as shows切换为view as episodes
+        wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.VIEW_AS_SHOWS_BTN()));
+        iosDriver.findElement(libraryPage.VIEW_AS_SHOWS_BTN()).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.View_As_Episodes())).click();
+
+        //验证切换为 episodes 列表，有内容
+        Assert.assertTrue(iosDriver.findElements(libraryPage.FOLLOWED_CELL()).size() > 0, "验证声音维度关注列表有内容");
+
+        //由view as episodes切换为view as shows
+        wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.View_As_Episodes())).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.VIEW_AS_SHOWS_BTN())).click();
 
         //验证library页存在该专辑
-        iosDriver.findElement(libraryPage.FOLLOWED_SHOWS_CELL()).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.FOLLOWED_CELL()));
+        iosDriver.findElement(libraryPage.FOLLOWED_CELL()).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.FOLLOWING_BTN()));
         Assert.assertTrue(iosDriver.findElement(albumPage.ALBUM_TITLE_ALBUM_PAGE()).isDisplayed(), "验证该专辑被follow");
     }

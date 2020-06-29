@@ -41,7 +41,8 @@ public class OnBoardingSkipFollow extends AbstractTestCase {
         iosDriver.findElement(accountPage.EMAIL_LOGIN_BTN()).click();
 
         //输入邮箱
-        wait.until(ExpectedConditions.elementToBeClickable(accountPage.EMAIL_INPUT())).clear();
+        wait.until(ExpectedConditions.elementToBeClickable(accountPage.EMAIL_INPUT()));
+        iosDriver.findElement(accountPage.EMAIL_INPUT()).clear();
         iosDriver.findElement(accountPage.EMAIL_INPUT()).sendKeys(RandomStringUtils.randomAlphanumeric(6) + "@hi.com");
 
         //点击 continue 进入下一页
@@ -79,7 +80,7 @@ public class OnBoardingSkipFollow extends AbstractTestCase {
         iosDriver.findElement(libraryPage.Library_TAB_BTN()).click();
 
         //验证没有关注专辑
-        wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.View_As_Shows_Btn()));
+        wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.VIEW_AS_SHOWS_BTN()));
         Assert.assertTrue(iosDriver.findElement(libraryPage.FOLLOW_HINTS_LIBRARY()).isDisplayed(), "验证关注专辑提示存在，表明没有关注专辑");
     }
 }

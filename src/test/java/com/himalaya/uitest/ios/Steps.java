@@ -117,7 +117,7 @@ public class Steps {
 
         //点击进入专辑
         wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" +searchContent + "'")));
-        iosDriver.findElement(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" + searchContent + "'")).click();
+        iosDriver.findElement(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" +searchContent + "'")).click();
     }
 
     public void signUpByEmail(IOSDriver iosDriver) {

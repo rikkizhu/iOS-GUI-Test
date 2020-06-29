@@ -12,11 +12,15 @@ public class LibraryPage {
         return MobileBy.AccessibilityId("You can easily access all your favorite podcasts here");
     }
 
-    public By View_As_Shows_Btn() {
+    public By VIEW_AS_SHOWS_BTN() {
         return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='View As Shows'");
     }
 
-    public By FOLLOWED_SHOWS_CELL() {
+    public By View_As_Episodes() {
+        return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='View As Episodes'");
+    }
+
+    public By FOLLOWED_CELL() {
         return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeCell'");
     }
 

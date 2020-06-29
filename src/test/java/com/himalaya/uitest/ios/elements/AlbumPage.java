@@ -26,7 +26,7 @@ public class AlbumPage {
     }
 
     public By SETTING_BTN_BEHIND_FOLLOWING() {
-        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeButton[2]");
+        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeButton[2]");
     }
 
     public By LISTENERS_ALSO_FOLLOWED() {
@@ -42,18 +42,18 @@ public class AlbumPage {
     }
 
     public By ALBUM_TITLE_ALBUM_PAGE() {
-        return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("FOLLOW_ALBUM_NAME") + "'");
+        return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("SEARCH_ALBUM") + "'");
     }
 
-    public By Detail_More_ALBUM_PAGE(){
-        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeButton[2]");
+    public By DETAIL_MORE_ALBUM_PAGE() {
+        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeButton[2]");
     }
 
-    public By SEARCH_EPISODES_IN_SHOW_BTN(){
+    public By SEARCH_EPISODES_IN_SHOW_BTN() {
         return MobileBy.AccessibilityId("Search episodes in this show");
     }
 
-    public By SEARCH_FIELD_IN_SHOW(){
+    public By SEARCH_FIELD_IN_SHOW() {
         return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeSearchField' AND name=='Search episodes in this show'");
     }
 

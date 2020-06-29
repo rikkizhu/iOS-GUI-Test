@@ -15,15 +15,15 @@ public class SearchEpisodeInAlbum extends AbstractTestCase {
 
     @BeforeMethod
     public void setUp() {
-        steps.searchAlbum(iosDriver,Utils.getProperties("SEARCH_ALBUM"));
+        steps.searchAlbum(iosDriver, Utils.getProperties("SEARCH_ALBUM"));
     }
 
-    @Test(description = "专辑页搜索")
+    @Test(description = "专辑页搜索声音")
     public void testSearchEpisodeInAlbum() {
         WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         //点击右上角detail的搜索按钮
-        wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.Detail_More_ALBUM_PAGE())).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.DETAIL_MORE_ALBUM_PAGE())).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.SEARCH_EPISODES_IN_SHOW_BTN())).click();
 
         //输入搜索内容，点击搜索

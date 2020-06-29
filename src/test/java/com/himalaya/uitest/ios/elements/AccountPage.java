@@ -13,6 +13,10 @@ public class AccountPage {
         return MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeTextField'");
     }
 
+    public By CLEAR_TEXT_LOGIN_PAGE(){
+        return MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeButton' AND name=='Clear text'");
+    }
+
     public By CONTINUE_BUTTON() {
         return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='Continue'");
     }

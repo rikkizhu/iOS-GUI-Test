@@ -18,13 +18,26 @@ public class Utils {
 
     IOSDriver iosDriver;
 
-    public IOSDriver launchApp() throws MalformedURLException {
+    public IOSDriver launchiphoneXApp() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.4.1");
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone X");
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
         capabilities.setCapability(MobileCapabilityType.UDID, "3b6b1eff284652e707646f322089c6be4d189fe5");
+        capabilities.setCapability("bundleId", "com.***REMOVED***");
+
+        iosDriver = new IOSDriver(new URL("HTTP://127.0.0.1:4723/wd/hub"), capabilities);
+        return iosDriver;
+    }
+
+    public IOSDriver launchiphone6App() throws MalformedURLException {
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12.4.5");
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 6");
+        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
+        capabilities.setCapability(MobileCapabilityType.UDID, "6027272dcff3571a8c89ad0b5dcb200db6ac98ff");
         capabilities.setCapability("bundleId", "com.***REMOVED***");
 
         iosDriver = new IOSDriver(new URL("HTTP://127.0.0.1:4723/wd/hub"), capabilities);

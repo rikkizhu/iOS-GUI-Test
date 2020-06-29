@@ -37,8 +37,7 @@ public class MultiAlbumLoginSwitch extends AbstractTestCase {
         iosDriver.findElement(accountPage.EMAIL_LOGIN_BTN()).click();
 
         //输入邮箱
-        wait.until(ExpectedConditions.elementToBeClickable(accountPage.EMAIL_INPUT()));
-        iosDriver.findElement(accountPage.EMAIL_INPUT()).clear();
+        wait.until(ExpectedConditions.elementToBeClickable(accountPage.CLEAR_TEXT_LOGIN_PAGE())).click();
         iosDriver.findElement(accountPage.EMAIL_INPUT()).sendKeys(Utils.getProperties("MULTI_ALBUM_ACCOUNT"));
 
         //点击 continue 进入下一页

@@ -13,7 +13,7 @@ import java.util.List;
 
 public class SearchEpisode extends AbstractTestCase {
     @Test(description = "全局搜索声音")
-    public void testSearchEpisode() {
+    public void testSearchEpisode() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         //进入search tab点击搜索框
@@ -29,6 +29,7 @@ public class SearchEpisode extends AbstractTestCase {
         iosDriver.findElement(searchPage.RESULT_EPISODES_TAB()).click();
 
         //验证搜索出专辑对应声音
+        Thread.sleep(1000);
         Assert.assertTrue(iosDriver.findElement(searchPage.RESULT_ALBUM_CELL()).isDisplayed(), "验证有声音搜索结果");
         Assert.assertTrue(iosDriver.findElements(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("MY_SHOW_FIRST_EPISODE_NAME") + "'")).size() > 0,
                 "验证搜索结果中有目标声音");

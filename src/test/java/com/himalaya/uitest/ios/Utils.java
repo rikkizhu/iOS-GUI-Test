@@ -5,6 +5,7 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.*;
@@ -38,6 +39,19 @@ public class Utils {
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 6");
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
         capabilities.setCapability(MobileCapabilityType.UDID, "6027272dcff3571a8c89ad0b5dcb200db6ac98ff");
+        capabilities.setCapability("bundleId", "com.***REMOVED***");
+
+        iosDriver = new IOSDriver(new URL("HTTP://127.0.0.1:4723/wd/hub"), capabilities);
+        return iosDriver;
+    }
+
+    public IOSDriver launchiPhoneXSMaxApp() throws MalformedURLException {
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "13.5.1");
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone XS Max");
+        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
+        capabilities.setCapability(MobileCapabilityType.UDID, "00008020-000B25892269002E");
         capabilities.setCapability("bundleId", "com.***REMOVED***");
 
         iosDriver = new IOSDriver(new URL("HTTP://127.0.0.1:4723/wd/hub"), capabilities);
@@ -82,10 +96,31 @@ public class Utils {
 
     public void swipePageLeftRight(IOSDriver iosDriver, Integer init_width, Integer end_width) {
         TouchAction action = new TouchAction(iosDriver);
-        action.longPress(PointOption.point(init_width, iosDriver.manage().window().getSize().height / 2))
+        action.longPress(PointOption.point(init_width, iosDriver.manage().window().getSize().height / 3))
                 .waitAction(WaitOptions.waitOptions(Duration.ofNanos(15000)))
-                .moveTo(PointOption.point(end_width, iosDriver.manage().window().getSize().height / 2))
+                .moveTo(PointOption.point(end_width, iosDriver.manage().window().getSize().height / 3))
                 .release().perform();
+    }
+
+    public void swipeDownToElement(IOSDriver iosDriver, By findElementLocator){
+        int height = iosDriver.manage().window().getSize().height;
+        if (iosDriver.findElements(findElementLocator).size()>0){
+            iosDriver.findElement(findElementLocator).click();
+        }else {
+            while (iosDriver.findElements(findElementLocator).size()<=0){
+                this.swipePageUpDown(iosDriver, height * 3 / 4, height / 4);
+            }
+        }
+    }
+    public void swipeUpToElement(IOSDriver iosDriver, By findElementLocator){
+        int height = iosDriver.manage().window().getSize().height;
+        if (iosDriver.findElements(findElementLocator).size()>0){
+            iosDriver.findElement(findElementLocator).click();
+        }else {
+            while (iosDriver.findElements(findElementLocator).size()<=0){
+                this.swipePageUpDown(iosDriver, height / 4,height * 3 / 4);
+            }
+        }
     }
 
     public static String getProperties(String key) {
@@ -107,5 +142,4 @@ public class Utils {
             }
         }
     }
-
 }

@@ -11,7 +11,6 @@ import org.testng.annotations.Test;
 /*
 由于大播放页存在过多只能用xpath定位的元素，会影响执行效率，偶尔还会出现xpath定位不到的问题
 */
-
 public class SwitchEpisodeByButton extends AbstractTestCase {
     Steps steps = new Steps();
 
@@ -28,7 +27,7 @@ public class SwitchEpisodeByButton extends AbstractTestCase {
 
     @Test(description = "大播放页按钮切换上下首")
     public void testSwitchEpisodeByBtn() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(iosDriver, 60);
+        WebDriverWait wait = new WebDriverWait(iosDriver, 120);
 
         //点击第一条声音开始播放
         wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.MY_SHOW_FIRST_EPISODE()));
@@ -40,11 +39,11 @@ public class SwitchEpisodeByButton extends AbstractTestCase {
         Assert.assertEquals("验证上一首不可点击", "false", isEnabled);
 
         //获取第一首声音名称
-        wait.until(ExpectedConditions.presenceOfElementLocated(playerPage.EPISODE_NAME_PLAYER())).isDisplayed();
+        wait.until(ExpectedConditions.presenceOfElementLocated(playerPage.EPISODE_NAME_PLAYER()));
         String FIRST_EPISODE_NAME = iosDriver.findElement((playerPage.EPISODE_NAME_PLAYER())).getAttribute("value");
 
         //切换下一首
-        wait.until(ExpectedConditions.presenceOfElementLocated(playerPage.SWITCH_NEXT_EPISODE_BTN())).isDisplayed();
+        wait.until(ExpectedConditions.presenceOfElementLocated(playerPage.SWITCH_NEXT_EPISODE_BTN()));
         iosDriver.findElement(playerPage.SWITCH_NEXT_EPISODE_BTN()).click();
         Thread.sleep(3000);
 

@@ -19,7 +19,7 @@ public class SearchEpisodeInAlbum extends AbstractTestCase {
     }
 
     @Test(description = "专辑页搜索声音")
-    public void testSearchEpisodeInAlbum() {
+    public void testSearchEpisodeInAlbum() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         //点击右上角detail的搜索按钮

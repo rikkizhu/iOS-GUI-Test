@@ -1,7 +1,6 @@
 package com.***REMOVED***.uitest.ios.elements;
 
 import io.appium.java_client.MobileBy;
-import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.By;
 
 public class ProfilePage {
@@ -34,5 +33,25 @@ public class ProfilePage {
     }
 
     public By HALF_SCREEN_SIGNIN(){return MobileBy.AccessibilityId("Sign in");}
+
+    public By LOCATION_BUTTON(){
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='Location'");
+    }
+
+    public By LOCATION_USA(){
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='United States'");
+    }
+
+    public By LOCATION_HONGKONG(){
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='Hong Kong'");
+    }
+
+    public  By LOCATION_BACK_BTN(){
+        return By.xpath("//XCUIElementTypeNavigationBar[@name='Location']/XCUIElementTypeButton");
+    }
+
+    public By SETTING_BACK_BTN(){
+        return By.xpath("//XCUIElementTypeNavigationBar[@name='Settings']/XCUIElementTypeButton");
+    }
 
 }

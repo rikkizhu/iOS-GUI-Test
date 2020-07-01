@@ -24,7 +24,7 @@ public class AbstractTestCase {
     @BeforeClass(alwaysRun = true)
     public static void launch***REMOVED***() throws MalformedURLException {
         Utils utils = new Utils();
-        iosDriver = utils.launchiphone6App();
+        iosDriver = utils.launchiPhoneXSMaxApp();
 
     }
 

@@ -36,9 +36,10 @@ public class MiniPlayer extends AbstractTestCase {
         //下滑大播放页，打开 minibar
         int height = iosDriver.manage().window().getSize().height;
         utils.swipePageUpDown(iosDriver, height / 4, height * 3 / 4);
+
         //验证打开 minibar
         wait.until(ExpectedConditions.presenceOfElementLocated(playerPage.IMAGE_BTN_IN_MINIBAR()));
-        Assert.assertTrue(iosDriver.findElement(playerPage.IMAGE_BTN_IN_MINIBAR()).isDisplayed(), "验证打开minibar");
+        Assert.assertTrue(iosDriver.findElement(playerPage.PAUSE_BTN_IN_MINIBAR()).isDisplayed(), "验证打开minibar且处于播放状态");
 
         //验证minibar处于播放状态
         int init_progress = Integer.parseInt(iosDriver.findElement(playerPage.PLAYER_PROGRESS()).getAttribute("value").replace("%", ""));
@@ -59,6 +60,7 @@ public class MiniPlayer extends AbstractTestCase {
         iosDriver.findElement(playerPage.PLAY_BTN_IN_MINIBAR()).click();
         iosDriver.findElement(playerPage.IMAGE_BTN_IN_MINIBAR()).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(playerPage.PRE_SEEK_PLAYER()));
+
         //断言成功唤起大播放页
         Assert.assertTrue(iosDriver.findElement(playerPage.PRE_SEEK_PLAYER()).isDisplayed(), "验证成功唤起大播放页");
 
@@ -71,6 +73,7 @@ public class MiniPlayer extends AbstractTestCase {
         }
         Thread.sleep(1 * 1000);
         int seek_progress2 = Integer.parseInt(iosDriver.findElement(playerPage.PLAYER_PROGRESS()).getAttribute("value").replace("%", ""));
+
         //断言进度已回退
         Assert.assertTrue(seek_progress1 > seek_progress2, "验证回退后，进度变小");
 

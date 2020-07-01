@@ -37,7 +37,7 @@ public class EmailSignUp extends AbstractTestCase {
         iosDriver.findElement(accountPage.EMAIL_LOGIN_BTN()).click();
 
         //输入邮箱
-        wait.until(ExpectedConditions.elementToBeClickable(accountPage.CLEAR_TEXT_LOGIN_PAGE())).click();
+        wait.until(ExpectedConditions.elementToBeClickable(accountPage.EMAIL_INPUT())).clear();
         iosDriver.findElement(accountPage.EMAIL_INPUT()).sendKeys(RandomStringUtils.randomAlphanumeric(6) + "@hi.com");
 
         //点击 continue 进入下一页

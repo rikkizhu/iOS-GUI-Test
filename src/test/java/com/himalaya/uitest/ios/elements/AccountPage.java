@@ -13,10 +13,6 @@ public class AccountPage {
         return MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeTextField'");
     }
 
-    public By CLEAR_TEXT_LOGIN_PAGE(){
-        return MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeButton' AND name=='Clear text'");
-    }
-
     public By CONTINUE_BUTTON() {
         return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='Continue'");
     }
@@ -74,7 +70,7 @@ public class AccountPage {
     }
 
     public By FIRST_MULTI_ALBUM_ACCOUNT() {
-        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]");
+        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]");
     }
 
     public By FB_OPEN() {

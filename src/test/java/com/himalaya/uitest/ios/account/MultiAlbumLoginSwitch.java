@@ -37,7 +37,7 @@ public class MultiAlbumLoginSwitch extends AbstractTestCase {
         iosDriver.findElement(accountPage.EMAIL_LOGIN_BTN()).click();
 
         //输入邮箱
-        wait.until(ExpectedConditions.elementToBeClickable(accountPage.CLEAR_TEXT_LOGIN_PAGE())).click();
+        wait.until(ExpectedConditions.elementToBeClickable(accountPage.EMAIL_INPUT())).clear();
         iosDriver.findElement(accountPage.EMAIL_INPUT()).sendKeys(Utils.getProperties("MULTI_ALBUM_ACCOUNT"));
 
         //点击 continue 进入下一页
@@ -73,7 +73,8 @@ public class MultiAlbumLoginSwitch extends AbstractTestCase {
         iosDriver.findElement(profilePage.PROFILE_BTN()).click();
 
         //断言用户名子用户1正确
-        Assert.assertTrue(iosDriver.findElement(MobileBy.iOSNsPredicateString("type =='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("Multi_Album_NAME1") + "'")).isDisplayed(), "断言断言用户名子用户1正确");
+        System.out.println("type =='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("Multi_Album_NAME1") + "'");
+        Assert.assertTrue(iosDriver.findElement(MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='" + Utils.getProperties("Multi_Album_NAME1") + "'")).isDisplayed(), "断言断言用户名子用户1正确");
 
         //切换用户
         iosDriver.findElement(profilePage.Switch_Show_Btn()).click();
@@ -85,6 +86,6 @@ public class MultiAlbumLoginSwitch extends AbstractTestCase {
         iosDriver.findElement(profilePage.PROFILE_BTN()).click();
 
         //断言用户名子用户2正确
-        Assert.assertTrue(iosDriver.findElement(MobileBy.iOSNsPredicateString("type =='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("Multi_Album_NAME2") + "'")).isDisplayed(), "断言断言用户名子用户2正确");
+        Assert.assertTrue(iosDriver.findElement(MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='" + Utils.getProperties("Multi_Album_NAME2") + "'")).isDisplayed(), "断言断言用户名子用户2正确");
     }
 }

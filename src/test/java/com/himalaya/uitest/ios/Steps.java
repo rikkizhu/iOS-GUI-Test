@@ -28,7 +28,7 @@ public class Steps {
         iosDriver.findElement(accountPage.EMAIL_LOGIN_BTN()).click();
 
         //输入邮箱
-        wait.until(ExpectedConditions.elementToBeClickable(accountPage.CLEAR_TEXT_LOGIN_PAGE())).click();
+        wait.until(ExpectedConditions.elementToBeClickable(accountPage.EMAIL_INPUT())).clear();
         iosDriver.findElement(accountPage.EMAIL_INPUT()).sendKeys(Utils.getProperties("EMAIL_ACCOUNT"));
 
         //点击 continue 进入下一页

@@ -13,7 +13,7 @@ import java.util.List;
 
 public class SearchPlaylist extends AbstractTestCase {
     @Test(description = "全局搜索播单")
-    public void testSearchPlaylist(){
+    public void testSearchPlaylist() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
         //进入search tab点击搜索框
@@ -29,6 +29,7 @@ public class SearchPlaylist extends AbstractTestCase {
         iosDriver.findElement(searchPage.RESULT_PLAYLISTS_TAB()).click();
 
         //验证搜索出播单
+        Thread.sleep(1000);
         Assert.assertTrue(iosDriver.findElement(searchPage.RESULT_ALBUM_CELL()).isDisplayed(), "验证有播单搜索结果");
         Assert.assertTrue(iosDriver.findElements(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("SEARCH_PLAYLIST") + "'")).size() > 0,
                 "验证搜索结果中有目标播单");

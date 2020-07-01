@@ -18,7 +18,7 @@ public class SearchPage {
     }
 
     public By KEYBOARD_SEARCH() {
-        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeButton' AND label=='Search'");
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeButton' AND name=='Search'");
     }
 
     public By RESULT_SHOW_TAB() {
@@ -27,7 +27,6 @@ public class SearchPage {
 
     public By RESULT_EPISODES_TAB() {
         return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeButton' AND name=='Episodes'");
-
     }
 
     public By RESULT_PLAYLISTS_TAB() {
@@ -35,7 +34,7 @@ public class SearchPage {
     }
 
     public By RESULT_ALBUM_CELL() {
-        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell");
+        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView[2]/XCUIElementTypeCell");
     }
 
     public By CLEAR_TEXT_BTN() {
@@ -55,7 +54,7 @@ public class SearchPage {
     }
 
     public By RESULT_EPISODE_CELL_IN_ALBUM() {
-        return MobileBy.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell");
+        return MobileBy.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell");
     }
 
 }

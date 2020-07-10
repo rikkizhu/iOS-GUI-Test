@@ -1,0 +1,11 @@
+[ {
+  "uid" : "66a3adb20972f57e",
+  "name" : "邮箱登录_前置条件",
+  "time" : {
+    "start" : 1593771668078,
+    "stop" : 1593771687316,
+    "duration" : 19238
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

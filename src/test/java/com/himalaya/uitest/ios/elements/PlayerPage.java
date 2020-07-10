@@ -1,10 +1,7 @@
 package com.***REMOVED***.uitest.ios.elements;
 
-import com.***REMOVED***.uitest.ios.Utils;
-import com.sun.org.apache.regexp.internal.RE;
 import io.appium.java_client.MobileBy;
 import org.openqa.selenium.By;
-import org.openqa.selenium.UnableToSetCookieException;
 
 public class PlayerPage {
     public By PLAYER_PROGRESS() {
@@ -17,6 +14,10 @@ public class PlayerPage {
 
     public By PRE_SEEK_PLAYER() {
         return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeButton' AND name=='player ic prev15sec'");
+    }
+
+    public By NEXT_SEEK_PLAYER(){
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeButton' AND name=='player ic next15sec'");
     }
 
     public By SEEK_BTN_IN_MINIBAR() {

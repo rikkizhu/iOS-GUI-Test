@@ -23,5 +23,4 @@ public class LibraryPage {
     public By FOLLOWED_CELL() {
         return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeCell'");
     }
-
 }

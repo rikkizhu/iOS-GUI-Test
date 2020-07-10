@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jul 03 18:21:08 CST 2020","Fri Jul 03 18:21:27 CST 2020","19238","iOS 自动化测试","P0级别测试用例-邮箱登录(前置条件)","com.***REMOVED***.uitest.ios.account.EmailLogin","com.***REMOVED***.uitest.ios.account.EmailLogin","testEmail_Login","邮箱登录_前置条件",""

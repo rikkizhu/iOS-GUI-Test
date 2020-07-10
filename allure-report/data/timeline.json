@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "***REMOVED***deMacBook-Pro-2.local",
+    "children" : [ {
+      "name" : "32839@***REMOVED***deMacBook-Pro-2.local.main(1)",
+      "children" : [ {
+        "name" : "邮箱登录_前置条件",
+        "uid" : "66a3adb20972f57e",
+        "parentUid" : "52f5feed261607669964096843a0ef30",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593771668078,
+          "stop" : 1593771687316,
+          "duration" : 19238
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "52f5feed261607669964096843a0ef30"
+    } ],
+    "uid" : "af994fa78c7b51454d073e3af1f35bce"
+  } ],
+  "name" : "timeline"
+}

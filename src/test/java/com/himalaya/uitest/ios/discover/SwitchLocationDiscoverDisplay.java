@@ -8,7 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-public class DiscoverDisplayAndOperation extends AbstractTestCase {
+public class SwitchLocationDiscoverDisplay extends AbstractTestCase {
 
     Utils utils = new Utils();
 

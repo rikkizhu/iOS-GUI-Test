@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 
-public class MiniPlayer extends AbstractTestCase {
+public class MiniBarOperation extends AbstractTestCase {
     Steps steps = new Steps();
     Utils utils = new Utils();
 

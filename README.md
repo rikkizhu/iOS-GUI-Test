@@ -13,8 +13,8 @@
 
 **2. 找到 appnium WebDriverAgent 所在目录**
 
-  - 终端 cd 到  /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent 运行 `sh ./Scripts/bootstrap.sh`
-  - 用 Xcode 打开 /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent 下的文件 WebDriverAgent.xcodeproj
+  - 终端 cd 到  /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-webdriveragent 运行 `sh ./Scripts/bootstrap.sh`
+  - 用 Xcode 打开 /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-webdriveragent 下的文件 WebDriverAgent.xcodeproj
   
 **3. Xcode 连接手机**
 
@@ -124,6 +124,7 @@ http://www.testclass.net/testng/data-provider
 `allure serve 用于生成allure的源文件所在目录`
 
 更多使用参考官方文档：https://docs.qameta.io/allure/
+
 
 
 

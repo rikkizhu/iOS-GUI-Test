@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "iOS 自动化测试",
+    "children" : [ {
+      "name" : "P0级别测试用例-邮箱登录(前置条件)",
+      "children" : [ {
+        "name" : "com.***REMOVED***.uitest.ios.account.EmailLogin",
+        "children" : [ {
+          "name" : "邮箱登录_前置条件",
+          "uid" : "66a3adb20972f57e",
+          "parentUid" : "264d71c6e08139ddc41d39cda0c6e053",
+          "status" : "passed",
+          "time" : {
+            "start" : 1593771668078,
+            "stop" : 1593771687316,
+            "duration" : 19238
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "264d71c6e08139ddc41d39cda0c6e053"
+      } ],
+      "uid" : "1633fb52e73620bdd57c9754d811de6a"
+    } ],
+    "uid" : "d404029d388243899fb8c0272fe51c5b"
+  } ],
+  "name" : "suites"
+}

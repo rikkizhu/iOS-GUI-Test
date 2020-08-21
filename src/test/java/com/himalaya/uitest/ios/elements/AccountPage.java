@@ -26,11 +26,15 @@ public class AccountPage {
     }
 
     public By TOURIST_LOGIN_BTN() {
-        return MobileBy.AccessibilityId("Skip For Now");
+        return MobileBy.AccessibilityId("Skip");
     }
 
     public By SKIP_BTN_ON_GUIDE() {
         return MobileBy.AccessibilityId("Skip");
+    }
+
+    public By SKIP_BTN_ON_FREE_LIMIT(){
+        return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='Skip'");
     }
 
     public By CATEGORY_TITLE_ON_GUIDE() {
@@ -72,9 +76,16 @@ public class AccountPage {
     public By FIRST_MULTI_ALBUM_ACCOUNT() {
         return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]");
     }
-
     public By FB_OPEN() {
         return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='Open'");
+    }
+
+    public By FREE_FIRST_COURSE_HINT(){
+        return MobileBy.AccessibilityId("Start your first course, on us");
+    }
+
+    public By FREE_FIRST_COURSE(){
+        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]");
     }
 
 }

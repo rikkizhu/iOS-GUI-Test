@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="iOS 自动化测试" verbose="1">
+<suite name="iOS 自动化测试" verbose="1" configfailurepolicy="continue">
     <test name="P0级别测试用例-登录相关">
         <groups>
             <run>

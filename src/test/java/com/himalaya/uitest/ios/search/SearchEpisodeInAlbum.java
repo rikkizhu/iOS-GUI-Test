@@ -31,7 +31,7 @@ public class SearchEpisodeInAlbum extends AbstractTestCase {
         wait.until(ExpectedConditions.presenceOfElementLocated((searchPage.KEYBOARD_SEARCH()))).click();
 
         //验证搜索出专辑对应声音
-        Assert.assertTrue(iosDriver.findElement(searchPage.RESULT_EPISODE_CELL_IN_ALBUM()).isDisplayed(), "验证有声音搜索结果");
+        wait.until(ExpectedConditions.presenceOfElementLocated(searchPage.RESULT_EPISODE_CELL_IN_ALBUM())).isDisplayed();
         Assert.assertTrue(iosDriver.findElements(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("MY_SHOW_THIRD_EPISODE_NAME") + "'")).size() > 0,
                 "验证搜索结果中有目标声音");
     }

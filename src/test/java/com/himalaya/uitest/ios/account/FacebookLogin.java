@@ -38,7 +38,11 @@ public class FacebookLogin extends AbstractTestCase {
         iosDriver.switchTo().alert().accept();
 
         //点击open
-        wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.FB_OPEN())).click();
+        try {
+            WebDriverWait wait2 = new WebDriverWait(iosDriver, 5);
+            wait2.until(ExpectedConditions.presenceOfElementLocated(accountPage.FB_OPEN())).click();
+        } catch (Exception e) {
+        }
 
         //点击continue
         wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.CONTINUE_BUTTON())).click();

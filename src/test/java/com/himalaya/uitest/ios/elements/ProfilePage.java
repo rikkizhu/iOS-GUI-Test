@@ -20,38 +20,59 @@ public class ProfilePage {
         return MobileBy.AccessibilityId("Switch Show");
     }
 
-    public By Setting_Btn(){
+    public By Setting_Btn() {
         return MobileBy.AccessibilityId("Settings");
     }
 
-    public By LogOut_Btn(){
+    public By LogOut_Btn() {
         return MobileBy.AccessibilityId("Log Out");
     }
 
-    public By Log_Out_Alert(){
+    public By Log_Out_Alert() {
         return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='Log Out'");
     }
 
-    public By HALF_SCREEN_SIGNIN(){return MobileBy.AccessibilityId("Sign in");}
-
-    public By LOCATION_BUTTON(){
-        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='Location'");
+    public By HALF_SCREEN_SIGNIN() {
+        return MobileBy.AccessibilityId("Sign in");
     }
 
-    public By LOCATION_USA(){
+    public By LOCATION_BUTTON() {
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='Content Location'");
+    }
+
+    public By LOCATION_USA() {
         return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='United States'");
     }
 
-    public By LOCATION_HONGKONG(){
-        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='Hong Kong'");
+    public By LOCATION_CHINAMAINLAND() {
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='China mainland'");
     }
 
-    public  By LOCATION_BACK_BTN(){
-        return By.xpath("//XCUIElementTypeNavigationBar[@name='Location']/XCUIElementTypeButton");
+    public By LOCATION_BACK_BTN() {
+        return By.xpath("//XCUIElementTypeNavigationBar[@name='Content Location']/XCUIElementTypeButton");
     }
 
-    public By SETTING_BACK_BTN(){
+    public By SETTING_BACK_BTN() {
         return By.xpath("//XCUIElementTypeNavigationBar[@name='Settings']/XCUIElementTypeButton");
     }
 
+    public By MEMBERSHIP_BTN() {
+        return By.xpath("//XCUIElementTypeStaticText[@name='Memberships']");
+    }
+
+    public By MEMBERSHIP_TRANSACTIONS_CELL() {
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeImage'");
+    }
+
+    public By TRANSACTION_BTN(){
+        return By.xpath("//XCUIElementTypeNavigationBar[@name='Memberships']/XCUIElementTypeButton[2]");
+    }
+
+    public By TRANSACTIONS_TITLE(){
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name =='Transactions'");
+    }
+
+    public By Memberships_TITLE(){
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name =='Memberships'");
+    }
 }

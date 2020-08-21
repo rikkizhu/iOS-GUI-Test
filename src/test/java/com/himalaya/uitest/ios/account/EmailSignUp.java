@@ -52,6 +52,16 @@ public class EmailSignUp extends AbstractTestCase {
         wait.until(ExpectedConditions.elementToBeClickable(accountPage.SIGH_UP()));
         iosDriver.findElement(accountPage.SIGH_UP()).click();
 
+        //限免礼包
+        try{
+            //跳过限免礼包
+            WebDriverWait wait2 = new WebDriverWait(iosDriver, 3);
+            wait2.until(ExpectedConditions.presenceOfElementLocated(accountPage.SKIP_BTN_ON_FREE_LIMIT()));
+            iosDriver.findElement(accountPage.SKIP_BTN_ON_FREE_LIMIT()).click();
+        }catch (Exception e){
+        }
+
+        //新手引导
         try {
             //跳过感兴趣的分类选择
             wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.CATEGORY_TITLE_ON_GUIDE()));

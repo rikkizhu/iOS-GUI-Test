@@ -16,12 +16,12 @@ public class SwitchLocationDiscoverDisplay extends AbstractTestCase {
     public void tearDown() {
         WebDriverWait wait = new WebDriverWait(iosDriver, 30);
 
-        //切换国家到香港
+        //切换国家到大陆
         iosDriver.findElement(profilePage.PROFILE_BTN()).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.Setting_Btn())).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.LOCATION_BUTTON())).click();
-        utils.swipeUpToElement(iosDriver, profilePage.LOCATION_HONGKONG());
-        iosDriver.findElement(profilePage.LOCATION_HONGKONG()).click();
+        utils.swipeUpToElement(iosDriver, profilePage.LOCATION_CHINAMAINLAND());
+        iosDriver.findElement(profilePage.LOCATION_CHINAMAINLAND()).click();
         iosDriver.findElement(profilePage.LOCATION_BACK_BTN()).click();
     }
 

@@ -44,6 +44,10 @@ public class ProfilePage {
         return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='United States'");
     }
 
+    public By LOCATION_JAPAN() {
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='Japan'");
+    }
+
     public By LOCATION_CHINAMAINLAND() {
         return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='China mainland'");
     }
@@ -64,15 +68,15 @@ public class ProfilePage {
         return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeImage'");
     }
 
-    public By TRANSACTION_BTN(){
+    public By TRANSACTION_BTN() {
         return By.xpath("//XCUIElementTypeNavigationBar[@name='Memberships']/XCUIElementTypeButton[2]");
     }
 
-    public By TRANSACTIONS_TITLE(){
+    public By TRANSACTIONS_TITLE() {
         return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name =='Transactions'");
     }
 
-    public By Memberships_TITLE(){
+    public By Memberships_TITLE() {
         return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name =='Memberships'");
     }
 }

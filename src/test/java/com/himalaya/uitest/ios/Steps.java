@@ -7,6 +7,7 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -100,7 +101,7 @@ public class Steps {
         wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.DISCOVER_TAB_BTN()));
     }
 
-    public void searchAlbum(IOSDriver iosDriver,String searchContent) {
+    public void searchAlbum(IOSDriver iosDriver, String searchContent) {
         WebDriverWait wait = new WebDriverWait(iosDriver, 30);
 
         //进入search tab点击搜索框
@@ -115,8 +116,8 @@ public class Steps {
         SEARCH_BUTTONS.get(1).click();
 
         //点击进入专辑
-        wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" +searchContent + "'")));
-        iosDriver.findElement(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" +searchContent + "'")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" + searchContent + "'")));
+        iosDriver.findElement(MobileBy.iOSNsPredicateString("type=='XCUIElementTypeStaticText' AND name=='" + searchContent + "'")).click();
     }
 
     public void signUpByEmail(IOSDriver iosDriver) {
@@ -156,5 +157,49 @@ public class Steps {
         //accept 弹窗
         wait.until(ExpectedConditions.alertIsPresent());
         iosDriver.switchTo().alert().accept();
+    }
+
+    public void fbLogin(IOSDriver iosDriver) {
+        WebDriverWait wait = new WebDriverWait(iosDriver, 60);
+
+        //点击 FB 登录按钮
+        wait.until(ExpectedConditions.visibilityOfElementLocated(accountPage.FB_LOGIN_BTN())).click();
+
+        //accept 弹窗
+        wait.until(ExpectedConditions.alertIsPresent());
+        iosDriver.switchTo().alert().accept();
+
+        //点击open
+        try {
+            WebDriverWait wait2 = new WebDriverWait(iosDriver, 5);
+            wait2.until(ExpectedConditions.presenceOfElementLocated(accountPage.FB_OPEN())).click();
+        } catch (Exception e) {
+        }
+
+        //点击continue
+        wait.until(ExpectedConditions.presenceOfElementLocated(accountPage.CONTINUE_BUTTON())).click();
+
+        //accept 弹窗
+        try {
+            WebDriverWait wait2 = new WebDriverWait(iosDriver, 3);
+            wait2.until(ExpectedConditions.alertIsPresent());
+            iosDriver.switchTo().alert().accept();
+        } catch (Exception e) {
+        }
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(discoverPage.DISCOVER_TAB_BTN()));
+    }
+
+    public void switchLocation(IOSDriver iosDriver, By by) {
+        WebDriverWait wait = new WebDriverWait(iosDriver, 60);
+
+        //切换国家
+        iosDriver.findElement(profilePage.PROFILE_BTN()).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.Setting_Btn())).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.LOCATION_BUTTON())).click();
+        utils.swipeDownToElement(iosDriver, profilePage.LOCATION_JAPAN());
+        iosDriver.findElement(by).click();
+        iosDriver.findElement(profilePage.LOCATION_BACK_BTN()).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.SETTING_BACK_BTN())).click();
     }
 }

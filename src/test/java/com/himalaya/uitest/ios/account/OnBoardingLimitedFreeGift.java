@@ -73,6 +73,7 @@ public class OnBoardingLimitedFreeGift extends AbstractTestCase {
 
         //验证membership列表中有一个专辑
         wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.Memberships_TITLE()));
+        Thread.sleep(1000);
         Assert.assertTrue(iosDriver.findElements(profilePage.MEMBERSHIP_TRANSACTIONS_CELL()).size() == 1,
                 "验证membership列表中有一个专辑");
 

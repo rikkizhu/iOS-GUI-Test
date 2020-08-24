@@ -22,6 +22,10 @@ public class FollowUnfollowedAlbum extends AbstractTestCase {
         steps.searchAlbum(iosDriver, Utils.getProperties("SEARCH_ALBUM"));
 
         //点击 follow 按钮
+        if (iosDriver.findElements(albumPage.FOLLOWING_BTN()).size() > 0) {
+            iosDriver.findElement(albumPage.FOLLOWING_BTN()).click();
+            wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.FOLLOW_BTN()));
+        }
         iosDriver.findElement(albumPage.FOLLOW_BTN()).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(albumPage.FOLLOWING_BTN()));
 

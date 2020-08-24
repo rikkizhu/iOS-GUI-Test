@@ -15,7 +15,6 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 @Test(groups = {"account"})
-//新手引导有AB测试，有的设备不一定走新手引导
 public class OnBoardingFollowAlbums extends AbstractTestCase {
     Steps steps = new Steps();
 
@@ -29,12 +28,22 @@ public class OnBoardingFollowAlbums extends AbstractTestCase {
 
     @AfterMethod
     public void tearDown() {
+        steps.switchLocation(iosDriver, profilePage.LOCATION_CHINAMAINLAND());
         steps.logOut(iosDriver);
     }
 
     @Test(description = "新手引导关注专辑")
     public void testFollowAlbum_OnBoarding() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(iosDriver, 15);
+
+        //FB登录
+        steps.fbLogin(iosDriver);
+
+        //切换国家
+        steps.switchLocation(iosDriver, profilePage.LOCATION_JAPAN());
+
+        //退出登录
+        steps.logOut(iosDriver);
 
         // 点击 "邮箱登录"按钮
         wait.until(ExpectedConditions.visibilityOfElementLocated(accountPage.EMAIL_LOGIN_BTN()));

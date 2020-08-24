@@ -15,9 +15,9 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 @Test(groups = {"account"})
-//新手引导有AB测试，有的设备不一定走新手引导
 public class OnBoardingSkipFollow extends AbstractTestCase {
     Steps steps = new Steps();
+    Utils utils = new Utils();
 
     @BeforeMethod
     public void setUp() {
@@ -29,6 +29,7 @@ public class OnBoardingSkipFollow extends AbstractTestCase {
 
     @AfterMethod
     public void tearDown() {
+        steps.switchLocation(iosDriver, profilePage.LOCATION_CHINAMAINLAND());
         steps.logOut(iosDriver);
     }
 
@@ -36,7 +37,16 @@ public class OnBoardingSkipFollow extends AbstractTestCase {
     public void testSkipFollow_OnBoarding() {
         WebDriverWait wait = new WebDriverWait(iosDriver, 15);
 
-        // 点击 "邮箱登录"按钮
+        //FB登录
+        steps.fbLogin(iosDriver);
+
+        //切换国家
+        steps.switchLocation(iosDriver, profilePage.LOCATION_JAPAN());
+
+        //退出登录
+        steps.logOut(iosDriver);
+
+        //点击 "邮箱登录"按钮
         wait.until(ExpectedConditions.visibilityOfElementLocated(accountPage.EMAIL_LOGIN_BTN()));
         iosDriver.findElement(accountPage.EMAIL_LOGIN_BTN()).click();
 

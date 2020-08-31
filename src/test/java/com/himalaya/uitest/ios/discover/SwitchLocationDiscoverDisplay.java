@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.discover;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Utils;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -8,7 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-public class SwitchLocationDiscoverDisplay extends AbstractTestCase {
+public class SwitchLocationDiscoverDisplay extends BaseTestCase {
 
     Utils utils = new Utils();
 

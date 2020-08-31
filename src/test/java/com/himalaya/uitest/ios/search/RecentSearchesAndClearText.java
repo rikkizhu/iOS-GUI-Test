@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.search;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Utils;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.ios.IOSElement;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class RecentSearchesAndClearText extends AbstractTestCase {
+public class RecentSearchesAndClearText extends BaseTestCase {
 
     @Test(description = "搜索历史和清空搜索内容测试")
     public void testRecentSearchesAndClearText() {

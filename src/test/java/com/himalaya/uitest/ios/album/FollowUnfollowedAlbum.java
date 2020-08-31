@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.album;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
 import com.***REMOVED***.uitest.ios.Utils;
 import io.appium.java_client.ios.IOSElement;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class FollowUnfollowedAlbum extends AbstractTestCase {
+public class FollowUnfollowedAlbum extends BaseTestCase {
     Steps steps = new Steps();
 
     @Test(description = "关注专辑")

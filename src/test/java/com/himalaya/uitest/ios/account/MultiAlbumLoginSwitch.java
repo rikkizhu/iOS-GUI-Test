@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.account;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
 import com.***REMOVED***.uitest.ios.Utils;
 import io.appium.java_client.MobileBy;
@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 @Test(groups = {"account"})
-public class MultiAlbumLoginSwitch extends AbstractTestCase {
+public class MultiAlbumLoginSwitch extends BaseTestCase {
     Steps steps = new Steps();
 
     @BeforeMethod

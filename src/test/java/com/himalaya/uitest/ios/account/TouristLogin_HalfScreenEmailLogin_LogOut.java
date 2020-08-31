@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.account;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Utils;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -8,7 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 @Test(groups = {"account"})
-public class TouristLogin_HalfScreenEmailLogin_LogOut extends AbstractTestCase {
+public class TouristLogin_HalfScreenEmailLogin_LogOut extends BaseTestCase {
     Utils utils = new Utils();
 
     @Test(description = "游客登录")

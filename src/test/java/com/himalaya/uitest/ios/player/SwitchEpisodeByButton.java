@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.player;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 /*
 由于大播放页存在过多只能用xpath定位的元素，会影响执行效率，偶尔还会出现xpath定位不到的问题
 */
-public class SwitchEpisodeByButton extends AbstractTestCase {
+public class SwitchEpisodeByButton extends BaseTestCase {
     Steps steps = new Steps();
 
     @BeforeMethod

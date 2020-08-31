@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.discover;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Utils;
 import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class DiscoverScrollUpDown extends AbstractTestCase {
+public class DiscoverScrollUpDown extends BaseTestCase {
     Utils utils = new Utils();
     @Test(description = "discover页上下滑动")
     public void testDiscoverScrollUpDown() throws InterruptedException {

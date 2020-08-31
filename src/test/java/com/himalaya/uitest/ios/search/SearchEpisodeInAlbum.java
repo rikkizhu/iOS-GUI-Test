@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.search;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
 import com.***REMOVED***.uitest.ios.Utils;
 import io.appium.java_client.MobileBy;
@@ -10,7 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class SearchEpisodeInAlbum extends AbstractTestCase {
+public class SearchEpisodeInAlbum extends BaseTestCase {
     Steps steps = new Steps();
 
     @BeforeMethod

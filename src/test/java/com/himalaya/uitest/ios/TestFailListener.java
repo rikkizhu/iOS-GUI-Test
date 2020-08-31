@@ -15,7 +15,7 @@ public class TestFailListener extends TestListenerAdapter {
 
     @Attachment(value = "Page screenshot", type = "image/png")
     public byte[] takePhoto() {
-        byte[] screenshotAs = ((TakesScreenshot) AbstractTestCase.iosDriver).getScreenshotAs(OutputType.BYTES);
+        byte[] screenshotAs = ((TakesScreenshot) BaseTestCase.iosDriver).getScreenshotAs(OutputType.BYTES);
         return screenshotAs;
     }
 

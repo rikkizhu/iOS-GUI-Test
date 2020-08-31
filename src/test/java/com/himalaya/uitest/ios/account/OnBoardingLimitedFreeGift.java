@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.account;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
 import com.***REMOVED***.uitest.ios.Utils;
 import io.appium.java_client.ios.IOSElement;
@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 @Test(groups = {"account"})
-public class OnBoardingLimitedFreeGift extends AbstractTestCase {
+public class OnBoardingLimitedFreeGift extends BaseTestCase {
     Steps steps = new Steps();
 
     @BeforeMethod

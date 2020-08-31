@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.search;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Utils;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.ios.IOSElement;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class SearchPlaylist extends AbstractTestCase {
+public class SearchPlaylist extends BaseTestCase {
     @Test(description = "全局搜索播单")
     public void testSearchPlaylist() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(iosDriver, 15);

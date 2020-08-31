@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.discover;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class SwitchMultiTab extends AbstractTestCase {
+public class SwitchMultiTab extends BaseTestCase {
 
     @Test(description = "多 tab 切换")
     public void testSwitchMultiTab() throws InterruptedException {

@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.account;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Utils;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class EmailLogin extends AbstractTestCase {
+public class EmailLogin extends BaseTestCase {
 
     @Test(description = "邮箱登录_前置条件")
     public void testEmail_Login() throws InterruptedException, IOException {

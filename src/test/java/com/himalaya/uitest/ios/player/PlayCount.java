@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.player;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
 import com.***REMOVED***.uitest.ios.Utils;
 import io.appium.java_client.ios.IOSElement;
@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class PlayCount extends AbstractTestCase {
+public class PlayCount extends BaseTestCase {
     Utils utils = new Utils();
     Steps steps = new Steps();
 

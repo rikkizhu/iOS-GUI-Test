@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-import static com.***REMOVED***.uitest.ios.AbstractTestCase.searchPage;
+import static com.***REMOVED***.uitest.ios.BaseTestCase.searchPage;
 
 public class Steps {
     AccountPage accountPage = new AccountPage();

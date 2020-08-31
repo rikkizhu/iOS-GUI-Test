@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.discover;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class CardSeeAll extends AbstractTestCase {
+public class CardSeeAll extends BaseTestCase {
     @Test(description = "discover 卡片 see all")
     public void testCardSeeAll() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(iosDriver, 30);

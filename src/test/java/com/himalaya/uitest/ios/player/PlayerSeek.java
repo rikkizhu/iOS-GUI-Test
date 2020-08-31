@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.player;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -8,7 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class PlayerSeek extends AbstractTestCase {
+public class PlayerSeek extends BaseTestCase {
     Steps steps = new Steps();
 
     @BeforeMethod

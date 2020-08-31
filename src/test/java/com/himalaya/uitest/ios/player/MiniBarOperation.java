@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.player;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
 import com.***REMOVED***.uitest.ios.Utils;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 
-public class MiniBarOperation extends AbstractTestCase {
+public class MiniBarOperation extends BaseTestCase {
     Steps steps = new Steps();
     Utils utils = new Utils();
 

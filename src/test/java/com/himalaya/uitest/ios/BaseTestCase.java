@@ -9,7 +9,7 @@ import org.testng.annotations.Listeners;
 import java.net.MalformedURLException;
 
 @Listeners({TestFailListener.class})
-public class AbstractTestCase {
+public class BaseTestCase {
     protected static IOSDriver iosDriver;
 
     protected static AccountPage accountPage = new AccountPage();

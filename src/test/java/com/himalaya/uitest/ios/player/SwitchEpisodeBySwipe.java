@@ -1,6 +1,6 @@
 package com.***REMOVED***.uitest.ios.player;
 
-import com.***REMOVED***.uitest.ios.AbstractTestCase;
+import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Steps;
 import com.***REMOVED***.uitest.ios.Utils;
 import org.junit.Assert;
@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 由于大播放页存在过多只能用xpath定位的元素，会影响执行效率，偶尔还会出现xpath定位不到的问题
 */
 
-public class SwitchEpisodeBySwipe extends AbstractTestCase {
+public class SwitchEpisodeBySwipe extends BaseTestCase {
     Steps steps = new Steps();
     Utils utils = new Utils();
 

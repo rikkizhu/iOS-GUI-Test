@@ -16,7 +16,7 @@ public class PlayerPage {
         return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeButton' AND name=='player ic prev15sec'");
     }
 
-    public By NEXT_SEEK_PLAYER(){
+    public By NEXT_SEEK_PLAYER() {
         return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeButton' AND name=='player ic next15sec'");
     }
 
@@ -51,4 +51,33 @@ public class PlayerPage {
     public By EPISODE_NAME_PLAYER() {
         return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeStaticText");
     }
+
+    public By QUEUE_BTN() {
+        return MobileBy.AccessibilityId("player ic queue");
+    }
+
+    public By REVERSE_QUEEN() {
+        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton");
+    }
+
+    public By QUEEN_BACK_BTN() {
+        return By.xpath("//XCUIElementTypeNavigationBar[@name='Queue']/XCUIElementTypeButton");
+    }
+
+    public By SORT_BTN_LIST_PLAY_QUEEN() {
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeButton' AND name CONTAINS 'Reorder'");
+    }
+
+    public By EPISODE_LIST_PLAY_QUEEN() {
+        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[1]");
+    }
+
+    public By FIRST_EPISODE_PLAY_QUEUE() {
+        return By.xpath("//XCUIElementTypeTable/XCUIElementTypeCell[1]");
+    }
+
+    public By REMOVE_PLAY_QUEUE() {
+        return MobileBy.AccessibilityId("Remove");
+    }
+
 }

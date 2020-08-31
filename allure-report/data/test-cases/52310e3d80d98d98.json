@@ -1,0 +1,88 @@
+{
+  "uid" : "52310e3d80d98d98",
+  "name" : "fb登录",
+  "fullName" : "com.***REMOVED***.uitest.ios.account.FacebookLogin.testFacebookLogin",
+  "historyId" : "312356143fa81623850f58ca8b1bb452",
+  "time" : {
+    "start" : 1598436029667,
+    "stop" : 1598436047175,
+    "duration" : 17508
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1598436018927,
+      "stop" : 1598436024661,
+      "duration" : 5734
+    },
+    "description" : "",
+    "status" : "unknown",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1598436047177,
+      "stop" : 1598436055445,
+      "duration" : 8268
+    },
+    "description" : "",
+    "status" : "unknown",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.***REMOVED***.uitest.ios.account.FacebookLogin"
+  }, {
+    "name" : "testClass",
+    "value" : "com.***REMOVED***.uitest.ios.account.FacebookLogin"
+  }, {
+    "name" : "testMethod",
+    "value" : "testFacebookLogin"
+  }, {
+    "name" : "parentSuite",
+    "value" : "iOS 自动化测试"
+  }, {
+    "name" : "suite",
+    "value" : "P0级别测试用例-登录相关"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.***REMOVED***.uitest.ios.account.FacebookLogin"
+  }, {
+    "name" : "host",
+    "value" : "RuiqideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "53017@RuiqideMacBook-Pro.local.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "52310e3d80d98d98.json",
+  "parameterValues" : [ ]
+}

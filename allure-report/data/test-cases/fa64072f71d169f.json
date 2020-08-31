@@ -1,12 +1,12 @@
 {
-  "uid" : "66a3adb20972f57e",
+  "uid" : "fa64072f71d169f",
   "name" : "邮箱登录_前置条件",
   "fullName" : "com.***REMOVED***.uitest.ios.account.EmailLogin.testEmail_Login",
   "historyId" : "c21442f22272ee1ed255f5c3fcdfd297",
   "time" : {
-    "start" : 1593771668078,
-    "stop" : 1593771687316,
-    "duration" : 19238
+    "start" : 1598436069376,
+    "stop" : 1598436085832,
+    "duration" : 16456
   },
   "status" : "passed",
   "flaky" : false,
@@ -33,10 +33,10 @@
     "value" : "com.***REMOVED***.uitest.ios.account.EmailLogin"
   }, {
     "name" : "host",
-    "value" : "***REMOVED***deMacBook-Pro-2.local"
+    "value" : "RuiqideMacBook-Pro.local"
   }, {
     "name" : "thread",
-    "value" : "32839@***REMOVED***deMacBook-Pro-2.local.main(1)"
+    "value" : "53017@RuiqideMacBook-Pro.local.main(1)"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -51,6 +51,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "66a3adb20972f57e.json",
+  "source" : "fa64072f71d169f.json",
   "parameterValues" : [ ]
 }

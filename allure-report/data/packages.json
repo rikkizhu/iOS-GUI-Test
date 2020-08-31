@@ -1,22 +1,443 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "children" : [ {
-    "name" : "com.***REMOVED***.uitest.ios.account.EmailLogin",
+    "name" : "com.***REMOVED***.uitest.ios",
     "children" : [ {
-      "name" : "testEmail_Login",
-      "uid" : "66a3adb20972f57e",
-      "parentUid" : "776becfa3879ad41808c21fa6d25fcd8",
-      "status" : "passed",
-      "time" : {
-        "start" : 1593771668078,
-        "stop" : 1593771687316,
-        "duration" : 19238
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
+      "name" : "account",
+      "children" : [ {
+        "name" : "OnBoardingLimitedFreeGift",
+        "children" : [ {
+          "name" : "testOnBoardingLimitedFreeGift",
+          "uid" : "9f4c21dfa901b140",
+          "parentUid" : "03bd2c4882d30dff2cd5171e53ad0dfb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598435663105,
+            "stop" : 1598435691070,
+            "duration" : 27965
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "03bd2c4882d30dff2cd5171e53ad0dfb"
+      }, {
+        "name" : "OnBoardingFollowAlbums",
+        "children" : [ {
+          "name" : "testFollowAlbum_OnBoarding",
+          "uid" : "179be6adb9cfcbcb",
+          "parentUid" : "0ecace2ecc6e4853e559b2cb031d1504",
+          "status" : "failed",
+          "time" : {
+            "start" : 1598435711493,
+            "stop" : 1598435773744,
+            "duration" : 62251
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "0ecace2ecc6e4853e559b2cb031d1504"
+      }, {
+        "name" : "MultiAlbumLoginSwitch",
+        "children" : [ {
+          "name" : "testMultiAlbumLoginSwitch",
+          "uid" : "7ecea2922f7d498c",
+          "parentUid" : "5dffefe48a9f28e7d9c94b44794615b5",
+          "status" : "broken",
+          "time" : {
+            "start" : 1598435807370,
+            "stop" : 1598435831317,
+            "duration" : 23947
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "5dffefe48a9f28e7d9c94b44794615b5"
+      }, {
+        "name" : "TouristLogin_HalfScreenEmailLogin_LogOut",
+        "children" : [ {
+          "name" : "testTouristLogin",
+          "uid" : "726664684fddeba",
+          "parentUid" : "81c0e1188780f789f87e957a200dc799",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598435847013,
+            "stop" : 1598435883009,
+            "duration" : 35996
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testHalfScreenEmailLogin",
+          "uid" : "7b5aee69f0cd827d",
+          "parentUid" : "81c0e1188780f789f87e957a200dc799",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598435888018,
+            "stop" : 1598435906968,
+            "duration" : 18950
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testSignOut",
+          "uid" : "a22b12aa0e6c912a",
+          "parentUid" : "81c0e1188780f789f87e957a200dc799",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598435911976,
+            "stop" : 1598435919831,
+            "duration" : 7855
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "81c0e1188780f789f87e957a200dc799"
+      }, {
+        "name" : "OnBoardingSkipFollow",
+        "children" : [ {
+          "name" : "testSkipFollow_OnBoarding",
+          "uid" : "bcf8512c98d9de02",
+          "parentUid" : "df3cda58af32d5f1c5fb07ee4e46ad6b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598435933898,
+            "stop" : 1598435992913,
+            "duration" : 59015
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "df3cda58af32d5f1c5fb07ee4e46ad6b"
+      }, {
+        "name" : "FacebookLogin",
+        "children" : [ {
+          "name" : "testFacebookLogin",
+          "uid" : "52310e3d80d98d98",
+          "parentUid" : "41d95b2765ffef9d943bdf999f55f0e0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436029667,
+            "stop" : 1598436047175,
+            "duration" : 17508
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "41d95b2765ffef9d943bdf999f55f0e0"
+      }, {
+        "name" : "EmailLogin",
+        "children" : [ {
+          "name" : "testEmail_Login",
+          "uid" : "fa64072f71d169f",
+          "parentUid" : "776becfa3879ad41808c21fa6d25fcd8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436069376,
+            "stop" : 1598436085832,
+            "duration" : 16456
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "776becfa3879ad41808c21fa6d25fcd8"
+      } ],
+      "uid" : "a810a77ec7abbc5ea455a1ba4930f009"
+    }, {
+      "name" : "album.FollowUnfollowedAlbum",
+      "children" : [ {
+        "name" : "testFollowAlbum",
+        "uid" : "50b9988d9a986d2b",
+        "parentUid" : "adfdd018914e61c57aa38ec29a1569c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598436100316,
+          "stop" : 1598436126980,
+          "duration" : 26664
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testUnFollowAlbum",
+        "uid" : "f59eb5b414c73f67",
+        "parentUid" : "adfdd018914e61c57aa38ec29a1569c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598436131988,
+          "stop" : 1598436138201,
+          "duration" : 6213
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "album.FollowUnfollowedAlbum"
+    }, {
+      "name" : "search",
+      "children" : [ {
+        "name" : "RecentSearchesAndClearText",
+        "children" : [ {
+          "name" : "testRecentSearchesAndClearText",
+          "uid" : "cb2d4f7acf6a5a2e",
+          "parentUid" : "1b388ee49ba0a179fb34f67fc6850c0f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436147625,
+            "stop" : 1598436161667,
+            "duration" : 14042
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "1b388ee49ba0a179fb34f67fc6850c0f"
+      }, {
+        "name" : "SearchEpisode",
+        "children" : [ {
+          "name" : "testSearchEpisode",
+          "uid" : "662589ac0e9a3b18",
+          "parentUid" : "38d1892dcfac837b3a328ce50dbfda6a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436216454,
+            "stop" : 1598436230146,
+            "duration" : 13692
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "38d1892dcfac837b3a328ce50dbfda6a"
+      }, {
+        "name" : "SearchEpisodeInAlbum",
+        "children" : [ {
+          "name" : "testSearchEpisodeInAlbum",
+          "uid" : "ea30b9673e471cb1",
+          "parentUid" : "83c60ea7e5650fd2502c49722d7ed93c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436293248,
+            "stop" : 1598436299634,
+            "duration" : 6386
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "83c60ea7e5650fd2502c49722d7ed93c"
+      }, {
+        "name" : "SearchPlaylist",
+        "children" : [ {
+          "name" : "testSearchPlaylist",
+          "uid" : "76b240c2e7c9103",
+          "parentUid" : "987de805050ca360756c87059079abf9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436428462,
+            "stop" : 1598436438579,
+            "duration" : 10117
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "987de805050ca360756c87059079abf9"
+      }, {
+        "name" : "SearchAlbum",
+        "children" : [ {
+          "name" : "testSearchAlbum",
+          "uid" : "6d7e62ba5ef2d754",
+          "parentUid" : "ae383e2ca60bba496fb05106ec491e2b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436488530,
+            "stop" : 1598436503155,
+            "duration" : 14625
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ae383e2ca60bba496fb05106ec491e2b"
+      } ],
+      "uid" : "1cf279cc94388a857bad88e8f29dd297"
+    }, {
+      "name" : "player",
+      "children" : [ {
+        "name" : "SwitchEpisodeByButton",
+        "children" : [ {
+          "name" : "testSwitchEpisodeByBtn",
+          "uid" : "84df541d49775b6b",
+          "parentUid" : "e7d969f8f6839345b1cb6811db430806",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436175240,
+            "stop" : 1598436203407,
+            "duration" : 28167
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e7d969f8f6839345b1cb6811db430806"
+      }, {
+        "name" : "SwitchEpisodeBySwipe",
+        "children" : [ {
+          "name" : "testSwitchEpisodeBySwipe",
+          "uid" : "837c8b73937d99ce",
+          "parentUid" : "72bebed45f3cbdc0340b8a52fb3ffef4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436246254,
+            "stop" : 1598436264637,
+            "duration" : 18383
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "72bebed45f3cbdc0340b8a52fb3ffef4"
+      }, {
+        "name" : "PlayQueen",
+        "children" : [ {
+          "name" : "testManualSortPlayQueen",
+          "uid" : "311362ca808b1c01",
+          "parentUid" : "6e94d28a26e2dbf957b8211c28878b5f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436315305,
+            "stop" : 1598436334637,
+            "duration" : 19332
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testReversePlayQueen",
+          "uid" : "aa98a57d2c8ae544",
+          "parentUid" : "6e94d28a26e2dbf957b8211c28878b5f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436353083,
+            "stop" : 1598436376405,
+            "duration" : 23322
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testSwitchEpisodePlayQueen",
+          "uid" : "319a90933151a8c3",
+          "parentUid" : "6e94d28a26e2dbf957b8211c28878b5f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436395288,
+            "stop" : 1598436411116,
+            "duration" : 15828
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "6e94d28a26e2dbf957b8211c28878b5f"
+      }, {
+        "name" : "PlayerPlayPause",
+        "children" : [ {
+          "name" : "testPlayPause",
+          "uid" : "7d194564b04b4a53",
+          "parentUid" : "d4c80da1d9f75031105232355f071eeb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436451691,
+            "stop" : 1598436478964,
+            "duration" : 27273
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "d4c80da1d9f75031105232355f071eeb"
+      }, {
+        "name" : "PlayCount",
+        "children" : [ {
+          "name" : "testPlayCount",
+          "uid" : "c2ad8f879bd56d91",
+          "parentUid" : "ec298b00b04edacb05c89981d93bff94",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436521542,
+            "stop" : 1598436533008,
+            "duration" : 11466
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ec298b00b04edacb05c89981d93bff94"
+      }, {
+        "name" : "BackgroundAppPlay",
+        "children" : [ {
+          "name" : "testBackgroundAppPlay",
+          "uid" : "5baaa7f6779826a",
+          "parentUid" : "28ed38c4eaa99e2e73e3a8a193bb8c3d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436546092,
+            "stop" : 1598436567877,
+            "duration" : 21785
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "28ed38c4eaa99e2e73e3a8a193bb8c3d"
+      }, {
+        "name" : "PlayerSeek",
+        "children" : [ {
+          "name" : "testPlayerSeek",
+          "uid" : "f418fc2490467af4",
+          "parentUid" : "9bb19c625ef5ff53dfde2b4ff40871bd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436585418,
+            "stop" : 1598436604348,
+            "duration" : 18930
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "9bb19c625ef5ff53dfde2b4ff40871bd"
+      }, {
+        "name" : "MiniBarOperation",
+        "children" : [ {
+          "name" : "testMiniPlayer",
+          "uid" : "1097094f8871d4f8",
+          "parentUid" : "55e0aa268f186ad7e69e724c28bc3c63",
+          "status" : "passed",
+          "time" : {
+            "start" : 1598436619897,
+            "stop" : 1598436677751,
+            "duration" : 57854
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "55e0aa268f186ad7e69e724c28bc3c63"
+      } ],
+      "uid" : "29d1e9fd4862656d1bf8cebabbce9a31"
     } ],
-    "uid" : "com.***REMOVED***.uitest.ios.account.EmailLogin"
+    "uid" : "com.***REMOVED***.uitest.ios"
   } ],
   "name" : "packages"
 }

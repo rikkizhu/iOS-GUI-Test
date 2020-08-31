@@ -1,0 +1,72 @@
+{
+  "uid" : "f418fc2490467af4",
+  "name" : "大播放页 seek",
+  "fullName" : "com.***REMOVED***.uitest.ios.player.PlayerSeek.testPlayerSeek",
+  "historyId" : "c245277b4868fa8894fe11a382df875b",
+  "time" : {
+    "start" : 1598436585418,
+    "stop" : 1598436604348,
+    "duration" : 18930
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1598436573077,
+      "stop" : 1598436580399,
+      "duration" : 7322
+    },
+    "description" : "",
+    "status" : "unknown",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.***REMOVED***.uitest.ios.player.PlayerSeek"
+  }, {
+    "name" : "testClass",
+    "value" : "com.***REMOVED***.uitest.ios.player.PlayerSeek"
+  }, {
+    "name" : "testMethod",
+    "value" : "testPlayerSeek"
+  }, {
+    "name" : "parentSuite",
+    "value" : "iOS 自动化测试"
+  }, {
+    "name" : "suite",
+    "value" : "P0级别测试用例-非登录用例"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.***REMOVED***.uitest.ios.player.PlayerSeek"
+  }, {
+    "name" : "host",
+    "value" : "RuiqideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "53017@RuiqideMacBook-Pro.local.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f418fc2490467af4.json",
+  "parameterValues" : [ ]
+}

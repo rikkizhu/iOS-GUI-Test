@@ -73,7 +73,6 @@ public class MultiAlbumLoginSwitch extends AbstractTestCase {
         iosDriver.findElement(profilePage.PROFILE_BTN()).click();
 
         //断言用户名子用户1正确
-        System.out.println("type =='XCUIElementTypeStaticText' AND name=='" + Utils.getProperties("Multi_Album_NAME1") + "'");
         Assert.assertTrue(iosDriver.findElement(MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='" + Utils.getProperties("Multi_Album_NAME1") + "'")).isDisplayed(), "断言断言用户名子用户1正确");
 
         //切换用户

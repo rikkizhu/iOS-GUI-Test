@@ -1,0 +1,72 @@
+{
+  "uid" : "5baaa7f6779826a",
+  "name" : "锁屏播放及app后置播放",
+  "fullName" : "com.***REMOVED***.uitest.ios.player.BackgroundAppPlay.testBackgroundAppPlay",
+  "historyId" : "433ea5ae30cc4e2c808bbd16e3e6bf00",
+  "time" : {
+    "start" : 1598436546092,
+    "stop" : 1598436567877,
+    "duration" : 21785
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1598436537479,
+      "stop" : 1598436541087,
+      "duration" : 3608
+    },
+    "description" : "",
+    "status" : "unknown",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.***REMOVED***.uitest.ios.player.BackgroundAppPlay"
+  }, {
+    "name" : "testClass",
+    "value" : "com.***REMOVED***.uitest.ios.player.BackgroundAppPlay"
+  }, {
+    "name" : "testMethod",
+    "value" : "testBackgroundAppPlay"
+  }, {
+    "name" : "parentSuite",
+    "value" : "iOS 自动化测试"
+  }, {
+    "name" : "suite",
+    "value" : "P0级别测试用例-非登录用例"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.***REMOVED***.uitest.ios.player.BackgroundAppPlay"
+  }, {
+    "name" : "host",
+    "value" : "RuiqideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "53017@RuiqideMacBook-Pro.local.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5baaa7f6779826a.json",
+  "parameterValues" : [ ]
+}

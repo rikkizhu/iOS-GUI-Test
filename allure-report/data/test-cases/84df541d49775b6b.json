@@ -1,0 +1,72 @@
+{
+  "uid" : "84df541d49775b6b",
+  "name" : "大播放页按钮切换上下首",
+  "fullName" : "com.***REMOVED***.uitest.ios.player.SwitchEpisodeByButton.testSwitchEpisodeByBtn",
+  "historyId" : "85fffc4e4fdd611dc05e3e6dbac0fe67",
+  "time" : {
+    "start" : 1598436175240,
+    "stop" : 1598436203407,
+    "duration" : 28167
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1598436166618,
+      "stop" : 1598436170236,
+      "duration" : 3618
+    },
+    "description" : "",
+    "status" : "unknown",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.***REMOVED***.uitest.ios.player.SwitchEpisodeByButton"
+  }, {
+    "name" : "testClass",
+    "value" : "com.***REMOVED***.uitest.ios.player.SwitchEpisodeByButton"
+  }, {
+    "name" : "testMethod",
+    "value" : "testSwitchEpisodeByBtn"
+  }, {
+    "name" : "parentSuite",
+    "value" : "iOS 自动化测试"
+  }, {
+    "name" : "suite",
+    "value" : "P0级别测试用例-非登录用例"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.***REMOVED***.uitest.ios.player.SwitchEpisodeByButton"
+  }, {
+    "name" : "host",
+    "value" : "RuiqideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "53017@RuiqideMacBook-Pro.local.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "84df541d49775b6b.json",
+  "parameterValues" : [ ]
+}

@@ -93,6 +93,7 @@ public class OnBoardingFollowAlbums extends AbstractTestCase {
 
         //验证有关注两个专辑
         wait.until(ExpectedConditions.presenceOfElementLocated(libraryPage.VIEW_AS_SHOWS_BTN()));
+        Thread.sleep(2000);
         Assert.assertEquals(iosDriver.findElements(libraryPage.FOLLOWED_CELL()).size(), 2, "验证关注专辑数为2");
     }
 }

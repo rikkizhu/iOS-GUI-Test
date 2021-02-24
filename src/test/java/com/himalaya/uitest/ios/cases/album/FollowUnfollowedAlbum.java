@@ -1,4 +1,4 @@
-package com.***REMOVED***.uitest.ios.album;
+package com.***REMOVED***.uitest.ios.cases.album;
 
 import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Steps;

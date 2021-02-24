@@ -1,4 +1,4 @@
-package com.***REMOVED***.uitest.ios.player;
+package com.***REMOVED***.uitest.ios.cases.player;
 
 import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Steps;

@@ -8,19 +8,19 @@
             </run>
         </groups>
         <packages>
-            <package name="com.***REMOVED***.uitest.ios.account"></package>
+            <package name="com.***REMOVED***.uitest.ios.cases.account"></package>
         </packages>
     </test>
     <test name="P0级别测试用例-邮箱登录(前置条件)">
         <classes>
-            <class name="com.***REMOVED***.uitest.ios.account.EmailLogin"></class>
+            <class name="com.***REMOVED***.uitest.ios.cases.account.EmailLogin"></class>
         </classes>
     </test>
     <test name="P0级别测试用例-非登录用例">
         <packages>
-            <package name="com.***REMOVED***.uitest.ios.album"></package>
-            <package name="com.***REMOVED***.uitest.ios.search"></package>
-            <package name="com.***REMOVED***.uitest.ios.player"></package>
+            <package name="com.***REMOVED***.uitest.ios.cases.album"></package>
+            <package name="com.***REMOVED***.uitest.ios.cases.search"></package>
+            <package name="com.***REMOVED***.uitest.ios.cases.player"></package>
         </packages>
     </test>
 </suite>

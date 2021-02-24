@@ -10,6 +10,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
@@ -59,8 +60,6 @@ public class Steps {
 
         //点击 Settings
         wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.PROFILE_BTN())).click();
-        int height = iosDriver.manage().window().getSize().height;
-        utils.swipePageUpDown(iosDriver, height * 3 / 4, height / 4);
         wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.Setting_Btn())).click();
 
         //点击退出

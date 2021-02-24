@@ -34,7 +34,7 @@ public class AccountPage {
     }
 
     public By SKIP_BTN_ON_FREE_LIMIT(){
-        return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='Skip'");
+        return MobileBy.iOSNsPredicateString("type=='XCUIElementTypeButton' AND name=='Skip the offer'");
     }
 
     public By CATEGORY_TITLE_ON_GUIDE() {

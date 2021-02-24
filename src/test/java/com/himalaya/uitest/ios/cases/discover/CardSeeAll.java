@@ -1,4 +1,4 @@
-package com.***REMOVED***.uitest.ios.discover;
+package com.***REMOVED***.uitest.ios.cases.discover;
 
 import com.***REMOVED***.uitest.ios.BaseTestCase;
 import io.appium.java_client.ios.IOSElement;

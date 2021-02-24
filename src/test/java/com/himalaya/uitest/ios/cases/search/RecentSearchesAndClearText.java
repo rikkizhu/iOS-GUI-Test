@@ -1,4 +1,4 @@
-package com.***REMOVED***.uitest.ios.search;
+package com.***REMOVED***.uitest.ios.cases.search;
 
 import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Utils;

@@ -21,7 +21,7 @@ public class ProfilePage {
     }
 
     public By Setting_Btn() {
-        return MobileBy.AccessibilityId("Settings");
+        return By.xpath("//XCUIElementTypeNavigationBar[@name=\"XMIMoreHomeView\"]/XCUIElementTypeButton");
     }
 
     public By LogOut_Btn() {

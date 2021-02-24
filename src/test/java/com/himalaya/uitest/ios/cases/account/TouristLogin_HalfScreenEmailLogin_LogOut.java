@@ -1,4 +1,4 @@
-package com.***REMOVED***.uitest.ios.account;
+package com.***REMOVED***.uitest.ios.cases.account;
 
 import com.***REMOVED***.uitest.ios.BaseTestCase;
 import com.***REMOVED***.uitest.ios.Utils;
@@ -89,8 +89,6 @@ public class TouristLogin_HalfScreenEmailLogin_LogOut extends BaseTestCase {
 
         //点击 Settings
         wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.PROFILE_BTN())).click();
-        int height = iosDriver.manage().window().getSize().height;
-        utils.swipePageUpDown(iosDriver, height * 3 / 4, height / 4);
         wait.until(ExpectedConditions.presenceOfElementLocated(profilePage.Setting_Btn())).click();
 
         //点击退出

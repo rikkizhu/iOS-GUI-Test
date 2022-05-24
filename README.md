@@ -39,12 +39,12 @@
 
 1、以 appium 官方测试 demo 为例，打开项目，选择模拟器，点击下图箭头 build 起来即可。
 
-另外，需要获取到你的 .app 文件路径以供测试代码里使用（如我的是Users/***REMOVED***/Library/Developer/Xcode/DerivedData/TestApp-dnlcmpeeuewymkcljdldzrnrbduz/Build/Products/Debug-iphonesimulator/TestApp.app）。
+另外，需要获取到你的 .app 文件路径以供测试代码里使用（如我的是Users/xxxx/Library/Developer/Xcode/DerivedData/TestApp-dnlcmpeeuewymkcljdldzrnrbduz/Build/Products/Debug-iphonesimulator/TestApp.app）。
 
 ![](https://s1.ax1x.com/2020/03/27/GPEfFx.jpg)
 ![](https://s1.ax1x.com/2020/03/27/GPEyy4.jpg)
 
-2、模拟器运行 ***REMOVED***
+2、模拟器运行 xxxx
 
 找开发要包；也可考虑支持 jenkins 打模拟器包。
 
@@ -59,11 +59,11 @@
   "deviceName": "iPhone 6",
   "automationName ": "XCUITest",
   "udid": "6027272dcff3571a8c89ad0b5dcb200db6ac98ff",
-  "bundleId": "com.***REMOVED***"
+  "bundleId": "com.xxxx"
 }
 ```
 
-***REMOVED***
+![](https://i.bmp.ovh/imgs/2022/05/24/65b1084c52b66583.png)
 
 
 UDID xcode 上有，也可以通过蒲公英查。
@@ -78,7 +78,7 @@ bundleId 用 ideviceinstaller -l 查，若 ideviceinstaller -l 失败解决方�
   "platformVersion": "12.4",
   "deviceName": "iPhone 6",
   "automationName": "XCUITest",
-  "app": "/Users/***REMOVED***/Library/Developer/Xcode/DerivedData/TestApp-dnlcmpeeuewymkcljdldzrnrbduz/Build/Products/Debug-iphonesimulator/TestApp.app"
+  "app": "/Users/xxxx/Library/Developer/Xcode/DerivedData/TestApp-dnlcmpeeuewymkcljdldzrnrbduz/Build/Products/Debug-iphonesimulator/TestApp.app"
 }
 ```
 
@@ -91,7 +91,7 @@ bundleId 用 ideviceinstaller -l 查，若 ideviceinstaller -l 失败解决方�
 https://www.algerfan.cn/articles/2019/03/06/1551868940012.html
 
 3、按照四中的真机及模拟器启动app配置，用 java 编写启动代码
-***REMOVED***
+![](https://i.bmp.ovh/imgs/2022/05/24/2d5720995ffa0438.png)
 
 注意点：
 1：启动的时候 appium 要 start server

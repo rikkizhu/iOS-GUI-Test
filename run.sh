@@ -11,7 +11,7 @@ kill -9 $pid
 #allure serve allure-results
 ##生成 index.html 文件，消息通知
 allure generate allure-results -o allure-report
-curl 'https://oapi.dingtalk.com/robot/send?access_token=***REMOVED***' \
+curl 'https://oapi.dingtalk.com/robot/send?access_token=xxxx' \
   -H 'Content-Type: application/json' \
   -d '{
       "msgtype": "markdown",
@@ -28,7 +28,7 @@ curl 'https://oapi.dingtalk.com/robot/send?access_token=***REMOVED***' \
 #time=$(date "+%Y-%m-%d %H:%M:%S")
 #echo "${time}"
 #
-#cd /Users/***REMOVED***/Desktop/automation/test-ios
+#cd /Users/xxxx/Desktop/automation/test-ios
 #
 #node /Applications/Appium.app/Contents/Resources/app/node_modules/appium/build/lib/main.js &
 #rm -r allure-results
@@ -40,7 +40,7 @@ curl 'https://oapi.dingtalk.com/robot/send?access_token=***REMOVED***' \
 #
 #allure generate allure-results -o allure-report
 #
-#curl 'https://oapi.dingtalk.com/robot/send?access_token=***REMOVED***' \
+#curl 'https://oapi.dingtalk.com/robot/send?access_token=xxxx' \
 #  -H 'Content-Type: application/json' \
 #  -d '{
 #      "msgtype": "markdown",

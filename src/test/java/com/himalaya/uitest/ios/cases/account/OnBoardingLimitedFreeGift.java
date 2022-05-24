@@ -1,8 +1,8 @@
-package com.***REMOVED***.uitest.ios.cases.account;
+package com.xxxx.uitest.ios.cases.account;
 
-import com.***REMOVED***.uitest.ios.BaseTestCase;
-import com.***REMOVED***.uitest.ios.Steps;
-import com.***REMOVED***.uitest.ios.Utils;
+import com.xxxx.uitest.ios.BaseTestCase;
+import com.xxxx.uitest.ios.Steps;
+import com.xxxx.uitest.ios.Utils;
 import io.appium.java_client.ios.IOSElement;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.support.ui.ExpectedConditions;

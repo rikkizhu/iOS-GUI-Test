@@ -1,7 +1,7 @@
-package com.***REMOVED***.uitest.ios.cases.search;
+package com.xxxx.uitest.ios.cases.search;
 
-import com.***REMOVED***.uitest.ios.BaseTestCase;
-import com.***REMOVED***.uitest.ios.Utils;
+import com.xxxx.uitest.ios.BaseTestCase;
+import com.xxxx.uitest.ios.Utils;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;

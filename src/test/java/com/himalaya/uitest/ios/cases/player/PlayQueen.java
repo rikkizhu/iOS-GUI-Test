@@ -1,8 +1,8 @@
-package com.***REMOVED***.uitest.ios.cases.player;
+package com.xxxx.uitest.ios.cases.player;
 
-import com.***REMOVED***.uitest.ios.BaseTestCase;
-import com.***REMOVED***.uitest.ios.Steps;
-import com.***REMOVED***.uitest.ios.Utils;
+import com.xxxx.uitest.ios.BaseTestCase;
+import com.xxxx.uitest.ios.Steps;
+import com.xxxx.uitest.ios.Utils;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.ios.IOSElement;
 import org.junit.Assert;

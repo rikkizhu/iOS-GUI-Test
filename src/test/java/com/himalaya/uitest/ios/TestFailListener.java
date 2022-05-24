@@ -1,4 +1,4 @@
-package com.***REMOVED***.uitest.ios;
+package com.xxxx.uitest.ios;
 
 
 import io.qameta.allure.Attachment;

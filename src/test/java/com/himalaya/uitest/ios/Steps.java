@@ -1,8 +1,8 @@
-package com.***REMOVED***.uitest.ios;
+package com.xxxx.uitest.ios;
 
-import com.***REMOVED***.uitest.ios.elements.AccountPage;
-import com.***REMOVED***.uitest.ios.elements.DiscoverPage;
-import com.***REMOVED***.uitest.ios.elements.ProfilePage;
+import com.xxxx.uitest.ios.elements.AccountPage;
+import com.xxxx.uitest.ios.elements.DiscoverPage;
+import com.xxxx.uitest.ios.elements.ProfilePage;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-import static com.***REMOVED***.uitest.ios.BaseTestCase.searchPage;
+import static com.xxxx.uitest.ios.BaseTestCase.searchPage;
 
 public class Steps {
     AccountPage accountPage = new AccountPage();

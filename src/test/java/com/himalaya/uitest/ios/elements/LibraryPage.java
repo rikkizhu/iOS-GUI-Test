@@ -1,4 +1,4 @@
-package com.***REMOVED***.uitest.ios.elements;
+package com.xxxx.uitest.ios.elements;
 
 import io.appium.java_client.MobileBy;
 import org.openqa.selenium.By;

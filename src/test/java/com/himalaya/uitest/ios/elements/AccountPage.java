@@ -1,4 +1,4 @@
-package com.***REMOVED***.uitest.ios.elements;
+package com.xxxx.uitest.ios.elements;
 
 
 import io.appium.java_client.MobileBy;
@@ -70,11 +70,11 @@ public class AccountPage {
     }
 
     public By CHOOSE_MULTI_ALBUM_HINT() {
-        return MobileBy.AccessibilityId("Use ***REMOVED*** as...");
+        return MobileBy.AccessibilityId("Use xxxx as...");
     }
 
     public By FIRST_MULTI_ALBUM_ACCOUNT() {
-        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]");
+        return By.xpath("//XCUIElementTypeApplication[@name='xxxx']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]");
     }
     public By FB_OPEN() {
         return MobileBy.iOSNsPredicateString("type =='XCUIElementTypeButton' AND name=='Open'");
@@ -85,7 +85,7 @@ public class AccountPage {
     }
 
     public By FREE_FIRST_COURSE(){
-        return By.xpath("//XCUIElementTypeApplication[@name='***REMOVED***']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]");
+        return By.xpath("//XCUIElementTypeApplication[@name='xxxx']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]");
     }
 
 }

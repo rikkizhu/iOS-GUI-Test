@@ -1,6 +1,6 @@
-package com.***REMOVED***.uitest.ios.cases.discover;
+package com.xxxx.uitest.ios.cases.discover;
 
-import com.***REMOVED***.uitest.ios.BaseTestCase;
+import com.xxxx.uitest.ios.BaseTestCase;
 import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;

@@ -1,7 +1,7 @@
-package com.***REMOVED***.uitest.ios.cases.player;
+package com.xxxx.uitest.ios.cases.player;
 
-import com.***REMOVED***.uitest.ios.BaseTestCase;
-import com.***REMOVED***.uitest.ios.Steps;
+import com.xxxx.uitest.ios.BaseTestCase;
+import com.xxxx.uitest.ios.Steps;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;

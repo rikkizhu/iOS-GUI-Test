@@ -1,6 +1,6 @@
-package com.***REMOVED***.uitest.ios;
+package com.xxxx.uitest.ios;
 
-import com.***REMOVED***.uitest.ios.elements.*;
+import com.xxxx.uitest.ios.elements.*;
 import io.appium.java_client.ios.IOSDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -22,14 +22,14 @@ public class BaseTestCase {
 
 
     @BeforeClass(alwaysRun = true)
-    public static void launch***REMOVED***() throws MalformedURLException {
+    public static void launchxxxx() throws MalformedURLException {
         Utils utils = new Utils();
         iosDriver = utils.launchiPhoneXSMaxApp();
 
     }
 
     @AfterClass(alwaysRun = true)
-    public static void quit***REMOVED***() {
+    public static void quitxxxx() {
         try {
             iosDriver.switchTo().alert().accept();
         } catch (Exception e) {

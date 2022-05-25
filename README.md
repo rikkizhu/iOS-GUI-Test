@@ -1,5 +1,8 @@
 #  iOS 自动化说明文档
 
+##架构示意图
+![](https://i.bmp.ovh/imgs/2022/05/25/8663f0ff7c5d0b12.png)
+
 ## 搭建 appium iOS 环境
 这一步很简单，可参考[此文章](https://juejin.im/post/5d7ef540f265da03bb4ada00)的【1 appnium 安装】【2 安装驱动】部分，最后用 appium-doctor 查看搭建是否 ok 就行了。
 

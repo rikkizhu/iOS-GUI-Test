@@ -1,6 +1,6 @@
 #  iOS 自动化说明文档
 
-##架构示意图
+## 架构示意图
 ![](https://i.bmp.ovh/imgs/2022/05/25/8663f0ff7c5d0b12.png)
 
 ## 搭建 appium iOS 环境

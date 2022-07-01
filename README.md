@@ -127,7 +127,8 @@ http://www.testclass.net/testng/data-provider
 方式2 直接启动服务并打开测试报告
 `allure serve 用于生成allure的源文件所在目录`
 
-![image](https://user-images.githubusercontent.com/26532614/176891307-8bc88303-9a44-435e-bff8-daeb4ed2658f.png)
+
+![image](https://user-images.githubusercontent.com/26532614/176891484-cb3d509c-85f2-4e4f-8e28-0d895cc4d1b8.png)
 
 更多使用参考官方文档：https://docs.qameta.io/allure/
 
